@@ -8,12 +8,13 @@ import WebDevLogo from '../WebDevLogo';
 // import { DisplayBox } from '../../utils/DisplayBox'
 
 // import from Material UI
+import Grid from '@mui/material/Unstable_Grid2';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import  LinkedIn from "@mui/icons-material/LinkedIn";
+import LinkedIn from "@mui/icons-material/LinkedIn";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
-import Grid from '@mui/material/Unstable_Grid2';
+
 // import { styled } from '@mui/material/styles';
 // import { Paper } from '@mui/material';
 
@@ -65,13 +66,24 @@ const Header = () => {
                 <Link to="/about">About</Link>
               </li>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
-                <Link to="/sam-hahn-travel/contact">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
-                <Link to="/portfolio">My Work</Link>
+                <Link to="/my_work">My Work</Link>
               </li>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
                 <Link to="/resume">Resume</Link>
+              </li>
+              <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
+                <a 
+                  href='https://github.com/KLong75' 
+                  target='_blank' 
+                  rel='noreferrer' 
+                  className='footer-instagram-link' 
+                  aria-label="Link to Kevin's LinkedIn page"
+                >
+                  <GitHubIcon style={{ fontSize: '30px'}} />
+                </a>  
               </li>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
                 <a 
@@ -84,6 +96,7 @@ const Header = () => {
                   <LinkedIn style={{ fontSize: '30px'}} />
                 </a>  
               </li>
+              
             </ul>
           </nav>
         )}
@@ -116,16 +129,17 @@ const Header = () => {
         >
           <Grid container spacing={0} alignItems='' textAlign='center'>
           <Grid item xs={12}>
-          <img 
-            // src={} 
-            alt="Globe Key Logo" 
+          <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/>
+          {/* <img 
+            src={WebDevLogo} 
+            alt=" Logo" 
             style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }} 
-          />
+          /> */}
           </Grid>
           <Grid xs={12}>
           <MenuItem 
             component={Link} 
-            to="/sam-hahn-travel" 
+            to="/" 
             onClick={handleMenuClose} 
             style=
               {{ 
@@ -140,7 +154,7 @@ const Header = () => {
           <Grid xs={12}>
           <MenuItem 
             component={Link} 
-            to="/sam-hahn-travel/about" 
+            to="/about" 
             onClick={handleMenuClose} 
             style={{ 
               padding: '18px', 
@@ -148,13 +162,13 @@ const Header = () => {
               marginLeft: '40px',
               // justifyContent: 'center' 
             }}
-            >About
+            >About Me
           </MenuItem>
           </Grid>
           <Grid xs={12}>
           <MenuItem 
             component={Link} 
-            to="/sam-hahn-travel/contact" 
+            to="/contact" 
             onClick={handleMenuClose} 
             style=
               {{ 
@@ -176,7 +190,7 @@ const Header = () => {
                 fontSize: '22px',
                 marginLeft: '40px' 
               }}
-            >Travel Design
+            >My Work
           </MenuItem>
           </Grid>
           <Grid xs={12}>
@@ -190,21 +204,35 @@ const Header = () => {
                 fontSize: '22px',
                 marginLeft: '40px' 
               }}
-            >Self Booking Resources
+            >Resume
           </MenuItem>
           </Grid>
           <Grid xs={12}>
           <MenuItem style={{padding: '18px',
               marginLeft: '40px'}}>
-            <a
-              href='https://www.instagram.com/samhahntravelco/'
-              target='_blank'
-              rel='noreferrer'
-              className=''
-              aria-label='Link to Sam Hahn Travel Co Instagram'
-            >
-              <InstagramIcon style={{ fontSize: '28px', color: '#fbdecc'}} />
-            </a>
+            <a 
+                  href='https://github.com/KLong75' 
+                  target='_blank' 
+                  rel='noreferrer' 
+                  className='footer-instagram-link' 
+                  aria-label="Link to Kevin's LinkedIn page"
+                >
+                  <GitHubIcon style={{ fontSize: '30px'}} />
+            </a>  
+          </MenuItem>
+          </Grid>
+          <Grid xs={12}>
+          <MenuItem style={{padding: '18px',
+              marginLeft: '40px'}}>
+            <a 
+                  href='https://github.com/KLong75' 
+                  target='_blank' 
+                  rel='noreferrer' 
+                  className='footer-instagram-link' 
+                  aria-label="Link to Kevin's LinkedIn page"
+                >
+                  <LinkedIn style={{ fontSize: '30px'}} />
+            </a>  
           </MenuItem>
           </Grid>
           </Grid>

@@ -6,15 +6,15 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 // import components
 import Header from './components/Header';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 // import Swiper from './components/Swiper';
 
 // import page components
-// import Home from './pages/Home/Home';
-// import BookHotel from './pages/BookHotel/BookHotel';
-// import Contact from './pages/Contact/Contact';
-
-// import About from './pages/About/About';
+import Home from './pages/Home/Home';
+import About from './pages/AboutMe/AboutMe';
+import Contact from './pages/Contact/Contact';
+import MyWork from './pages/MyWork/MyWork';
+import Resume from './pages/Resume/Resume';
 
 
 const theme = createTheme({
@@ -46,7 +46,7 @@ const theme = createTheme({
         },
         a: {
           textDecoration: 'none',
-          // color: 'black',
+          color: 'black',
         },
       },
     },
@@ -63,14 +63,16 @@ function App() {
         
           <Header />
             <Routes>
-              {/* <Route path="/" element={<Home />} /> */}
-              {/* <Route path="/about" element={<About />} /> */}
-              {/* <Route path="/contact" element={<Contact />} /> */}
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/my_work" element={<MyWork />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/contact" element={<Contact />} />
            
             
             </Routes>
             
-          {/* <Footer /> */}
+          <Footer />
         
       </Router>
     </ThemeProvider>

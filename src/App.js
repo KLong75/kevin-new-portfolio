@@ -7,6 +7,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 // import components
 import Header from './components/Header';
 import Footer from './components/Footer';
+import TyeDyeBackground from './components/TyeDyeBackground';
 // import Swiper from './components/Swiper';
 
 // import page components
@@ -59,6 +60,7 @@ function App() {
     <>
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <TyeDyeBackground />
       <Router>
           <Header />
             <Routes>

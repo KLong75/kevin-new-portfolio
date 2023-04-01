@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 
 // import components
 import WebDevLogo from '../WebDevLogo';
-
-// import { DisplayBox } from '../../utils/DisplayBox'
+import FloatingBalls from '../FloatingBalls';
 
 // import from Material UI
 import Grid from '@mui/material/Unstable_Grid2';
@@ -16,12 +15,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 // import { styled } from '@mui/material/styles';
 // import { Paper } from '@mui/material';
 
-// import components
-import Sphere from "../Sphere";
-
 // import images/logos
 
-
+// import styles
 // import styles from './Header.module.css';
 
 
@@ -119,19 +115,21 @@ const Header = () => {
               height: "100%",
               margin: 0,
               padding: 0,
-              backgroundColor: "",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
               color: "",
-              opacity: ".89",
+              // opacity: ".89",
+              backgroundColor: 'hsla(120,100%,75%,0.3)',
             },
           }}
         >
           <Grid container spacing={0} alignItems='' textAlign='center'>
+          <FloatingBalls />
           <Grid item xs={12}>
-          <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/>
+          
+          {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
           {/* <img 
             src={WebDevLogo} 
             alt=" Logo" 
@@ -147,8 +145,9 @@ const Header = () => {
               {{ 
                 padding: '18px', 
                 fontSize: '22px',
-                marginLeft: '40px',
-                // justifyContent: 'center'
+                // marginLeft: '40px',
+                justifyContent: 'center',
+                fontWeight: 'bolder'
               }}
             >Home
           </MenuItem>
@@ -161,8 +160,9 @@ const Header = () => {
             style={{ 
               padding: '18px', 
               fontSize: '22px',
-              marginLeft: '40px',
-              // justifyContent: 'center' 
+              // marginLeft: '40px',
+              justifyContent: 'center', 
+              fontWeight: 'bolder'
             }}
             >About Me
           </MenuItem>
@@ -176,7 +176,9 @@ const Header = () => {
               {{ 
                 padding: '18px', 
                 fontSize: '22px',
-                marginLeft: '40px' 
+                // marginLeft: '40px'
+                justifyContent: 'center',
+                fontWeight: 'bolder' 
               }}
             >Contact
           </MenuItem>
@@ -190,7 +192,9 @@ const Header = () => {
               {{ 
                 padding: '18px', 
                 fontSize: '22px',
-                marginLeft: '40px' 
+                // marginLeft: '40px'
+                justifyContent: 'center',
+                fontWeight: 'bolder' 
               }}
             >My Work
           </MenuItem>
@@ -204,36 +208,50 @@ const Header = () => {
               {{ 
                 padding: '18px', 
                 fontSize: '22px',
-                marginLeft: '40px' 
+                // marginLeft: '40px'
+                justifyContent: 'center',
+                fontWeight: 'bolder'  
               }}
             >Resume
           </MenuItem>
           </Grid>
           <Grid xs={12}>
-          <MenuItem style={{padding: '18px',
-              marginLeft: '40px'}}>
+          <MenuItem 
+            style={{
+              padding: '18px',
+              // marginLeft: '40px'
+              justifyContent: 'center',
+              fontWeight: 'bolder' 
+            }}
+            >
             <a 
-                  href='https://github.com/KLong75' 
-                  target='_blank' 
-                  rel='noreferrer' 
-                  className='footer-instagram-link' 
-                  aria-label="Link to Kevin's LinkedIn page"
-                >
-                  <GitHubIcon style={{ fontSize: '30px'}} />
+              href='https://github.com/KLong75' 
+              target='_blank' 
+              rel='noreferrer' 
+              className='footer-instagram-link' 
+              aria-label="Link to Kevin's LinkedIn page"
+            >
+              <GitHubIcon style={{ fontSize: '30px' }} />
             </a>  
           </MenuItem>
           </Grid>
           <Grid xs={12}>
-          <MenuItem style={{padding: '18px',
-              marginLeft: '40px'}}>
+          <MenuItem 
+            style={{
+              padding: '18px',
+              // marginLeft: '40px'
+              justifyContent: 'center',
+              fontWeight: 'bolder' 
+            }}
+            >
             <a 
-                  href='https://github.com/KLong75' 
-                  target='_blank' 
-                  rel='noreferrer' 
-                  className='footer-instagram-link' 
-                  aria-label="Link to Kevin's LinkedIn page"
-                >
-                  <LinkedIn style={{ fontSize: '30px'}} />
+              href='https://github.com/KLong75' 
+              target='_blank' 
+              rel='noreferrer' 
+              className='footer-instagram-link' 
+              aria-label="Link to Kevin's LinkedIn page"
+            >
+              <LinkedIn style={{ fontSize: '30px'}} />
             </a>  
           </MenuItem>
           </Grid>

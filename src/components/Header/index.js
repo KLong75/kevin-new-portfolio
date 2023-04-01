@@ -13,10 +13,11 @@ import { IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import GitHubIcon from '@mui/icons-material/GitHub';
-
-
 // import { styled } from '@mui/material/styles';
 // import { Paper } from '@mui/material';
+
+// import components
+import Sphere from "../Sphere";
 
 // import images/logos
 
@@ -58,6 +59,7 @@ const Header = () => {
           </IconButton>
         ) : (
           <nav style={{ margin: 0, padding: 0 }}>
+          
             <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
                   <Link to="/">Home</Link>

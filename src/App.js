@@ -60,7 +60,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
-        
           <Header />
             <Routes>
               <Route path="/" element={<Home />} />
@@ -68,12 +67,8 @@ function App() {
               <Route path="/my_work" element={<MyWork />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />
-           
-            
             </Routes>
-            
           <Footer />
-        
       </Router>
     </ThemeProvider>
     </>

@@ -122,9 +122,29 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit}>
       <h4 style={{ fontSize: '20px', marginTop:'0px', fontWeight: 'bolder'}}>Send Me a Message</h4>
       <FormControl >
-        <TextField label='First Name' required value={firstName} onChange={handleFirstNameChange} size='small' margin='dense' style={{ marginTop: '-10px', width: '100%'}} />
-        <TextField label='Last Name' required value={lastName} onChange={handleLastNameChange} size='small' margin='dense' />
         <TextField 
+          fullWidth 
+          label='First Name' 
+          required 
+          value={firstName} 
+          onChange={handleFirstNameChange} 
+          size='small' 
+          margin='dense' 
+          style={{ 
+            marginTop: '-10px', 
+            width: '100%'
+          }} 
+        />
+        <TextField 
+          fullWidth 
+          label='Last Name' 
+          required value={lastName} 
+          onChange={handleLastNameChange} 
+          size='small' 
+          margin='dense' 
+        />
+        <TextField 
+          fullWidth
           label='Email Address' 
           required 
           value={email} 

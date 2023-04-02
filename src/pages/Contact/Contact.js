@@ -23,18 +23,23 @@ const Contact = () => {
         <h1 className='' style={{ fontSize: '', marginBottom: ''}}>Get In Touch</h1>
       </Grid>
 
-    
+      <Grid xs={12} md={4} lg={4}>
 
-      <Grid  xs={12} md={6} style={{ marginTop: ''}} height=''>
+      </Grid>
+
+      <Grid  xs={12} md={4} lg={4} style={{ marginTop: ''}} height=''>
         <DisplayBox elevation={6} >
           <ScheduleAppointment  />
         </DisplayBox>
+        {/* <DisplayBox elevation={6} >
+        </DisplayBox> */}
+      </Grid>
 
-        <DisplayBox elevation={6} >
-        </DisplayBox>
+      <Grid xs={12} md={4} lg={4}>
+
       </Grid>
      
-      <Grid xs={12} md={6} style={{ marginTop: '-80px'}}>
+      <Grid xs={12} md={6} style={{ marginTop: '-60px'}}>
         <DisplayBox elevation={6}>
           <ContactForm />
           

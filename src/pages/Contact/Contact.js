@@ -20,14 +20,14 @@ const Contact = () => {
     <Grid container spacing={6} justifyContent='center' textAlign='center' >
      
       <Grid xs={12} style={{ marginTop: ''}}>
-        <h1 className='' style={{ fontSize: '', marginBottom: ''}}>Get In Touch</h1>
+        <h1 className='' style={{ fontSize: '', marginBottom: ''}}>&lt; Let's Talk /&gt;</h1>
       </Grid>
 
-      <Grid xs={12} md={4} lg={4}>
+      {/* <Grid xs={12} md={4} lg={4}>
 
-      </Grid>
+      </Grid> */}
 
-      <Grid  xs={12} md={4} lg={4} style={{ marginTop: ''}} height=''>
+      <Grid  xs={12} md={4} lg={4} style={{ marginTop: '-60px'}} height=''>
         <DisplayBox elevation={6} >
           <ScheduleAppointment  />
         </DisplayBox>
@@ -35,9 +35,9 @@ const Contact = () => {
         </DisplayBox> */}
       </Grid>
 
-      <Grid xs={12} md={4} lg={4}>
+      {/* <Grid xs={12} md={4} lg={4}>
 
-      </Grid>
+      </Grid> */}
      
       <Grid xs={12} md={6} style={{ marginTop: '-60px'}}>
         <DisplayBox elevation={6}>

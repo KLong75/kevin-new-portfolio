@@ -120,7 +120,7 @@ const ContactForm = () => {
     <Grid container spacing={2} justifyContent='center' textAlign='center' >
     
     <form onSubmit={handleSubmit}>
-      <h4 style={{ fontSize: '20px', marginTop:'0px', fontWeight: 'bolder'}}>Send Me a Message</h4>
+      <h4 style={{ fontSize: '20px', marginTop:'0px', fontWeight: 'bolder'}}>&lt; Send Me a Message /&gt;</h4>
       <FormControl >
         <TextField 
           fullWidth 

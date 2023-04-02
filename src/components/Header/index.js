@@ -58,19 +58,19 @@ const Header = () => {
           
             <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
-                  <Link to="/">Home</Link>
+                  <Link to="/">&lt; Home /&gt;</Link>
               </li>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
-                <Link to="/about">About</Link>
+                <Link to="/about">&lt; About /&gt;</Link>
               </li>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact">&lt; Contact /&gt;</Link>
               </li>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
-                <Link to="/my_work">My Work</Link>
+                <Link to="/my_work">&lt; My Work /&gt;</Link>
               </li>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
-                <Link to="/resume">Resume</Link>
+                <Link to="/resume">&lt; Resume /&gt;</Link>
               </li>
               <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
                 <a 
@@ -120,14 +120,14 @@ const Header = () => {
               justifyContent: "center",
               alignItems: "center",
               color: "",
-              // opacity: ".89",
+              // opacity: ".8",
               backgroundColor: 'hsla(120,100%,75%,0.3)',
             },
           }}
         >
           <Grid container spacing={0} alignItems='' textAlign='center'>
           <FloatingBalls />
-          <Grid item xs={12}>
+          {/* <Grid item xs={12}> */}
           
           {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
           {/* <img 
@@ -135,7 +135,7 @@ const Header = () => {
             alt=" Logo" 
             style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }} 
           /> */}
-          </Grid>
+          {/* </Grid> */}
           <Grid xs={12}>
           <MenuItem 
             component={Link} 
@@ -149,7 +149,7 @@ const Header = () => {
                 justifyContent: 'center',
                 fontWeight: 'bolder'
               }}
-            >Home
+            >&lt; Home /&gt;
           </MenuItem>
           </Grid>
           <Grid xs={12}>
@@ -164,7 +164,7 @@ const Header = () => {
               justifyContent: 'center', 
               fontWeight: 'bolder'
             }}
-            >About Me
+            >&lt; About Me /&gt;
           </MenuItem>
           </Grid>
           <Grid xs={12}>
@@ -180,7 +180,7 @@ const Header = () => {
                 justifyContent: 'center',
                 fontWeight: 'bolder' 
               }}
-            >Contact
+            >&lt; Contact /&gt;
           </MenuItem>
           </Grid>
           <Grid xs={12}>
@@ -196,7 +196,7 @@ const Header = () => {
                 justifyContent: 'center',
                 fontWeight: 'bolder' 
               }}
-            >My Work
+            >&lt; My Work /&gt;
           </MenuItem>
           </Grid>
           <Grid xs={12}>
@@ -212,7 +212,7 @@ const Header = () => {
                 justifyContent: 'center',
                 fontWeight: 'bolder'  
               }}
-            >Resume
+            >&lt; Resume /&gt;
           </MenuItem>
           </Grid>
           <Grid xs={12}>

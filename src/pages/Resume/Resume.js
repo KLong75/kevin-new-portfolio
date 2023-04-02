@@ -1,11 +1,13 @@
-
-
+import ProgrammingIcons from "../../components/ProgrammingIcons";
 
 const Resume = () => {
   return (
-    <div>
+    <>
       <h1>Resume</h1>
-    </div>
+
+      <ProgrammingIcons />
+     
+    </>
   );
 };
 

@@ -21,7 +21,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 // import styles from './Header.module.css';
 
 
-
 const Header = () => {
   const [menuAnchor, setMenuAnchor] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -45,34 +44,36 @@ const Header = () => {
 
   return (
     <header style={{ padding: '16px', backgroundColor: '' }}>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-     
-      <WebDevLogo />
+    {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
+      <Grid style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <WebDevLogo />
        
         {isMobile ? (
           <IconButton onClick={handleMenuOpen} size="large">
             <MenuIcon />
           </IconButton>
         ) : (
+          <>
+          {/* <WebDevLogo /> */}
           <nav style={{ margin: 0, padding: 0 }}>
-          
-            <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
-              <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
+          {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
+            <ul className='permanent-marker' style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
+              <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                   <Link to="/">&lt; Home /&gt;</Link>
               </li>
-              <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
+              <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                 <Link to="/about">&lt; About /&gt;</Link>
               </li>
-              <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
+              <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                 <Link to="/contact">&lt; Contact /&gt;</Link>
               </li>
-              <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
+              <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                 <Link to="/my_work">&lt; My Work /&gt;</Link>
               </li>
-              <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
+              <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                 <Link to="/resume">&lt; Resume /&gt;</Link>
               </li>
-              <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
+              <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                 <a 
                   href='https://github.com/KLong75' 
                   target='_blank' 
@@ -83,7 +84,7 @@ const Header = () => {
                   <GitHubIcon style={{ fontSize: '30px'}} />
                 </a>  
               </li>
-              <li style={{ margin: '0 20px', fontSize: '20px', fontWeight: 'bold' }}>
+              <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                 <a 
                   href='https://www.linkedin.com/in/klong75/' 
                   target='_blank' 
@@ -97,6 +98,7 @@ const Header = () => {
               
             </ul>
           </nav>
+          </>
         )}
         
         <Menu
@@ -257,7 +259,12 @@ const Header = () => {
           </Grid>
           </Grid>
         </Menu>
-      </div>
+      </Grid>
+      <Grid container spacing={0} alignItems='center' textAlign='center'>
+      <Grid xs={12}>
+            <h1 className="permanent-marker">&lt; Kevin Long | Web Developer /&gt;</h1>
+          </Grid>
+          </Grid>
     </header>
   );
 }

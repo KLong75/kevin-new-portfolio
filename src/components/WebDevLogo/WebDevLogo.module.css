@@ -1,8 +1,7 @@
 .logoImage {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: auto;
   display: block;
   margin: 0 auto;
-  margin-left: -10px;
-
+  /* margin-left: -10px; */
 }

@@ -24,8 +24,9 @@ import Grid from '@mui/material/Unstable_Grid2';
 // import components
 import WebDevLogo from '../../components/WebDevLogo';
 import TyeDyeDarkBackground from '../TyeDyeDarkBackground';
-// import images
 
+// import images
+import webDev from '../../assets/logos/permanentMarkerWebDevLogo2.png';
 
 // import from utils
 import { validateEmail } from '../../utils/helpers';
@@ -33,9 +34,9 @@ import { validateEmail } from '../../utils/helpers';
 
 const ContactFormToast = ({message, icon}) => (
   <div>
-    <WebDevLogo />
-    {/* <img src={frameGlobeLogoPeach} alt="frame globe logo peach" style={{width: '100px', height: '100px', borderRadius: '50%', border: '1px solid #fbdecc'}}/> */}
-    <p style={{color: '#black', fontSize: '20px', marginTop: '10px'}}>{message}</p>
+    
+    <img src={webDev} alt="" style={{width: '80%', height: 'auto', borderRadius: '50%', border: ''}}/>
+    <p style={{color: '#black', fontSize: '20px', marginTop: '10px', fontWeight: 'bold'}} className='permanent-marker'>{message}</p>
     <TyeDyeDarkBackground />
   </div>
 )
@@ -103,7 +104,7 @@ const ContactForm = () => {
       .then((result) => {
         console.log(result.text);
         console.log(firstName, lastName, email, message, interestedIn);
-        toast(<ContactFormToast style={{color: '' }} message='Thank you for message! I will be in touch soon!' icon={WebDevLogo}/>);
+        toast(<ContactFormToast style={{color: 'black' }} message='Thank you for message! I will be in touch soon!' icon={WebDevLogo}/>);
       }, (error) => {
         console.log(error.text);
       });
@@ -201,7 +202,7 @@ const ContactForm = () => {
           position="top-center"
           autoClose={5000}
           transition={Zoom}
-          theme="light"
+          // theme="light"
           style={{ color: 'black'}}
           
         />

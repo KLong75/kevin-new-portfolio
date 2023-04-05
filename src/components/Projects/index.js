@@ -8,6 +8,18 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 // import components
 import DisplayBox from '../DisplayBox';
 
+// import images
+import shtDesktop from '../../assets/images/projectImages/shtDesktop.png';
+import shtMobile from '../../assets/images/projectImages/shtMobile.png'; 
+import vainMainMobile from '../../assets/images/projectImages/vainMainMobile.png'
+import vainMainDesktop from '../../assets/images/projectImages/vainMainDesktop.png';
+import musicologyDesktop from '../../assets/images/projectImages/musicologyDesktop.gif';
+import musicologyMobile from '../../assets/images/projectImages/musicologyMobile.jpg';
+import moviesMobile from '../../assets/images/projectImages/moviesMobile.jpg';
+import moviesDesktop from '../../assets/images/projectImages/moviesDesktop.gif';
+import whoDoMobile from '../../assets/images/projectImages/whoDoMobile.jpg';
+import whoDoDesktop from '../../assets/images/projectImages/whoDoDesktop.png';
+
 const Project = () => {
 
   const projects = [
@@ -19,15 +31,19 @@ const Project = () => {
       technologies: 'React, Material UI, JavaScript, HTML, CSS',
       appHref:'https://klong75.github.io/sam-hahn-travel',
       gitHref:'https://github.com/KLong75/sam-hahn-travel',
+      mobile_img_src: `${shtMobile}`,
+      desktop_img_src: `${shtDesktop}`
     },
     { 
       title: 'Vain Mainstream',
       src: 'vainmain-radio.png',
       alt: 'screenshot of app',
-      description: 'The official web application for indie rock musician Vain Mainstream, promoting his latest tour and album. Users can listen to and download album tracks and watch videos from the tour. This single page React application is an installable progressive web app with offline functionality.',
+      description: 'The official web application for indie rock musician Vain Mainstream, promoting his latest tour and album. Users can listen to and download album tracks and watch videos from the tour. This fully responsive single page React application is an installable progressive web app with offline functionality.',
       technologies: 'React, Material UI, JavaScript, HTML, CSS',
       appHref:'https://vainmainstream.com/',
       gitHref:'https://github.com/KLong75/vain-mainstream',
+      mobile_img_src: `${vainMainMobile}`,
+      desktop_img_src: `${vainMainDesktop}`
     },
     { 
       title: 'MUSICOLOGY',
@@ -37,6 +53,8 @@ const Project = () => {
       technologies: 'MongoDB, Express, React, Node.js, GraphQL, Mongoose, Bootstrap, Material UI, bcrypt, Apollo, React router, JSON web tokens, JavaScript, CSS',
       appHref:'https://musicology-umekev.herokuapp.com/',
       gitHref:'https://github.com/KLong75/musician-networking-app',
+      mobile_img_src: `${musicologyMobile}`,
+      desktop_img_src: `${musicologyDesktop}`
     },
     {
       title: 'Movies R Us',
@@ -46,6 +64,8 @@ const Project = () => {
       technologies: 'JavaScript, HTML, CSS, Bulma',
       appHref: 'https://klong75.github.io/Movies-R-Us-KJ/',
       gitHref: 'https://github.com/KLong75/Movies-R-Us-KJ',
+      mobile_img_src: `${moviesMobile}`,
+      desktop_img_src: `${moviesDesktop}`
     },
     {
       title: 'Who Do?',
@@ -55,6 +75,8 @@ const Project = () => {
       technologies: 'MySQL, Handlebars, Express.js, Node.js, bcrypt, Javascript, HTML, CSS',
       appHref: 'https://who-do-austin.herokuapp.com/login',
       gitHref: 'https://github.com/truppeiner/who-do',
+      mobile_img_src: `${whoDoMobile}`,
+      desktop_img_src: `${whoDoDesktop}`
     },
 
   ];
@@ -65,6 +87,7 @@ const Project = () => {
     <section>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={4} justifyContent='space-evenly' textAlign={'center'}> 
+        
           {projects.map((project) => (  
             <Grid xs={12} sm={6} md={4} key={project.title} >
               
@@ -73,17 +96,36 @@ const Project = () => {
                 <Grid textAlign={'center'}>
                   <h4 
                     className='permanent-marker'
-                    style={{fontSize: '1.5rem'}}
+                    style={{fontSize: '1.5rem', margin: '0', padding: '0', fontWeight: 'bold'}}
                     
                   >{(`"${project.title}"`)}</h4>
                 </Grid>
 
+                <Grid> 
+                <img style={{width: '40%', height: 'auto'}} src={project.mobile_img_src} alt={project.alt} className='mobile-img'/>
+                <br></br>
+                <span className="permanent-marker">Mobile View</span>
+                </Grid>
+
+                
+                
+
                 <Grid textAlign={'left'}>
-                  <p >{(`${project.description}`)}</p>
+                  <p style={{margin: 0}}>{(`${project.description}`)}</p>
+                </Grid>
+
+                <Grid>
+                <img style={{width: '100%', height: 'auto'}} src={project.desktop_img_src} alt={project.alt} className='mobile-img'/>
+                <br></br>
+                <span className="permanent-marker">Desktop View</span>
                 </Grid>
 
                 <Grid textAlign={'left'}>
                   <p >{(`Technologies: ${project.technologies}`)}</p>
+                </Grid>
+
+                <Grid>
+                  <span className="permanent-marker">Links:</span>
                 </Grid>
 
                 <Grid textAlign={'center'}>

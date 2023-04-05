@@ -23,18 +23,20 @@ import Grid from '@mui/material/Unstable_Grid2';
 
 // import components
 import WebDevLogo from '../../components/WebDevLogo';
-
+import TyeDyeDarkBackground from '../TyeDyeDarkBackground';
 // import images
 
 
 // import from utils
 import { validateEmail } from '../../utils/helpers';
 
+
 const ContactFormToast = ({message, icon}) => (
   <div>
     <WebDevLogo />
     {/* <img src={frameGlobeLogoPeach} alt="frame globe logo peach" style={{width: '100px', height: '100px', borderRadius: '50%', border: '1px solid #fbdecc'}}/> */}
     <p style={{color: '#black', fontSize: '20px', marginTop: '10px'}}>{message}</p>
+    <TyeDyeDarkBackground />
   </div>
 )
 
@@ -118,9 +120,16 @@ const ContactForm = () => {
 
   return (
     <Grid container spacing={2} justifyContent='center' textAlign='center' >
-    
+    <Grid xs={12}>
     <form onSubmit={handleSubmit}>
-      <h4 style={{ fontSize: '20px', marginTop:'0px', fontWeight: 'bolder'}}>&lt; Send Me a Message /&gt;</h4>
+      <h4
+        className='permanent-marker' 
+        style={{ 
+          fontSize: '1rem', 
+          marginTop:'0px', 
+          fontWeight: 'bolder'
+        }}>&lt; Send Me a Message /&gt;
+      </h4>
       <FormControl >
         <TextField 
           fullWidth 
@@ -155,9 +164,9 @@ const ContactForm = () => {
           helperText={<span style={{color: ''}}>{errorMessage}</span>}
 
         />
-        <TextField label='Message' required value={message} onChange={handleMessageChange} margin='dense' multiline rows={8}/>
-        <FormLabel id="interested-in">Interested In</FormLabel>
-          <RadioGroup
+        <TextField label='Message' fullWidth required value={message} onChange={handleMessageChange} margin='dense' multiline rows={8}/>
+        <FormLabel id="interested-in">Thank you for sending me a message. I will get back to you right away!</FormLabel>
+          {/* <RadioGroup
             aria-labelledby="interested-in"
             value={interestedIn}
             onChange={handleInterestedInChange}
@@ -167,7 +176,7 @@ const ContactForm = () => {
             <FormControlLabel value="Flight and Accommodation Booking/Group Booking" control={<Radio style={{color: 'black'}} />} label="Custom Website or App for your Creative Project" />
             <FormControlLabel value="Custom Travel Design" control={<Radio style={{color: 'black'}}/>} label="Custom Website or App for your Business" />
             <FormControlLabel value="Just Curious" control={<Radio style={{color: 'black'}}/>} label="Just Curious" />
-          </RadioGroup>
+          </RadioGroup> */}
           <br/>
         <Grid xs={12}>
         <Button 
@@ -176,7 +185,7 @@ const ContactForm = () => {
           color='primary' 
           variant='contained' 
           style={{
-            width: '100px', 
+            width: '6rem', 
             backgroundColor:'black',
             marginTop: '-20px'
           }}
@@ -185,15 +194,16 @@ const ContactForm = () => {
         </Button>
         </Grid>
       </FormControl>
+      
     </form>
-
+</Grid>
     <ToastContainer
           position="top-center"
           autoClose={5000}
           transition={Zoom}
           theme="light"
-          style={{ color: '', backgroundColor: 'hsla(120,100%,75%,0.3)' }}
-          progressStyle={{ backgroundColor: '' }}
+          style={{ color: 'black'}}
+          
         />
     
     </Grid>

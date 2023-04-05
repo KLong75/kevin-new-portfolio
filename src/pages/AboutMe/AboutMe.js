@@ -1,10 +1,42 @@
+// import from Material UI
+import Grid from "@mui/material/Unstable_Grid2/Grid2";
+
+// import components
+// import Header from '../../components/Header';
+import TextType from "../../components/TextType";
+import AboutCube from "../../components/AboutCube";
+
+// import images
+
+
 
 
 const AboutMe = () => {
+
+  const phrases = [
+    'Full Stack Web Developer', 
+    'Teacher',
+    'Puppeteer',  
+    'Musician', 
+    // 'Problem Solver', 
+    'Marathon Runner',
+  ];
+
+
   return (
-    <div>
-      <h1>AboutMe</h1>
-    </div>
+    <section>
+      <Grid container spacing={2} justifyContent="center" textAlign='center' style={{marginTop: ''}}>
+        <Grid xs={12} style={{marginTop: '', marginBottom: ''}}>
+          <h2 className="permanent-marker" style={{marginTop: 0, marginBottom: 0}}>Hi. I'm Kevin.</h2>
+          <span className="permanent-marker" style={{fontSize: '18px'}}>I am a:</span>
+          <h3 className="permanent-marker" style={{marginTop: 0, marginBottom: 0}}> <TextType typingSpeed={320} phrases={phrases} />.</h3>
+        </Grid>
+
+        <Grid xs={12} style={{marginTop: '', marginBottom: ''}}>
+          <AboutCube />
+        </Grid>
+      </Grid>
+    </section>
   );
 };
 

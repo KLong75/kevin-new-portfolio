@@ -12,6 +12,8 @@ import expressGif from '../../assets/programming-icons/Express.gif';
 import nodeGif from '../../assets/programming-icons/Nodejsb.gif';
 import reactGif from '../../assets/programming-icons/Reactb.gif';
 import mySqlGif from '../../assets/programming-icons/Mysqlb.gif';
+import materialUi from '../../assets/programming-icons/materialUi.png';
+import bootstrapGif from '../../assets/programming-icons/Bootstrap.gif';
 import gitHubGif from '../../assets/programming-icons/Github.gif';
 import vsCodeGif from '../../assets/programming-icons/VSCode.gif';
 
@@ -34,7 +36,9 @@ const ProgrammingIcons = () => {
       </Grid>
 
       <Grid container direction='row' spacing={2} justifyContent="space-around" alignItems="center" style={{ padding: ''}}>
-        <img width='10%' height='auto' src={mySqlGif} alt="" />
+        <img width='10%' height='auto' src={mySqlGif} alt="" />  
+        <img width='10%' height='auto' src={bootstrapGif} alt="" />
+        <img width='10%' height='auto' src={materialUi} alt="" />
         <img width='10%' height='auto' src={gitHubGif} alt="" />
         <img width='10%' height='auto' src={vsCodeGif} alt="" />
       </Grid>

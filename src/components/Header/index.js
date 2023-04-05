@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 
 // import components
 import WebDevLogo from '../WebDevLogo';
-import FloatingBalls from '../FloatingBalls';
+// import FloatingBalls from '../FloatingBalls';
+// import Sphere from '../Sphere';
+import TyeDyeDarkBackground from '../../components/TyeDyeDarkBackground';
 
 // import from Material UI
 import Grid from '@mui/material/Unstable_Grid2';
@@ -43,20 +45,39 @@ const Header = () => {
   };
 
   return (
-    <header style={{ padding: '16px', backgroundColor: '' }}>
+    
+    <header style={{ padding: '2rem', backgroundColor: '', alignItems: 'center', textAlign: 'center' }} >
+      <Grid container spacing={0} alignItems='center' textAlign='center'>
+
+        <Grid item xs={12}>
+          <WebDevLogo />
+        </Grid>
+
+        {/* <Grid item xs={10}> */}
+          {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
+        {/* </Grid> */}
+
+        <Grid xs={12}>
+          <h1 className="permanent-marker" style={{margin: 0, fontSize: '2rem'}}>&lt; Kevin Long | Web Developer /&gt;</h1>
+        </Grid>
+
+      </Grid>
     {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
-      <Grid style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <WebDevLogo />
-       
+      <Grid style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
+        {/* <Grid xs={12}> */}
+        {/* <WebDevLogo /> */}
+        {/* </Grid> */}
+      
         {isMobile ? (
           <IconButton onClick={handleMenuOpen} size="large">
             <MenuIcon />
           </IconButton>
         ) : (
           <>
-          {/* <WebDevLogo /> */}
+         
+          <Grid xs={12}>
           <nav style={{ margin: 0, padding: 0 }}>
-          {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
+          
             <ul className='permanent-marker' style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
               <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                   <Link to="/">&lt; Home /&gt;</Link>
@@ -64,16 +85,17 @@ const Header = () => {
               <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                 <Link to="/about">&lt; About /&gt;</Link>
               </li>
+             
               <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
-                <Link to="/contact">&lt; Contact /&gt;</Link>
-              </li>
-              <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
-                <Link to="/my_work">&lt; My Work /&gt;</Link>
+                <Link to="/my_work">&lt; Projects /&gt;</Link>
               </li>
               <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                 <Link to="/resume">&lt; Resume /&gt;</Link>
               </li>
               <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
+                <Link to="/contact">&lt; Contact /&gt;</Link>
+              </li>
+              {/* <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                 <a 
                   href='https://github.com/KLong75' 
                   target='_blank' 
@@ -94,10 +116,11 @@ const Header = () => {
                 >
                   <LinkedIn style={{ fontSize: '30px'}} />
                 </a>  
-              </li>
+              </li> */}
               
             </ul>
           </nav>
+          </Grid>
           </>
         )}
         
@@ -128,7 +151,7 @@ const Header = () => {
           }}
         >
           <Grid container spacing={0} alignItems='' textAlign='center'>
-          <FloatingBalls />
+          <TyeDyeDarkBackground />
           {/* <Grid item xs={12}> */}
           
           {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
@@ -198,7 +221,7 @@ const Header = () => {
                 justifyContent: 'center',
                 fontWeight: 'bolder' 
               }}
-            >&lt; My Work /&gt;
+            >&lt; Projects /&gt;
           </MenuItem>
           </Grid>
           <Grid xs={12}>
@@ -260,11 +283,6 @@ const Header = () => {
           </Grid>
         </Menu>
       </Grid>
-      <Grid container spacing={0} alignItems='center' textAlign='center'>
-      <Grid xs={12}>
-            <h1 className="permanent-marker">&lt; Kevin Long | Web Developer /&gt;</h1>
-          </Grid>
-          </Grid>
     </header>
   );
 }

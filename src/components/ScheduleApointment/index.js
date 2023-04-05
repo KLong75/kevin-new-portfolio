@@ -9,7 +9,7 @@ const ScheduleAppointment = () => {
   return (
     <Grid container spacing={1} justifyContent='center' textAlign='center' >
     {/* <section > */}
-      <h4 style={{ fontSize: '20px', marginTop:'0px'}}>&lt; Schedule an Appointment /&gt;</h4>
+      <h4 className='permanent-marker' style={{ fontSize: '1rem', marginTop:'0px'}}>&lt; Schedule an Appointment /&gt;</h4>
         <Grid xs={12} >
         <a 
           href='https://calendly.com/' 
@@ -18,7 +18,7 @@ const ScheduleAppointment = () => {
           className='calendly-link' 
           aria-label='Schedul'
         >
-          <Button variant="contained" size='small' style={{width: '100px', backgroundColor: 'black', marginTop: '-20px'}}>
+          <Button variant="contained" size='small' style={{width: '6rem', backgroundColor: 'black', marginTop: '-20px'}}>
             Schedule
           </Button>
         </a>

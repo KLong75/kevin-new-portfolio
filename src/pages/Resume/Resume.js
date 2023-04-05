@@ -1,3 +1,5 @@
+// import components
+// import Header from '../../components/Header';
 import ProgrammingIcons from "../../components/ProgrammingIcons";
 
 const Resume = () => {

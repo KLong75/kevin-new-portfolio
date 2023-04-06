@@ -26,7 +26,7 @@ const Home = () => {
 
       <Grid container textAlign={'center'}>
         <Grid xs={12} >
-          <img src={homeDevLogo} alt="web development icon" sx={{ width: '100%', height: 'auto' }} />
+          <img src={homeDevLogo} alt="web development icon" style={{ width: '24%', height: 'auto' }} />
         </Grid>
       </Grid>
 

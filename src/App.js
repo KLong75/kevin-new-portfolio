@@ -43,7 +43,7 @@ const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         ul: {
-          listStyleType: 'none',
+          // listStyleType: 'none',
           padding: 0,
         },
         a: {

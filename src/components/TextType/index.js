@@ -1,7 +1,10 @@
 
 import { useState, useEffect } from "react";
 
+
+
 const TextType = ({ phrases, typingSpeed }) => {
+
   const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
   const [isTyping, setIsTyping] = useState(true);

@@ -14,12 +14,17 @@ import AboutCube from "../../components/AboutCube";
 const AboutMe = () => {
 
   const phrases = [
-    'Full Stack Web Developer', 
-    'Teacher',
-    'Puppeteer',  
-    'Musician', 
-    // 'Problem Solver', 
-    'Marathon Runner',
+    'A Full Stack Web Developer', 
+    'A Teacher',
+    'An Artist',
+    'A Puppeteer',  
+    'A Musician', 
+    // 'A Problem Solver', 
+    'A Marathon Runner',
+    'A Hiker',
+    'A Dog Person',
+    'An Imperfect Human Being', 
+    // 'working to do a little good in this world and have some fun along the way',
   ];
 
 
@@ -28,8 +33,8 @@ const AboutMe = () => {
       <Grid container spacing={2} justifyContent="center" textAlign='center' style={{marginTop: ''}}>
         <Grid xs={12} style={{marginTop: '', marginBottom: ''}}>
           <h2 className="permanent-marker" style={{marginTop: 0, marginBottom: 0}}>Hi. I'm Kevin.</h2>
-          <span className="permanent-marker" style={{fontSize: '18px'}}>I am a:</span>
-          <h3 className="permanent-marker" style={{marginTop: 0, marginBottom: 0}}> <TextType typingSpeed={320} phrases={phrases} />.</h3>
+          <span className="permanent-marker" style={{fontSize: '18px'}}>I am:</span>
+          <h3 className="permanent-marker" style={{marginTop: 0, marginBottom: 0}}> <TextType typingSpeed={200} phrases={phrases} />.</h3>
         </Grid>
 
         <Grid xs={12} style={{marginTop: '', marginBottom: ''}}>

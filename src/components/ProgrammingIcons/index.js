@@ -23,24 +23,24 @@ const ProgrammingIcons = () => {
   return (
     <section style={{padding: '10px'}}>
       <Grid container direction='row' spacing={2} justifyContent="space-around" alignItems="center" style={{ padding: ''}}>
-        <img width='10%' height='auto' src={javaScriptGif} alt="" />
-        <img width='10%' height='auto' src={htmlLogoGif} alt="" />
-        <img width='10%' height='auto' src={cssLogoGif} alt="" />
+        <img width='14%' height='auto' src={javaScriptGif} alt="" />
+        <img width='14%' height='auto' src={htmlLogoGif} alt="" />
+        <img width='14%' height='auto' src={cssLogoGif} alt="" />
       </Grid>
 
       <Grid container direction='row' spacing={2} justifyContent="space-around" alignItems="center" style={{ padding: ''}}>
-        <img width='10%' height='auto' src={mongoGif} alt="" />
-        <img width='10%' height='auto' src={expressGif} alt="" />
-        <img width='10%' height='auto' src={reactGif} alt="" />
-        <img width='10%' height='auto' src={nodeGif} alt="" />
+        <img width='14%' height='auto' src={mongoGif} alt="" />
+        <img width='14%' height='auto' src={expressGif} alt="" />
+        <img width='14%' height='auto' src={reactGif} alt="" />
+        <img width='14%' height='auto' src={nodeGif} alt="" />
       </Grid>
 
       <Grid container direction='row' spacing={2} justifyContent="space-around" alignItems="center" style={{ padding: ''}}>
-        <img width='10%' height='auto' src={mySqlGif} alt="" />  
-        <img width='10%' height='auto' src={bootstrapGif} alt="" />
-        <img width='10%' height='auto' src={materialUi} alt="" />
-        <img width='10%' height='auto' src={gitHubGif} alt="" />
-        <img width='10%' height='auto' src={vsCodeGif} alt="" />
+        <img width='14%' height='auto' src={mySqlGif} alt="" />  
+        <img width='14%' height='auto' src={bootstrapGif} alt="" />
+        <img width='14%' height='auto' src={materialUi} alt="" />
+        <img width='14%' height='auto' src={gitHubGif} alt="" />
+        <img width='14%' height='auto' src={vsCodeGif} alt="" />
       </Grid>
     </section>
   );

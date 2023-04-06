@@ -17,6 +17,7 @@ code {
 
 html {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .permanent-marker {

@@ -17,6 +17,7 @@ import "swiper/css/pagination";
 // import required modules
 import permanentMarkerWebDevLogo from '../../assets/logos/permanentMarkerWebDevLogo2.png';
 import kevHuck from '../../assets/images/kev-huck.jpg';
+import kevTeach from '../../assets/images/Kevin/kevTeach.png';
 import tromboneStilt from '../../assets/images/stiltTrombone.jpg';
 import trombone from '../../assets/images/trombone.jpg';
 import mayDayTiger from '../../assets/images/tiger.jpg';
@@ -52,7 +53,7 @@ const AboutCube = () => {
           shadowScale: 0.94,
         }}
         autoplay={{
-          delay: 3600,
+          delay: 2400,
           disableOnInteraction: false,
         }}
         pagination={false}
@@ -65,26 +66,32 @@ const AboutCube = () => {
         <SwiperSlide>
           <img src={kevHuck} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
+          <img src={kevTeach} alt='' style={{display: 'block', width: '100%'}}/>
+        </SwiperSlide>
+        <SwiperSlide>
           <img src={mayDayTiger} alt='' style={{display: 'block', width: '100%'}}/>
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide>
           <img src={gargoyle} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
         <SwiperSlide>
           <img src={trombone} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <img src={marathon1} alt='' style={{display: 'block', width: '100%'}}/>
-        </SwiperSlide> */}
-        {/* <SwiperSlide>
+        </SwiperSlide>
+        <SwiperSlide>
           <img src={marathon2} alt='' style={{display: 'block', width: '100%'}}/>
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide>
           <img src={marathonFinish} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
         <SwiperSlide>
           <img src={marathonMedal} alt='' style={{display: 'block', width: '100%'}}/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={tromboneStilt} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
 
       </Swiper>

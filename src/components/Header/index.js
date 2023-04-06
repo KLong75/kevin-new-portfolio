@@ -4,20 +4,19 @@ import { Link } from "react-router-dom";
 
 // import components
 import WebDevLogo from '../WebDevLogo';
-// import FloatingBalls from '../FloatingBalls';
-// import Sphere from '../Sphere';
+
 import TyeDyeDarkBackground from '../../components/TyeDyeDarkBackground';
 
 // import from Material UI
 import Grid from '@mui/material/Unstable_Grid2';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import LinkedIn from "@mui/icons-material/LinkedIn";
-import GitHubIcon from '@mui/icons-material/GitHub';
+
 // import { styled } from '@mui/material/styles';
 // import { Paper } from '@mui/material';
 
 // import images/logos
+import webDev from '../../assets/logos/permanentMarkerWebDevLogo2crop.png';
 
 // import styles
 // import styles from './Header.module.css';
@@ -53,21 +52,13 @@ const Header = () => {
           <WebDevLogo />
         </Grid>
 
-        {/* <Grid item xs={10}> */}
-          {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
-        {/* </Grid> */}
 
         <Grid xs={12}>
-          <h1 className="permanent-marker" style={{margin: 0, fontSize: '2rem'}}>&lt; Kevin Long | Web Developer /&gt;</h1>
+          <h1 className="permanent-marker" style={{margin: 0, fontSize: '4rem'}}>&lt; Kevin Long | Web Developer /&gt;</h1>
         </Grid>
-
       </Grid>
-    {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
+    
       <Grid style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
-        {/* <Grid xs={12}> */}
-        {/* <WebDevLogo /> */}
-        {/* </Grid> */}
-      
         {isMobile ? (
           <IconButton onClick={handleMenuOpen} size="large">
             <MenuIcon />
@@ -77,7 +68,6 @@ const Header = () => {
          
           <Grid xs={12}>
           <nav style={{ margin: 0, padding: 0 }}>
-          
             <ul className='permanent-marker' style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
               <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                   <Link to="/">&lt; Home /&gt;</Link>
@@ -95,29 +85,6 @@ const Header = () => {
               <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
                 <Link to="/contact">&lt; Contact /&gt;</Link>
               </li>
-              {/* <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
-                <a 
-                  href='https://github.com/KLong75' 
-                  target='_blank' 
-                  rel='noreferrer' 
-                  className='footer-instagram-link' 
-                  aria-label="Link to Kevin's LinkedIn page"
-                >
-                  <GitHubIcon style={{ fontSize: '30px'}} />
-                </a>  
-              </li>
-              <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
-                <a 
-                  href='https://www.linkedin.com/in/klong75/' 
-                  target='_blank' 
-                  rel='noreferrer' 
-                  className='footer-instagram-link' 
-                  aria-label="Link to Kevin's LinkedIn page"
-                >
-                  <LinkedIn style={{ fontSize: '30px'}} />
-                </a>  
-              </li> */}
-              
             </ul>
           </nav>
           </Grid>
@@ -152,16 +119,16 @@ const Header = () => {
         >
           <Grid container spacing={0} alignItems='' textAlign='center'>
           <TyeDyeDarkBackground />
-          {/* <Grid item xs={12}> */}
+          <Grid item xs={12}>
           
-          {/* <WebDevLogo style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }}/> */}
-          {/* <img 
-            src={WebDevLogo} 
+          <img 
+            src={webDev} 
             alt=" Logo" 
-            style={{ width: '40%', height: 'auto', marginTop: '0px', marginBottom: '-10px' }} 
-          /> */}
-          {/* </Grid> */}
-          <Grid xs={12}>
+            style={{ width: '40%', height: 'auto', marginTop: '-6rem', marginBottom: '' }} 
+          />
+          <h1 style={{fontSize: '.95rem'}} className='permanent-marker'>&lt; Kevin Long | Web Developer /&gt;</h1>
+          </Grid>
+          <Grid xs={12} style={{marginTop: '2rem'}}>
           <MenuItem 
             component={Link} 
             to="/" 
@@ -238,46 +205,6 @@ const Header = () => {
                 fontWeight: 'bolder'  
               }}
             >&lt; Resume /&gt;
-          </MenuItem>
-          </Grid>
-          <Grid xs={12}>
-          <MenuItem 
-            style={{
-              padding: '18px',
-              // marginLeft: '40px'
-              justifyContent: 'center',
-              fontWeight: 'bolder' 
-            }}
-            >
-            <a 
-              href='https://github.com/KLong75' 
-              target='_blank' 
-              rel='noreferrer' 
-              className='footer-instagram-link' 
-              aria-label="Link to Kevin's LinkedIn page"
-            >
-              <GitHubIcon style={{ fontSize: '30px' }} />
-            </a>  
-          </MenuItem>
-          </Grid>
-          <Grid xs={12}>
-          <MenuItem 
-            style={{
-              padding: '18px',
-              // marginLeft: '40px'
-              justifyContent: 'center',
-              fontWeight: 'bolder' 
-            }}
-            >
-            <a 
-              href='https://github.com/KLong75' 
-              target='_blank' 
-              rel='noreferrer' 
-              className='footer-instagram-link' 
-              aria-label="Link to Kevin's LinkedIn page"
-            >
-              <LinkedIn style={{ fontSize: '30px'}} />
-            </a>  
           </MenuItem>
           </Grid>
           </Grid>

@@ -22,7 +22,7 @@ import tromboneStilt from '../../assets/images/stiltTrombone.jpg';
 import trombone from '../../assets/images/trombone.jpg';
 import mayDayTiger from '../../assets/images/tiger.jpg';
 import gargoyle from '../../assets/images/gargoyle.jpg';
-import marathon1 from '../../assets/images/marathon_1.jpg';
+// import marathon1 from '../../assets/images/marathon_1.jpg';
 import marathon2 from '../../assets/images/marathon_2.jpg';
 import marathonFinish from '../../assets/images/Finish_Line.jpg';
 import marathonMedal from '../../assets/images/medal.jpg';
@@ -36,7 +36,7 @@ const AboutCube = () => {
   return (
     <>
       <Swiper
-        speed={4500}
+        speed={2400}
         style={{
           width: '300px',
           height: '300px',
@@ -53,7 +53,7 @@ const AboutCube = () => {
           shadowScale: 0.94,
         }}
         autoplay={{
-          delay: 2400,
+          // delay: 2400,
           disableOnInteraction: false,
         }}
         pagination={false}
@@ -78,9 +78,9 @@ const AboutCube = () => {
         <SwiperSlide>
           <img src={trombone} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={marathon1} alt='' style={{display: 'block', width: '100%'}}/>
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <img src={marathon2} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>

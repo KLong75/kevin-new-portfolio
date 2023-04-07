@@ -19,7 +19,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import webDev from '../../assets/logos/permanentMarkerWebDevLogo2crop.png';
 
 // import styles
-// import styles from './Header.module.css';
+import styles from './Header.module.css';
 
 
 const Header = () => {
@@ -54,7 +54,7 @@ const Header = () => {
 
 
         <Grid xs={12}>
-          <h1 className="permanent-marker" style={{margin: 0, fontSize: '4rem'}}>&lt; Kevin Long | Web Developer /&gt;</h1>
+          <h1 className={`permanent-marker ${styles.appHeadline}`} style={{margin: 0, fontSize: '4rem'}}>&lt; Kevin Long | Web Developer /&gt;</h1>
         </Grid>
       </Grid>
     

@@ -9,13 +9,84 @@ import Grid from "@mui/material/Unstable_Grid2/Grid2";
 // import pdf
 import pdf from '../../assets/resume/Kevin_Long_Resume.pdf'
 
+// import images
+import shtDesktop from '../../assets/images/projectImages/shtDesktop.png';
+import shtMobile from '../../assets/images/projectImages/shtMobile.png'; 
+import vainMainMobile from '../../assets/images/projectImages/vainMainMobile.png'
+import vainMainDesktop from '../../assets/images/projectImages/vainMainDesktop.png';
+
+const projects = [
+  { 
+    title: 'Sam Hahn Travel',
+    src: 'sht_home_desktop.png',
+    alt: 'screenshot of app',
+    description: 'Fully responsive web application for Sam Hahn Travel. Installable Progressive Web Application. Single Page Application. Users can browse the site for information about Sam Hahn Travel and the services they offer. Users can also contact Sam Hahn Travel via the contact form.',
+    technologies: 'React, Material UI, JavaScript, HTML, CSS',
+    appHref:'https://klong75.github.io/sam-hahn-travel',
+    appLinkText: 'klong75.github.io/sam-hahn-travel',
+    gitHref:'https://github.com/KLong75/sam-hahn-travel',
+    gitLinkText: 'github.com/KLong75/sam-hahn-travel',
+    mobile_img_src: `${shtMobile}`,
+    desktop_img_src: `${shtDesktop}`
+  },
+  { 
+    title: 'Vain Mainstream',
+    src: 'vainmain-radio.png',
+    alt: 'screenshot of app',
+    description: 'The official web application for indie rock musician Vain Mainstream, promoting his latest tour and album. Users can listen to and download album tracks and watch videos from the tour. This fully responsive single page React application is an installable progressive web app with offline functionality.',
+    technologies: 'React, Material UI, JavaScript, HTML, CSS',
+    appHref:'https://vainmainstream.com/',
+    appLinkText: 'vainmainstream.com',
+    gitHref:'https://github.com/KLong75/vain-mainstream',
+    gitLinkText: 'github.com/KLong75/vain-mainstream',
+    mobile_img_src: `${vainMainMobile}`,
+    desktop_img_src: `${vainMainDesktop}`
+  },
+]
+
+const jobs = [
+  {
+    title: 'Software Engineer',
+    company: 'Self-Employed',
+    type: 'Freelance',
+    location: 'Remote',
+    dates: 'Jan 2022 - Present',
+    description: 'Design, Develop, Update, and Maintain reaponsive web applications based on client specifications.',
+    keyAccomplishment: ''
+  },
+  {
+    title: 'Elementary School Teacher',
+    company: 'Austin Discovery School',
+    type: 'Fulltime',
+    location: 'Austin, TX (Remote and In-Person)',
+    dates: '2020 - 2021',
+    description: 'Utilized clear communication and critical thinking skills to develop and implement lesson plans for all subjects across two grade levels.',
+    keyAccomplishments: [
+      'Used no-code platform Seesaw in conjunction with several other learning applications to successfully develop and implement an innovative online learning system for virtual learning, allowing students to learn effectively from home with minimal hands on support from parents and guardians.'
+    ]
+  },
+  {
+    title: 'Theater Artist',
+    company: 'Various Companies, Artists, and Organizations',
+    type: 'Contract',
+    location: 'Various Locations',
+    dates: '1998 - 2019',
+    description: 'Worked with several theater companies in various capacities including puppeteer, actor, director, technical director, lighting designer, set designer, and theater technician.',
+    keyAccomplishments: [
+      `Performed in 18 states and 2 foreign countries (South Korea and The Dominican Republic)`,
+      `Staff Artist for MayDay Parade and Festival (2001, 2006 - 2012) - annual outdoor giant puppet spectacle produced by In The Heart of the Beast Puppet and Mask Theater involving hundreds of performers and attended by tens of thousands in Minneapolis, MN.`, `While on the Mayday Staff worked to streamline the post parade clean up process, resulting in a 30% reduction in clean up time.`,
+    ]
+     
+  },
+
+]
 
 const Resume = () => {
   return (
     <>
       <Grid container textAlign={"center"} style={{padding: '.25rem'}}>
         <Grid xs={12} style={{marginTop: '-2rem'}}>
-          <h2 style={{margin: '0', fontSize: '3rem'}} className="permanent-marker">&lt; Resume /&gt;</h2>
+          <h2 style={{margin: '0', fontSize: '2rem'}} className="permanent-marker">&lt; Resume /&gt;</h2>
           <a href={pdf} download='Kevin Long Web Developer Resume'>
           <span className="permanent-marker">&lt; Click here to download a PDF of my resume. /&gt;</span>
           </a>
@@ -25,7 +96,7 @@ const Resume = () => {
           <Grid xs={12} style={{marginTop: '-1rem'}}>
             
               <h3 style={{marginTop: '', marginBottom: '1rem', fontSize: '2rem'}}>Kevin Long</h3>
-              
+              <DisplayBox>
                 <Grid container spacing={1}>
                  <Grid xs={12} sm={6} md={4} >
                    <span style={{fontWeight: 'bold'}}>Austin, TX</span>
@@ -33,13 +104,13 @@ const Resume = () => {
                  <br></br>
                  <Grid xs={12} sm={6} md={4}>
                    <a href="tel:512-975-0082">
-                     <span style={{fontWeight: 'bolder'}}>512-975-0082</span>
+                     <span>Phone: </span><span style={{fontWeight: 'bolder', textDecoration: 'underline'}}>512-975-0082</span>
                    </a>
                  </Grid>
                  <br></br>
                  <Grid xs={12} sm={6} md={4}>
                    <a href="mailto:kevinjlong75@gmail.com.com">
-                     <span style={{fontWeight: 'bolder'}}>kevinjlong75@gmail.com</span>
+                     <span>Email: </span><span style={{fontWeight: 'bolder', textDecoration: 'underline'}}>kevinjlong75@gmail.com</span>
                    </a>
                  </Grid>
                  <br></br>
@@ -50,14 +121,14 @@ const Resume = () => {
                      rel='noreferrer' 
                      aria-label="Link to Kevin's LinkedIn Profile"
                    >
-                     <span>LinkedIn: <span style={{fontWeight: 'bolder'}}>linkedin.com/in/klong75</span>
+                     <span>LinkedIn: <span style={{fontWeight: 'bolder', textDecoration: 'underline'}}>linkedin.com/in/klong75</span>
                      </span>
                    </a>
                  </Grid>
                  <br></br>
                  <Grid xs={12} sm={6} md={4}>
                    <a href="https://kevinlong.dev" target="_blank" rel="noreferrer" aria-label="Link to Kevin's Portfolio">
-                     <span>Portfolio: <span style={{fontWeight: 'bolder'}}>kevinlong.dev</span>
+                     <span>Portfolio: <span style={{fontWeight: 'bolder', textDecoration: 'underline'}}>kevinlong.dev</span>
                      </span>
                    </a>
                  </Grid>
@@ -69,11 +140,11 @@ const Resume = () => {
                      rel='noreferrer' 
                      aria-label="Link to Kevin's GitHub Profile"
                    >
-                    <span>GitHub: <span style={{fontWeight: 'bolder'}}>github.com/KLong75</span></span>
+                    <span>GitHub: <span style={{fontWeight: 'bolder', textDecoration: 'underline'}}>github.com/KLong75</span></span>
                    </a>
                  </Grid>
                 </Grid>
-              
+                </DisplayBox> 
           </Grid>
           <Grid xs={12}>
             
@@ -81,7 +152,7 @@ const Resume = () => {
               <DisplayBox>
               <p 
                 style={{textAlign: 'left', padding: '.5rem'}}>
-                  Full Stack Web Developer. Skills in JavaScript, HTML, CSS, MongoDB, Express.js, React.js, Node.js, responsive web design, and more. Bachelor of arts in theater. Has worked as a theater artist specializing in puppetry for over 20 years. A career in the arts has often necessitated a day job. Extensive work experience in a variety of roles and industries including retail, food service, agriculture, manufacturing, and education. Real-world experience informs thinking as a developer resulting in applications that are effective, intuitive, and easy to use. Excellent communication skills. Adapts to evolving circumstances. Growth mindset. Proactively works to grow and improve. Thrives on creative problem-solving and collaboration. Experienced at meeting deadlines under pressure. 
+                  Full Stack Software Engineer. Based in Austin, TX. Background in the performing arts and education. Brings the passion and creativity of an artist combined with the patience and communication skills of a teacher to work as a software engineer. Creates applications that function well, are intuitive to use, and look great on any screen. Bugs aren't problems. They are opportunities to learn. Thrives on creative problem-solving and collaboration. Experienced at meeting deadlines under pressure. Loves the challenge of bringing "What if?" to life.
               </p>
               </DisplayBox>
           </Grid>
@@ -90,19 +161,23 @@ const Resume = () => {
             
               <h4 style={{fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '1rem'}}>Education</h4>
               <DisplayBox>
+              <a href='https://professionaled.utexas.edu/coding-boot-camp-certificate-program' target='_blank' rel='noreferrer' aria-label="Link to UT Austin Coding Boot Camp Certificate Program">
               <span
                 style={{fontWeight: 'bold'}}>
                 Certificate in Full Stack Web Development | University of Texas | Austin, TX
               </span>
+              </a>
               <br></br>
               <span>
                 A 24-week intensive program focused on gaining technical programming skills in Full Stack Web Development
               </span>
               <br></br>
+              <a href='https://www.truman.edu/majors-programs/majors-minors/theatre-major/' target='_blank' rel='noreferrer' aria-label="Link to Truman State University Theater Arts Major">
               <p
                 style={{fontWeight: 'bold'}}>
                 Bachelor of Arts - Theater Arts | Truman State University | Kirksville, MO 
               </p>
+              </a>
               </DisplayBox>
             
           </Grid>
@@ -112,7 +187,7 @@ const Resume = () => {
               <h4 style={{fontWeight: 'bold', fontSize: '1.5rem', marginBottom: '1rem'}}>Technical Skills</h4>
               <DisplayBox>
               <p 
-                style={{textAlign: 'center'}}>
+                style={{textAlign: 'center', fontWeight: 'bold'}}>
                   JavaScript ES6, HTML5, CSS, MongoDB, Mongoose, Express, React, Node, SQL, Sequelize, MySQL, Bootstrap, Material UI, GitHub, bcrypt, JSON web tokens, RESTful APIs, Heroku, Git, Command Line, Responsive Web Design, Agile Methodology, Object-Oriented Programming, Test Driven Development, Model-View-Controller (MVC), PWA, Service Workers, IndexedDB, React Hooks, React Context API, React Router, Handlebars, jQuery
               </p>
               <Grid container spacing={1}>
@@ -133,36 +208,55 @@ const Resume = () => {
                   <DisplayBox>
                     <span style ={{fontWeight: 'bold' }} >Software Engineer | Freelance | 2022 - Present</span>
                     <p style={{marginLeft: '.25rem'}} >
-                      Design, Develop, Update, and Maintain reaponsive web applications based on client specifications.
+                      <span style={{fontWeight: 'bold'}}>Responsibilities: </span>Design, Develop, Update, and Maintain reaponsive web applications based on client specifications.
                     </p>
-                    <span style={{marginLeft: '.25rem'}}>Current Projects:</span>
+                    <span style={{marginLeft: '.25rem', fontWeight: 'bold'}}>Current Projects:</span>
                     <ul style={{marginTop: 0, marginLeft: '2rem'}}>
-                      <li style ={{fontWeight: 'bold'}}>Sam Hahn Travel</li>
-                        <span>Link: 
-                          <a style={{fontWeight: 'bold'}} href='https://klong75.github.io/sam-hahn-travel/' target='_blank' rel='noreferrer'> klong75.github.io/sam-hahn-travel/
+                      <li style ={{fontWeight: 'bold'}}>
+                        <a href='https://klong75.github.io/sam-hahn-travel/' target='_blank' rel='noreferrer'>
+                          {projects[0].title}
+                        </a>
+                      </li>
+                        <span>Deployed Application:  
+                          <a style={{fontWeight: 'bold', textDecoration: 'underline'}} href='https://klong75.github.io/sam-hahn-travel/' target='_blank' rel='noreferrer'> {projects[0].appLinkText}
                           </a>
                         </span>
                         <br></br>
-                        <span>Description:</span>
-                      <li style ={{fontWeight: 'bold'}}>Vain Mainstream  </li>
-                        <span>Link: 
-                          <a style={{fontWeight: 'bold'}} href='https://vainmainstream.com/' target='_blank' rel='noreferrer'> vainmainstream.com
+                        <span>GitHub Repository:  
+                          <a style={{fontWeight: 'bold', textDecoration: 'underline'}} href='https://klong75.github.io/sam-hahn-travel/' target='_blank' rel='noreferrer'> {projects[0].gitLinkText}
                           </a>
                         </span>
                         <br></br>
-                        <span>Description:</span>
+                        <p><span style={{fontWeight: 'bold'}}>Description:</span> {projects[0].description}</p>
+                        <p><span style={{fontWeight: 'bold'}}>Technologies:</span> {projects[0].technologies}</p>
+
+                      <li style ={{fontWeight: 'bold'}}>
+                        <a style={{fontWeight: 'bold'}} href='https://vainmainstream.com/' target='_blank' rel='noreferrer'> {projects[1].title}</a>
+                      </li>
+                        <span>Deployed Application: 
+                          <a style={{fontWeight: 'bold', textDecoration: 'underline'}} href='https://vainmainstream.com/' target='_blank' rel='noreferrer'> {projects[1].appLinkText}
+                          </a>
+                        </span>
+                        <br></br>
+                        <span>GitHub Repository:  
+                          <a style={{fontWeight: 'bold', textDecoration: 'underline'}} href='https://klong75.github.io/sam-hahn-travel/' target='_blank' rel='noreferrer'> {projects[1].gitLinkText}
+                          </a>
+                        </span>
+                        <br></br>
+                        <p><span style={{fontWeight: 'bold'}}>Description:</span> {projects[1].description}</p>
+                        <p><span style={{fontWeight: 'bold'}}>Technologies:</span> {projects[1].technologies}</p>
                      </ul>
                   </DisplayBox>
                 </Grid>
                 <Grid xs={12}>
                   <DisplayBox>
-                    <span style={{fontWeight: 'bold'}}>Bootcamp Teaching Assistant - Fullstack Web Development | 2U / edX |   Part Time - Remote | 2022 - Present</span>
+                    <span style={{fontWeight: 'bold'}}>Bootcamp Teaching Assistant - Fullstack Web Development | edX |   Part Time - Remote | 2022 - Present</span>
                     <p style={{marginLeft: '.25rem'}}>
-                      Assist with instruction during class sessions, support students with class activities, homework assignments, projects, and technical issues.
+                    <span style={{fontWeight: 'bold'}}>Responsibilities: </span>Assist with instruction during class sessions, support students with class activities, homework assignments, projects, and technical issues.
                     </p>
-                    <span style={{marginLeft: '.25rem'}}>Key Accomplishment:</span>
+                    <span style={{marginLeft: '.25rem', fontWeight: 'bold'}}>Key Accomplishment:</span>
                     <ul style={{marginTop: 0, marginLeft: '2rem'}}>
-                      <li>Assisted with the development of the curriculum for the course</li>
+                      <li>Facilitated bi-weekly homework help sessions based on student need</li>
                     </ul>
                   </DisplayBox>
                 </Grid>
@@ -170,12 +264,11 @@ const Resume = () => {
                   <DisplayBox>
                     <span style={{fontWeight: 'bold'}}>Elementery School Teacher | Austin Discovery School | Fulltime | 2020 - 2021</span>
                     <p style={{marginLeft: '.25rem'}}>
-                      Utilized clear communication and critical thinking skills to develop and implement 
-                      lesson plans for all subjects across two grade levels. 
+                      <span style={{fontWeight: 'bold'}}>Responsibilities: </span>Utilized clear communication and critical thinking skills to develop and implement lesson plans for all subjects across two grade levels. 
                     </p>
-                    <span style={{marginLeft: '.25rem'}}>Key Accomplishment:</span>
+                    <span style={{marginLeft: '.25rem', fontWeight: 'bold'}}>Key Accomplishment:</span>
                     <ul style={{marginTop: 0, marginLeft: '2rem'}}>
-                      <li>Successfully developed and implemented an innovative online learning system for virtual learning, allowing students to learn effectively from home with minimal on hand support from parents and guardians.</li>
+                      <li>Used no-code platform <a style={{fontWeight: 'bold', textDecoration: 'underline'}}href='https://web.seesaw.me/' target='_blank' rel='noreferrer'>Seesaw</a><span> </span>in conjunction with several other learning applications to successfully develop and implement an innovative online learning system for virtual learning, allowing students to learn effectively from home with minimal hands on support from parents and guardians.</li>
                     </ul>
                   </DisplayBox>
                 </Grid>
@@ -183,12 +276,14 @@ const Resume = () => {
                   <DisplayBox>
                     <span style={{fontWeight: 'bold'}}>Theater Artist | Various Different Locations | 1998 - 2019</span>
                     <p style={{marginLeft: '.25rem'}}>
-                      Utilized clear communication and critical thinking skills to develop and implement 
-                      lesson plans for all subjects across two grade levels. 
+                      <span style={{fontWeight: 'bold'}}>Responsibilities: </span>
+                      {jobs[2].description} 
                     </p>
-                    <span style={{marginLeft: '.25rem'}}>Key Accomplishment:</span>
+                    <span style={{marginLeft: '.25rem', fontWeight: 'bold'}}>Key Accomplishments:</span>
                     <ul style={{marginTop: 0, marginLeft: '2rem'}}>
-                      <li>Performed in 18 sta</li>
+                      <li>{jobs[2].keyAccomplishments[0]}</li>
+                      <li>{jobs[2].keyAccomplishments[1]}</li>
+                      <li>{jobs[2].keyAccomplishments[2]}</li>
                     </ul>
                   </DisplayBox>
                 </Grid>

@@ -5,7 +5,6 @@ import DisplayBox from "../../components/DisplayBox";
 // import ContactInfo from "../../components/ContactInfo";
 import Education from "../../components/Education";
 
-
 // import from Material UI
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
@@ -17,6 +16,9 @@ import shtDesktop from "../../assets/images/projectImages/shtDesktop.png";
 import shtMobile from "../../assets/images/projectImages/shtMobile.png";
 import vainMainMobile from "../../assets/images/projectImages/vainMainMobile.png";
 import vainMainDesktop from "../../assets/images/projectImages/vainMainDesktop.png";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const projects = [
   {
@@ -104,7 +106,7 @@ const Resume = () => {
   return (
     <>
       <Grid container textAlign={"center"} style={{ padding: ".25rem" }}>
-        <Grid xs={12} style={{ marginTop: "-2rem" }}>
+        <Grid xs={12}>
           <h2
             style={{ margin: "0", fontSize: "2rem" }}
             className="permanent-marker"
@@ -122,60 +124,109 @@ const Resume = () => {
           <Grid xs={12} style={{ marginTop: "-1rem" }}>
             <h3
               style={{ marginTop: "", marginBottom: "1rem", fontSize: "2rem" }}
+              className="permanent-marker"
             >
               Kevin Long
             </h3>
-            <DisplayBox >
+            <DisplayBox>
               {/* <Grid style={{marginTop: '.5rem', marginBottom: '1rem'}}>
                 <ContactInfo />
               </Grid> */}
               <Grid container spacing={1}>
-
-              <Grid xs={12} sm={6} md={4} >
-                   <span style={{fontWeight: 'bold'}}>Austin, TX</span>
-                 </Grid>
-                 <br></br>
-                 <Grid xs={12} sm={6} md={4}>
-                   <a href="tel:512-975-0082">
-                     <span>Phone: </span><span style={{fontWeight: 'bolder', textDecoration: 'underline'}}>512-975-0082</span>
-                   </a>
-                 </Grid>
-                 <br></br>
-                 <Grid xs={12} sm={6} md={4}>
-                   <a href="mailto:kevinjlong75@gmail.com.com">
-                     <span>Email: </span><span style={{fontWeight: 'bolder', textDecoration: 'underline'}}>kevinjlong75@gmail.com</span>
-                   </a>
-                 </Grid>
-                 <br></br>
-                 <Grid xs={12} sm={6} md={4}>
-                   <a 
-                     href='https://www.linkedin.com/in/klong75/' 
-                     target='_blank' 
-                     rel='noreferrer' 
-                     aria-label="Link to Kevin's LinkedIn Profile"
-                   >
-                     <span>LinkedIn: <span style={{fontWeight: 'bolder', textDecoration: 'underline'}}>linkedin.com/in/klong75</span>
-                     </span>
-                   </a>
-                 </Grid>
-                 <br></br>
-                 <Grid xs={12} sm={6} md={4}>
-                   <a href="https://kevinlong.dev" target="_blank" rel="noreferrer" aria-label="Link to Kevin's Portfolio">
-                     <span>Portfolio: <span style={{fontWeight: 'bolder', textDecoration: 'underline'}}>kevinlong.dev</span>
-                     </span>
-                   </a>
-                 </Grid>
-                 <br></br>
-                 <Grid xs={12} sm={6} md={4}>
-                   <a 
-                     href='https://github.com/KLong75' 
-                     target='_blank' 
-                     rel='noreferrer' 
-                     aria-label="Link to Kevin's GitHub Profile"
-                   >
-                    <span>GitHub: <span style={{fontWeight: 'bolder', textDecoration: 'underline'}}>github.com/KLong75</span></span>
-                   </a>
-                 </Grid>
+                <Grid xs={12} sm={6} md={4}>
+                  <span style={{ fontWeight: "bold" }}>Austin, TX</span>
+                </Grid>
+                <br></br>
+                <Grid xs={12} sm={6} md={4}>
+                  <a href="tel:512-975-0082">
+                    <span>Phone: </span>
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        textDecoration: "underline",
+                      }}
+                    >
+                      512-975-0082
+                    </span>
+                  </a>
+                </Grid>
+                <br></br>
+                <Grid xs={12} sm={6} md={4}>
+                  <a href="mailto:kevinjlong75@gmail.com.com">
+                    <span>Email: </span>
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        textDecoration: "underline",
+                      }}
+                    >
+                      kevinjlong75@gmail.com
+                    </span>
+                  </a>
+                </Grid>
+                <br></br>
+                <Grid xs={12} sm={6} md={4}>
+                  <a
+                    href="https://www.linkedin.com/in/klong75/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Link to Kevin's LinkedIn Profile"
+                  >
+                    <span>
+                      LinkedIn:{" "}
+                      <span
+                        style={{
+                          fontWeight: "bolder",
+                          textDecoration: "underline",
+                        }}
+                      >
+                        linkedin.com/in/klong75
+                      </span>
+                    </span>
+                  </a>
+                </Grid>
+                <br></br>
+                <Grid xs={12} sm={6} md={4}>
+                  <a
+                    href="https://kevinlong.dev"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Link to Kevin's Portfolio"
+                  >
+                    <span>
+                      Portfolio:{" "}
+                      <span
+                        style={{
+                          fontWeight: "bolder",
+                          textDecoration: "underline",
+                        }}
+                      >
+                        kevinlong.dev
+                      </span>
+                    </span>
+                  </a>
+                </Grid>
+                <br></br>
+                <Grid xs={12} sm={6} md={4}>
+                  <a
+                    href="https://github.com/KLong75"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Link to Kevin's GitHub Profile"
+                  >
+                    <span>
+                      GitHub:{" "}
+                      <span
+                        style={{
+                          fontWeight: "bolder",
+                          textDecoration: "underline",
+                        }}
+                      >
+                        github.com/KLong75
+                      </span>
+                    </span>
+                  </a>
+                </Grid>
               </Grid>
             </DisplayBox>
           </Grid>
@@ -186,6 +237,7 @@ const Resume = () => {
                 fontSize: "1.5rem",
                 marginBottom: "",
               }}
+              className="permanent-marker"
             >
               Summary
             </h4>
@@ -209,60 +261,11 @@ const Resume = () => {
                 fontSize: "1.5rem",
                 marginBottom: "1rem",
               }}
+              className="permanent-marker"
             >
               Education
             </h4>
             <DisplayBox>
-              {/* <Grid container >
-                <Grid xs={12} md={4}>
-                  <span style={{ fontWeight: "bold" }}>
-                    Certificate in Full Stack Web Development
-                  </span>
-                </Grid>
-
-                <Grid xs={12} md={4}>
-                  <span style={{ fontWeight: "bold" }}>
-                    University of Texas
-                  </span>
-                </Grid>
-
-                <Grid xs={12} md={4}>
-                  <span style={{ fontWeight: "bold" }}>Austin, Texas</span>
-                </Grid>
-
-                <Grid xs={12}>
-                  <span>A 24-week intensive program focused on gaining technical
-                programming skills in Full Stack Web Development</span>
-                </Grid>
-              </Grid> */}
-              {/* <a
-                href="https://professionaled.utexas.edu/coding-boot-camp-certificate-program"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Link to UT Austin Coding Boot Camp Certificate Program"
-              >
-                <span style={{ fontWeight: "bold" }}>
-                  Certificate in Full Stack Web Development | University of
-                  Texas | Austin, TX
-                </span>
-              </a>
-              <br></br>
-              <span>
-                A 24-week intensive program focused on gaining technical
-                programming skills in Full Stack Web Development
-              </span>
-              <br></br>
-              <a
-                href="https://www.truman.edu/majors-programs/majors-minors/theatre-major/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Link to Truman State University Theater Arts Major"
-              >
-                <p style={{ fontWeight: "bold" }}>
-                  Bachelor of Arts - Theater Arts | Truman State University |
-                  Kirksville, MO
-                </p>
-              </a> */}
               <Education />
             </DisplayBox>
           </Grid>
@@ -274,16 +277,249 @@ const Resume = () => {
                 fontSize: "1.5rem",
                 marginBottom: "1rem",
               }}
+              className="permanent-marker"
             >
               Technical Skills
             </h4>
             <DisplayBox>
-              <p style={{ textAlign: "center", fontWeight: "bold" }}>
-                JavaScript ES6, HTML5, CSS, MongoDB, Mongoose, Express, React,
-                Node, SQL, Sequelize, MySQL, Bootstrap, Material UI, GitHub, bcrypt, JSON web tokens, RESTful APIs, Heroku, Git, Command Line, Responsive Web Design, Agile Methodology, Object-Oriented
-                Programming, Test Driven Development, Model-View-Controller
-                (MVC), PWA, Service Workers, IndexedDB, React Hooks, React Context API, React Router, Handlebars, jQuery
-              </p>
+              <Grid
+                container
+                style={{
+                  textAlign: "center",
+                  fontWeight: "bold",
+                  marginTop: ".5rem",
+                  fontSize: ".9rem",
+                }}
+              >
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  JavaScript ES6{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "square-js", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  HTML5{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "html5", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  CSS{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "css3-alt", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Responsive Web Design{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "mobile-alt", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Agile Methodology{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "tasks", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Command Line{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "terminal", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Node{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "node", style: "brands" })}
+                  />
+                </Grid>
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Express{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "node-js", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  React{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "react", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  React Hooks{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "react", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  React Context API{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "react", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  React Router{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "react", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Material UI{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "react", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Bootstrap{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "bootstrap", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  MongoDB{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "database", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Mongoose{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "database", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  SQL{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "database", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Sequelize{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "database", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  MySQL{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "database", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  GitHub{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "github", style: "brands" })}
+                  />
+                </Grid>
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Git Version Control{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "git-alt", style: "brands" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Heroku{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "git-alt", style: "brands" })}
+                  />
+                </Grid>
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  bcrypt{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "key", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  JSON web tokens{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "key", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  RESTful APIs{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "code", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Handlebars{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "code", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  jQuery{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "code", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Object-Oriented Programming{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "code", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Test Driven Development{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "code", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Model-View-Controller(MVC){" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "code", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  PWA{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "mobile-alt", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  Service Workers{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "mobile-alt", style: "solid" })}
+                  />
+                </Grid>
+
+                <Grid xs={12} sm={6} md={4} lg={3}>
+                  IndexedDB{" "}
+                  <FontAwesomeIcon
+                    icon={icon({ name: "mobile-alt", style: "solid" })}
+                  />
+                </Grid>
+              </Grid>
+
               <Grid container spacing={1}>
                 <Grid xs={2}></Grid>
                 <Grid xs={8}>
@@ -301,25 +537,58 @@ const Resume = () => {
                 fontSize: "1.5rem",
                 marginBottom: 0,
               }}
+              className="permanent-marker"
             >
               Relevant Work Experience
             </h4>
             <Grid container textAlign={"left"}>
               <Grid xs={12}>
                 <DisplayBox>
-                  <span style={{ fontWeight: "bold" }}>
-                    Software Engineer | Freelance | 2022 - Present
-                  </span>
+                  <Grid
+                    container
+                    spacing={1}
+                    textAlign={"center"}
+                    style={{ fontSize: "1.1rem", marginBottom: ".5rem" }}
+                  >
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>
+                        Software Engineer
+                      </span>
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>Freelance</span>
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>Part Time</span>
+                    </Grid>
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>
+                        Oct. 2022 - Present
+                      </span>
+                    </Grid>
+
+                    <Grid
+                      xs={12}
+                      style={{ fontSize: "2rem", marginBottom: "-1rem" }}
+                    >
+                      <FontAwesomeIcon
+                        icon={icon({ name: "gear", style: "solid" })}
+                      />
+                    </Grid>
+                  </Grid>
                   <p style={{ marginLeft: ".25rem" }}>
                     <span style={{ fontWeight: "bold" }}>
                       Responsibilities:{" "}
                     </span>
-                    Design, Develop, Update, and Maintain reaponsive web
+                    Design, Develop, Update, and Maintain responsive web
                     applications based on client specifications.
                   </p>
-                  <span style={{ marginLeft: ".25rem", fontWeight: "bold" }}>
+
+                  <p style={{ marginLeft: ".25rem", fontWeight: "bold" }}>
                     Current Projects:
-                  </span>
+                  </p>
                   <ul style={{ marginTop: 0, marginLeft: "2rem" }}>
                     <li style={{ fontWeight: "bold" }}>
                       <a
@@ -425,12 +694,44 @@ const Resume = () => {
                   </ul>
                 </DisplayBox>
               </Grid>
+
               <Grid xs={12}>
                 <DisplayBox>
-                  <span style={{ fontWeight: "bold" }}>
-                    Bootcamp Teaching Assistant - Fullstack Web Development |
-                    edX | Part Time - Remote | 2022 - Present
-                  </span>
+                  <Grid
+                    container
+                    spacing={1}
+                    textAlign={"center"}
+                    style={{ fontSize: "1.1rem", marginBottom: ".5rem" }}
+                  >
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>
+                        Bootcamp Teaching Assistant - Fullstack Web Development
+                      </span>
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>edX</span>
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>Part Time</span>
+                    </Grid>
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>
+                        Oct. 2022 - Present
+                      </span>
+                    </Grid>
+
+                    <Grid
+                      xs={12}
+                      style={{ fontSize: "2rem", marginBottom: "-1rem" }}
+                    >
+                      <FontAwesomeIcon
+                        icon={icon({ name: "gear", style: "solid" })}
+                      />
+                    </Grid>
+                  </Grid>
+
                   <p style={{ marginLeft: ".25rem" }}>
                     <span style={{ fontWeight: "bold" }}>
                       Responsibilities:{" "}
@@ -453,10 +754,41 @@ const Resume = () => {
               </Grid>
               <Grid xs={12}>
                 <DisplayBox>
-                  <span style={{ fontWeight: "bold" }}>
-                    Elementery School Teacher | Austin Discovery School |
-                    Fulltime | 2020 - 2021
-                  </span>
+                  <Grid
+                    container
+                    spacing={1}
+                    textAlign={"center"}
+                    style={{ fontSize: "1.1rem", marginBottom: ".5rem" }}
+                  >
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>
+                        Elementery School Teacher
+                      </span>
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>
+                        Austin Discovery School
+                      </span>
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>Fulltime</span>
+                    </Grid>
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>2020 - 2021</span>
+                    </Grid>
+
+                    <Grid
+                      xs={12}
+                      style={{ fontSize: "2rem", marginBottom: "-1rem" }}
+                    >
+                      <FontAwesomeIcon
+                        icon={icon({ name: "school", style: "solid" })}
+                      />
+                    </Grid>
+                  </Grid>
+
                   <p style={{ marginLeft: ".25rem" }}>
                     <span style={{ fontWeight: "bold" }}>
                       Responsibilities:{" "}
@@ -493,9 +825,39 @@ const Resume = () => {
               </Grid>
               <Grid xs={12}>
                 <DisplayBox>
-                  <span style={{ fontWeight: "bold" }}>
-                    Theater Artist | Various Different Locations | 1998 - 2019
-                  </span>
+                  <Grid
+                    container
+                    spacing={1}
+                    textAlign={"center"}
+                    style={{ fontSize: "1.1rem", marginBottom: ".5rem" }}
+                  >
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>Theater Artist</span>
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>
+                        Various Different Locations and Companies
+                      </span>
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>Fulltime</span>
+                    </Grid>
+                    <Grid xs={12} sm={6} md={3}>
+                      <span style={{ fontWeight: "bold" }}>1998 - 2019</span>
+                    </Grid>
+
+                    <Grid
+                      xs={12}
+                      style={{ fontSize: "2rem", marginBottom: "-1rem" }}
+                    >
+                      <FontAwesomeIcon
+                        icon={icon({ name: "masks-theater", style: "solid" })}
+                      />
+                    </Grid>
+                  </Grid>
+
                   <p style={{ marginLeft: ".25rem" }}>
                     <span style={{ fontWeight: "bold" }}>
                       Responsibilities:{" "}

@@ -2,8 +2,9 @@
 // import Header from '../../components/Header';
 import ProgrammingIcons from "../../components/ProgrammingIcons";
 import DisplayBox from "../../components/DisplayBox";
-import ContactInfo from "../../components/ContactInfo";
+// import ContactInfo from "../../components/ContactInfo";
 import Education from "../../components/Education";
+
 
 // import from Material UI
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
@@ -279,14 +280,10 @@ const Resume = () => {
             <DisplayBox>
               <p style={{ textAlign: "center", fontWeight: "bold" }}>
                 JavaScript ES6, HTML5, CSS, MongoDB, Mongoose, Express, React,
-                Node, SQL, Sequelize, MySQL, Bootstrap, Material UI, GitHub,
-                bcrypt, JSON web tokens, RESTful APIs, Heroku, Git, Command
-                Line, Responsive Web Design, Agile Methodology, Object-Oriented
+                Node, SQL, Sequelize, MySQL, Bootstrap, Material UI, GitHub, bcrypt, JSON web tokens, RESTful APIs, Heroku, Git, Command Line, Responsive Web Design, Agile Methodology, Object-Oriented
                 Programming, Test Driven Development, Model-View-Controller
-                (MVC), PWA, Service Workers, IndexedDB, React Hooks, React
-                Context API, React Router, Handlebars, jQuery
+                (MVC), PWA, Service Workers, IndexedDB, React Hooks, React Context API, React Router, Handlebars, jQuery
               </p>
-              {/* <p>{skills[0].name}</p> */}
               <Grid container spacing={1}>
                 <Grid xs={2}></Grid>
                 <Grid xs={8}>

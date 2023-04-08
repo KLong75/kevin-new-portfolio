@@ -54,7 +54,8 @@ const Header = () => {
 
 
         <Grid xs={12}>
-          <h1 className={`permanent-marker ${styles.appHeadline}`} style={{margin: 0, fontSize: '4rem'}}>&lt; Kevin Long | Web Developer /&gt;</h1>
+          <h1 className={`permanent-marker ${styles.appHeadline}`} style={{margin: 0, fontSize: '3rem'}}>&lt; Kevin Long /&gt;</h1>
+          <h2 className={`permanent-marker ${styles.appHeadline}`} style={{margin: 0, fontSize: '3rem'}}>&lt; Full Stack Web Developer /&gt;</h2>
         </Grid>
       </Grid>
     

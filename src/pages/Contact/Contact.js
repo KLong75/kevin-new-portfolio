@@ -3,6 +3,7 @@
 import DisplayBox from "../../components/DisplayBox";
 import ContactForm from "../../components/ContactForm";
 import ScheduleAppointment from '../../components/ScheduleApointment';
+import ContactInfo from '../../components/ContactInfo';
 
 
 // import from Material UI
@@ -19,29 +20,45 @@ import Grid from '@mui/material/Unstable_Grid2';
 const Contact = () => {
   return (
     <>
-    <Grid container spacing={6} justifyContent='center' textAlign='center' >
+    <Grid container spacing={6} justifyContent='space-evenly' textAlign='center' >
      
       <Grid xs={12} style={{ marginTop: ''}}>
-        <h1 className='permanent-marker' style={{ fontSize: '1.75rem', marginBottom: ''}}>&lt; Let's Talk! /&gt;</h1>
+        <h3 className='permanent-marker' style={{ fontSize: '1.75rem', marginBottom: ''}}>&lt; Let's Talk! /&gt;</h3>
       </Grid>
 
+      <Grid sm={12} md={4} />
       
-
-      <Grid  xs={12} md={4} style={{ marginTop: '-60px'}} height=''>
+      <Grid  sm={12} md={4} style={{ marginTop: '-60px'}} height=''>
         <DisplayBox elevation={6} >
           <ScheduleAppointment  />
-          
         </DisplayBox>
-        
       </Grid>
 
+      <Grid sm={12} md={4} />
+
+      <Grid sm={12} md={2} />
+
+      <Grid  sm={12} md={8}  style={{ marginTop: '-60px'}} height=''>
+        <DisplayBox elevation={6} >
+        <Grid xs={12} style={{marginTop: '', marginBottom: '-2rem'}}>
+        <h4 style={{margin: 0}}className="permanent-marker">&lt; My Contact Info /&gt;</h4>
+      </Grid>
+          <ContactInfo />
+        </DisplayBox>
+      </Grid>
+
+      <Grid sm={12} md={2} />
       
-      <Grid xs={12} md={6} style={{ marginTop: '-60px'}}>
+
+      <Grid sm={12} md={8} style={{ marginTop: '-60px'}}>
         <DisplayBox elevation={6}>
           <ContactForm />
         </DisplayBox>
       </Grid>
       
+      
+
+     
       
     </Grid>
     </>

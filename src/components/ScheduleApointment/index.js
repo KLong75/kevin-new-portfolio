@@ -9,7 +9,7 @@ const ScheduleAppointment = () => {
   return (
     <Grid container spacing={1} justifyContent='center' textAlign='center' >
     {/* <section > */}
-      <h4 className='permanent-marker' style={{ fontSize: '1rem', marginTop:'0px'}}>&lt; Schedule an Appointment /&gt;</h4>
+      <h4 className='permanent-marker' style={{ marginTop:'0px'}}>&lt; Schedule an Appointment /&gt;</h4>
         <Grid xs={12} >
         <a 
           href='https://calendly.com/' 

@@ -28,7 +28,7 @@ const ProgrammingIcons = () => {
         <img width='16%' height='auto' src={cssLogoGif} alt="" />
       </Grid>
 
-      <Grid container direction='row' spacing={2} justifyContent="space-between" alignItems="center" style={{ marginBottom: '.75rem'}}>
+      <Grid container direction='row' spacing={2} justifyContent="space-between" alignItems="center" style={{ marginTop: '-.5rem', marginBottom: '.75rem'}}>
         <img width='20%' height='auto' src={mongoGif} alt="" />
         <img width='18%' height='auto' src={expressGif} alt="" />
         <img width='20%' height='auto' src={reactGif} alt="" />

@@ -10,9 +10,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // import from Material UI
 import TextField from '@mui/material/TextField';
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
+// import Radio from '@mui/material/Radio';
+// import RadioGroup from '@mui/material/RadioGroup';
+// import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Button from '@mui/material/Button';
@@ -68,9 +68,9 @@ const ContactForm = () => {
     setMessage(e.target.value);
   };
 
-  const handleInterestedInChange = (e) => {
-    setInterestedIn(e.target.value);
-  };
+  // const handleInterestedInChange = (e) => {
+  //   setInterestedIn(e.target.value);
+  // };
 
 
 
@@ -126,7 +126,6 @@ const ContactForm = () => {
       <h4
         className='permanent-marker' 
         style={{ 
-          fontSize: '1rem', 
           marginTop:'0px', 
           fontWeight: 'bolder'
         }}>&lt; Send Me a Message /&gt;

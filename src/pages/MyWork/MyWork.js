@@ -8,11 +8,13 @@ const MyWork = () => {
     return (
         <section>
           <Grid container spacing={2} justifyContent="center" textAlign='center' style={{marginTop: 'center'}}>
+
             <Grid xs={12} >
-            <h2>My Projects</h2>
+              <h3 className='permanent-marker' style={{}}>&lt; My Projects /&gt;</h3>
             </Grid>
             
           </Grid>
+
           <Projects/>
         </section>
     )

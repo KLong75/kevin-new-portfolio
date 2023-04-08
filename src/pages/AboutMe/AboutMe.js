@@ -33,7 +33,7 @@ const AboutMe = () => {
     <section>
       <Grid container spacing={2} justifyContent="center" textAlign='center' style={{marginTop: ''}}>
         <Grid xs={12} style={{marginTop: '', marginBottom: ''}}>
-          <h2 className="permanent-marker" style={{fontSize: '2rem', marginTop: 0, marginBottom: 0}}>&lt; About Me /&gt;</h2>
+          <h3 className="permanent-marker" style={{fontSize: '2rem', marginTop: 0, marginBottom: 0}}>&lt; About Me /&gt;</h3>
           <span className="permanent-marker" style={{fontSize: '18px'}}>I am</span>
           <p className="permanent-marker" style={{marginTop: 0, marginBottom: 0}}> <TextFade fadeSpeed={2800} phrases={phrases} /></p>
           {/* <h3 className="permanent-marker" style={{marginTop: 0, marginBottom: 0}}> <TextType typingSpeed={200} phrases={phrases} />.</h3> */}

@@ -10,7 +10,7 @@ const MyWork = () => {
           <Grid container spacing={2} justifyContent="center" textAlign='center' style={{marginTop: 'center'}}>
 
             <Grid xs={12} >
-              <h3 className='permanent-marker' style={{fontSize: '2rem'}}>&lt; My Projects /&gt;</h3>
+              <h3 className='permanent-marker' style={{fontSize: '2rem', margin: 0}}>&lt; My Projects /&gt;</h3>
             </Grid>
             
           </Grid>

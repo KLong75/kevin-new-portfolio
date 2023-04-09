@@ -1,0 +1,23 @@
+@media screen and (max-width: 500px) {
+  .resumeDownload {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .resumeDownload {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .resumeDownload {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .resumeDownload {
+    font-size: .6rem;
+  }
+}

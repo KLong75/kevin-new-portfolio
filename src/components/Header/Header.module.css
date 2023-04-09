@@ -1,10 +1,11 @@
-.appHeadline{
 
-}
 
 
 @media screen and (max-width: 1200px) {
   .appHeadline {
+    font-size: 3.25rem !important;
+  }
+  .appSubHeadline {
     font-size: 3.25rem !important;
   }
 }
@@ -13,10 +14,16 @@
   .appHeadline {
     font-size: 3rem !important;
   }
+  .appSubHeadline {
+    font-size: 3rem !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .appHeadline {
+    font-size: 2.5rem !important;
+  }
+  .appSubHeadline {
     font-size: 2.5rem !important;
   }
 }
@@ -25,10 +32,16 @@
   .appHeadline {
     font-size: 2.25rem !important;
   }
+  .appSubHeadline {
+    font-size: 2.25rem !important;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .appHeadline {
+    font-size: 2rem !important;
+  }
+  .appSubHeadline {
     font-size: 2rem !important;
   }
 }
@@ -37,10 +50,41 @@
   .appHeadline {
     font-size: 1.75rem !important;
   }
+  .appSubHeadline {
+    font-size: 1.75rem !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .appHeadline {
     font-size: 1.5rem !important;
+  }
+  .appSubHeadline {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .appSubHeadline {
+    font-size: 1.25rem !important;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .appSubHeadline {
+    font-size: 1.15rem !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .appSubHeadline {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .appSubHeadline {
+    font-size: .8rem !important;
   }
 }

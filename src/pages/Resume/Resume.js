@@ -20,6 +20,9 @@ import vainMainDesktop from "../../assets/images/projectImages/vainMainDesktop.p
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
+import styles from "./Resume.module.css";
+
+
 const projects = [
   {
     title: "Sam Hahn Travel",
@@ -114,7 +117,7 @@ const Resume = () => {
             &lt; Resume /&gt;
           </h2>
           <a href={pdf} download="Kevin Long Web Developer Resume">
-            <span className="permanent-marker">
+            <span className={`permanent-marker ${styles.resumeDownload}`}>
               &lt; Click here to download a PDF of my resume. /&gt;
             </span>
           </a>
@@ -133,6 +136,9 @@ const Resume = () => {
                 <ContactInfo />
               </Grid> */}
               <Grid container spacing={1}>
+                <Grid xs={12}>
+                  <FontAwesomeIcon icon={icon({ name: "folder-open", style: "regular" })}/>
+                </Grid>
                 <Grid xs={12} sm={6} md={4}>
                   <span style={{ fontWeight: "bold" }}>Austin, TX</span>
                 </Grid>
@@ -242,6 +248,11 @@ const Resume = () => {
               Summary
             </h4>
             <DisplayBox>
+            <Grid xs={12} style={{marginBottom: '-1.5rem'}}>
+            <FontAwesomeIcon
+                    icon={icon({ name: "user-gear", style: "solid" })}
+                  />
+            </Grid>
               <p style={{ textAlign: "left", padding: ".5rem" }}>
                 Full Stack Software Engineer. Based in Austin, TX. Background in
                 the performing arts and education. Brings the passion and

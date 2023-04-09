@@ -18,6 +18,13 @@ import musicologyMobile from "../../assets/images/projectImages/musicologyMobile
 // import whoDoMobile from '../../assets/images/projectImages/whoDoMobile.jpg';
 // import whoDoDesktop from '../../assets/images/projectImages/whoDoDesktop.png';
 
+
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
+// import { faGlobe, faVolumeHigh, faMusic } from "@fortawesome/free-solid-svg-icons";
+
+
+
 const Project = () => {
   const projects = [
     {
@@ -91,7 +98,8 @@ const Project = () => {
           textAlign={"center"}
         >
           {projects.map((project) => (
-            <Grid xs={12} lg={4} key={project.title}>
+  
+            <Grid sm={12} md ={6} lg={4} key={project.title}>
               <DisplayBox elevation={12} style={{ fontWeight: "bold" }}>
                 <Grid textAlign={"center"}>
                   <h4
@@ -101,6 +109,7 @@ const Project = () => {
                       margin: "0",
                       padding: "0",
                       fontWeight: "bold",
+                      marginBottom: '-1rem'
                     }}
                   >{`"${project.title}"`}</h4>
                 </Grid>
@@ -115,14 +124,14 @@ const Project = () => {
                   <br></br>
                   <span className="permanent-marker">Mobile View</span>
                 </Grid>
-
-                <Grid textAlign={"left"}>
-                  <p><span className="permanent-marker">Description:</span> {`${project.description}`}</p>
-                </Grid>
-
+                
                 <Grid>
                   <img
-                    style={{ width: "100%", height: "auto" }}
+                    style={{ 
+                      width: "100%", 
+                      height: "auto",
+                      marginTop: '-.5rem',
+                      marginBottom: '' }}
                     src={project.desktop_img_src}
                     alt={project.alt}
                     className="mobile-img"
@@ -131,27 +140,31 @@ const Project = () => {
                   <span className="permanent-marker">Desktop View</span>
                 </Grid>
 
+                <Grid textAlign={"left"} style={{marginTop: '-2rem', marginBottom: '-2.5rem'}}>
+                  <p><span className="permanent-marker">Description:</span> {`${project.description}`}</p>
+                </Grid>
+
                 <Grid textAlign={"left"}>
                   <p><span className="permanent-marker">Technologies:</span>{` ${project.technologies}`}</p>
                 </Grid>
 
-                <Grid style={{marginBottom: '-1.5rem'}}>
+                <Grid style={{marginBottom: '-1.5rem', marginTop: '-2rem'}}>
                   <span className="permanent-marker">Links:</span>
                 </Grid>
 
                 <Grid textAlign={"center"}>
                   <a href={project.appHref} target="_blank" rel="noreferrer">
-                    <div className="permanent-marker">
+                    <div className="permanent-marker" style={{marginBottom: '.5rem'}}>
                       &lt; Deployed Application /&gt;
                     </div>
                   </a>
-                </Grid>
-
+               
                 <a href={project.gitHref} target="_blank" rel="noreferrer">
                   <div className="permanent-marker">
                     &lt; GitHub Repository <GitHubIcon style={{marginBottom: '-.25rem'}}/> /&gt;
                   </div>
                 </a>
+                </Grid>
               </DisplayBox>
             </Grid>
           ))}

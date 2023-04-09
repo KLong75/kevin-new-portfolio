@@ -9,12 +9,9 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
-// import './AboutCube.css'
 
-// import "./styles.css";
 
 // import images
-// import required modules
 import permanentMarkerWebDevLogo from '../../assets/logos/permanentMarkerWebDevLogo2.png';
 import kevHuck from '../../assets/images/kev-huck.jpg';
 import kevTeach from '../../assets/images/Kevin/kevTeach.png';
@@ -36,7 +33,7 @@ const AboutCube = () => {
   return (
     <>
       <Swiper
-        speed={2400}
+        speed={1800}
         style={{
           width: '300px',
           height: '300px',

@@ -12,7 +12,7 @@ import TyeDyeBackground from './components/TyeDyeBackground';
 // import Swiper from './components/Swiper';
 
 // import page components
-import Home from './pages/Home/Home';
+// import Home from './pages/Home/Home';
 import About from './pages/AboutMe/AboutMe';
 import Contact from './pages/Contact/Contact';
 import MyWork from './pages/MyWork/MyWork';
@@ -65,8 +65,8 @@ function App() {
       <Router>
           <Header />
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
+              {/* <Route path="/" element={<Home />} /> */}
+              <Route path="/" element={<About />} />
               <Route path="/my_work" element={<MyWork />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />

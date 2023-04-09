@@ -2,7 +2,7 @@
 // import Header from '../../components/Header';
 import DisplayBox from "../../components/DisplayBox";
 import ContactForm from "../../components/ContactForm";
-import ScheduleAppointment from '../../components/ScheduleApointment';
+import ScheduleAppointment from '../../components/ScheduleAppointment';
 import ContactInfo from '../../components/ContactInfo';
 
 
@@ -29,7 +29,7 @@ const Contact = () => {
       <Grid sm={12} md={4} />
       
       <Grid  sm={12} md={4} style={{ marginTop: '-80px'}} height=''>
-        <DisplayBox elevation={6} >
+        <DisplayBox elevation={12} >
           <ScheduleAppointment  />
         </DisplayBox>
       </Grid>
@@ -39,7 +39,7 @@ const Contact = () => {
       <Grid sm={12} md={2} />
 
       <Grid  sm={12} md={8}  style={{ marginTop: '-80px'}} height=''>
-        <DisplayBox elevation={6} >
+        <DisplayBox elevation={12} >
         <Grid xs={12} style={{marginTop: '', marginBottom: '-2rem'}}>
         <h4 style={{margin: 0}}className="permanent-marker">&lt; My Contact Info /&gt;</h4>
       </Grid>
@@ -51,15 +51,10 @@ const Contact = () => {
       
 
       <Grid sm={12} md={8} style={{ marginTop: '-80px'}}>
-        <DisplayBox elevation={6}>
+        <DisplayBox elevation={12}>
           <ContactForm />
         </DisplayBox>
       </Grid>
-      
-      
-
-     
-      
     </Grid>
     </>
   );

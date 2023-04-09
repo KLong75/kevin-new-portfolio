@@ -123,7 +123,7 @@ const Resume = () => {
           </a>
         </Grid>
 
-        <DisplayBox>
+        <DisplayBox elevation={12}>
           <Grid xs={12} style={{ marginTop: "-1rem" }}>
             <h3
               style={{ marginTop: "", marginBottom: "1rem", fontSize: "2rem" }}
@@ -131,11 +131,11 @@ const Resume = () => {
             >
               Kevin Long
             </h3>
-            <DisplayBox>
+            <DisplayBox elevation={12}>
               {/* <Grid style={{marginTop: '.5rem', marginBottom: '1rem'}}>
                 <ContactInfo />
               </Grid> */}
-              <Grid container spacing={1}>
+              <Grid container spacing={1} style={{marginBottom: '.5rem'}}>
                 <Grid xs={12}>
                   <FontAwesomeIcon icon={icon({ name: "folder-open", style: "regular" })}/>
                 </Grid>
@@ -247,7 +247,7 @@ const Resume = () => {
             >
               Summary
             </h4>
-            <DisplayBox>
+            <DisplayBox elevation={12}>
             <Grid xs={12} style={{marginBottom: '-1.5rem'}}>
             <FontAwesomeIcon
                     icon={icon({ name: "user-gear", style: "solid" })}
@@ -276,7 +276,7 @@ const Resume = () => {
             >
               Education
             </h4>
-            <DisplayBox>
+            <DisplayBox elevation={12}>
               <Education />
             </DisplayBox>
           </Grid>
@@ -292,7 +292,7 @@ const Resume = () => {
             >
               Technical Skills
             </h4>
-            <DisplayBox>
+            <DisplayBox elevation={12}>
               <Grid
                 container
                 style={{
@@ -554,7 +554,7 @@ const Resume = () => {
             </h4>
             <Grid container textAlign={"left"}>
               <Grid xs={12}>
-                <DisplayBox>
+                <DisplayBox elevation={12}>
                   <Grid
                     container
                     spacing={1}
@@ -593,8 +593,8 @@ const Resume = () => {
                     <span style={{ fontWeight: "bold" }}>
                       Responsibilities:{" "}
                     </span>
-                    Design, Develop, Update, and Maintain responsive web
-                    applications based on client specifications.
+                    Design, Develop, Update, and Maintain fully responsive web sites and web
+                    applications that meet client specifications, exceed client expectations, function well, are intuitive to use, and look great on any screen size.
                   </p>
 
                   <p style={{ marginLeft: ".25rem", fontWeight: "bold" }}>
@@ -707,7 +707,7 @@ const Resume = () => {
               </Grid>
 
               <Grid xs={12}>
-                <DisplayBox>
+                <DisplayBox elevation={12}>
                   <Grid
                     container
                     spacing={1}
@@ -764,7 +764,7 @@ const Resume = () => {
                 </DisplayBox>
               </Grid>
               <Grid xs={12}>
-                <DisplayBox>
+                <DisplayBox elevation={12}>
                   <Grid
                     container
                     spacing={1}
@@ -835,7 +835,7 @@ const Resume = () => {
                 </DisplayBox>
               </Grid>
               <Grid xs={12}>
-                <DisplayBox>
+                <DisplayBox elevation={12}>
                   <Grid
                     container
                     spacing={1}

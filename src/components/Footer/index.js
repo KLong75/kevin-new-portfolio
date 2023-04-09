@@ -13,11 +13,11 @@ const Footer = () => {
         <ContactIcons />
       </Grid>
 
-      <Grid xs={12} style={{marginTop: '-20px', marginBottom: '10px', fontSize: '18px'}}>
+      <Grid xs={12} style={{fontSize: '1rem'}}>
         <span> ©2023 </span>
       </Grid>
 
-      <Grid xs={12} style={{marginTop: '-20px', marginBottom: '10px', fontSize: '18px'}}>
+      <Grid xs={12} style={{marginTop: '-1rem', marginBottom: '1rem', fontSize: '1.25rem'}}>
         <a href="https://kevinlong.dev/" target="_blank" rel="noreferrer">
           <span className="permanent-marker">www.kevinlong.dev</span>
         </a>  

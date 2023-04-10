@@ -15,38 +15,38 @@ import vsCodeGif from "../../assets/programming-icons/VSCode.gif";
 const ProgrammingIcons = () => {
   return (
     <>
-      <Grid container alignItems="center" style={{ padding: "" }}>
+      <Grid container alignItems="center" style={{ padding: "" }} >
         <Grid xs={4}>
-          <img width="50%" height="auto" src={javaScriptGif} alt="" />
+          <img width="50%" height="auto" src={javaScriptGif} alt="" style={{minWidth: '2rem'}} />
         </Grid>
         <Grid xs={4}>
-          <img width="50%" height="auto" src={htmlLogoGif} alt="" />
+          <img width="50%" height="auto" src={htmlLogoGif} alt="" style={{minWidth: '2rem'}}/>
         </Grid>
         <Grid xs={4}>
-          <img width="50%" height="auto" src={cssLogoGif} alt="" />
+          <img width="50%" height="auto" src={cssLogoGif} alt="" style={{minWidth: '2rem'}}/>
         </Grid>
 
         <Grid xs={3}>
-          <img width="80%" height="auto" src={mongoGif} alt="" />
+          <img width="80%" height="auto" src={mongoGif} alt="" style={{minWidth: '2rem', marginLeft: '-.25rem'}} />
         </Grid>
         <Grid xs={3}>
-          <img width="50%" height="auto" src={expressGif} alt="" />
+          <img width="50%" height="auto" src={expressGif} alt=""  style={{minWidth: '2rem'}}/>
         </Grid>
         <Grid xs={3}>
-          <img width="80%" height="auto" src={reactGif} alt="" />
+          <img width="80%" height="auto" src={reactGif} alt="" style={{minWidth: '2rem'}}/>
         </Grid>
         <Grid xs={3}>
-          <img width="80%" height="auto" src={nodeGif} alt="" />
+          <img width="80%" height="auto" src={nodeGif} alt="" style={{minWidth: '2rem', marginRight: '.25rem'}}/>
         </Grid>
 
         <Grid xs={4}>
-          <img width="60%" height="auto" src={gitHubGif} alt="" />
+          <img width="60%" height="auto" src={gitHubGif} alt="" style={{minWidth: '2rem'}}/>
         </Grid>
         <Grid xs={4}>
-          <img width="60%" height="auto" src={materialUi} alt="" />
+          <img width="60%" height="auto" src={materialUi} alt="" style={{minWidth: '2rem'}} />
         </Grid>
         <Grid xs={4}>
-          <img width="60%" height="auto" src={vsCodeGif} alt="" />
+          <img width="60%" height="auto" src={vsCodeGif} alt="" style={{minWidth: '2rem'}}/>
         </Grid>
       </Grid>
     </>

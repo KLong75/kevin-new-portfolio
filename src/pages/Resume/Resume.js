@@ -124,35 +124,40 @@ const Resume = () => {
       </Grid>
 
       <Grid container textAlign={"center"} style={{ padding: ".25rem" }}>
-        <DisplayBox elevation={12}>
-          <Grid xs={12} style={{ marginTop: "-1rem" }}>
-            <h3
-              style={{ marginTop: "", marginBottom: "1rem", fontSize: "2rem" }}
-              className="permanent-marker"
-            >
-              Kevin Long
-            </h3>
-            <FontAwesomeIcon
-              style={{ fontSize: "1.75rem" }}
-              icon={icon({ name: "user-gear", style: "solid" })}
-            />
+        <Grid xs={12}>
+          <DisplayBox elevation={12}>
+            <Grid xs={12} style={{ marginTop: "-1rem" }}>
+              <h3
+                style={{
+                  marginTop: "",
+                  marginBottom: "1rem",
+                  fontSize: "2rem",
+                }}
+                className="permanent-marker"
+              >
+                Kevin Long
+              </h3>
+              <FontAwesomeIcon
+                style={{ fontSize: "1.75rem" }}
+                icon={icon({ name: "user-gear", style: "solid" })}
+              />
 
-            <Grid
-              container
-              textAlign="center"
-              justifyContent={"center"}
-              spacing={1}
-              style={{ marginBottom: ".5rem" }}
-            >
-              <Grid xs={12} md={8}>
-                <DisplayBox elevation={12}>
-                  <ContactInfo />
-                </DisplayBox>
+              <Grid
+                container
+                textAlign="center"
+                justifyContent={"center"}
+                spacing={1}
+                style={{ marginBottom: ".5rem" }}
+              >
+                <Grid xs={12} md={8}>
+                  <DisplayBox elevation={12}>
+                    <ContactInfo />
+                  </DisplayBox>
+                </Grid>
               </Grid>
             </Grid>
-          </Grid>
 
-          {/* <Grid container spacing={1} style={{marginBottom: '.5rem'}}>
+            {/* <Grid container spacing={1} style={{marginBottom: '.5rem'}}>
               <DisplayBox elevation={12}>
                 <Grid xs={12}>
                   <FontAwesomeIcon icon={icon({ name: "folder-open", style: "regular" })}/>
@@ -252,500 +257,345 @@ const Resume = () => {
                   </a>
                 </Grid>
               </Grid> */}
-          {/* </DisplayBox>
+            {/* </DisplayBox>
           </Grid> */}
 
-          <Grid xs={12}>
-            <h4
-              style={{
-                fontWeight: "bold",
-                fontSize: "1.5rem",
-                marginBottom: "",
-              }}
-              className="permanent-marker"
-            >
-              Summary
-            </h4>
-          </Grid>
-
-          <Grid container>
-            <Grid sm={12} md={2}></Grid>
-            <Grid sm={12} md={8}>
-              <DisplayBox elevation={12}>
-                <Grid sm={12} style={{ marginBottom: "-1.5rem" }}>
-                  <FontAwesomeIcon
-                    style={{ fontSize: "1.5rem" }}
-                    icon={icon({ name: "folder-open", style: "regular" })}
-                  />
-                </Grid>
-                <Grid sm={12}>
-                  <p style={{ textAlign: "left", padding: ".5rem" }}>
-                    Full Stack Software Engineer. Based in Austin, TX.
-                    Background in the performing arts and education. Brings the
-                    passion and creativity of an artist combined with the
-                    patient persistence and skilled communication of a teacher
-                    to work as a software engineer. Thrives on creative
-                    problem-solving and collaboration. Experienced at meeting
-                    deadlines under pressure. Loves the challenge of bringing
-                    "What if?" to life.
-                  </p>
-                </Grid>
-              </DisplayBox>
+            <Grid xs={12}>
+              <h4
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "1.5rem",
+                  marginBottom: "",
+                }}
+                className="permanent-marker"
+              >
+                Summary
+              </h4>
             </Grid>
-          </Grid>
-          <Grid xs={12}>
-            <h4
-              style={{
-                fontWeight: "bold",
-                fontSize: "1.5rem",
-                marginBottom: "1rem",
-              }}
-              className="permanent-marker"
-            >
-              Education
-            </h4>
-          </Grid>
-          <Grid container>
-            <Grid sm={12} md={2}></Grid>
-            <Grid sm={12} md={8}>
-              <DisplayBox elevation={12}>
-                <Education />
-              </DisplayBox>
+
+            <Grid container>
+              <Grid sm={12} md={2}></Grid>
+              <Grid sm={12} md={8}>
+                <DisplayBox elevation={12}>
+                  <Grid sm={12} style={{ marginBottom: "-1.5rem" }}>
+                    <FontAwesomeIcon
+                      style={{ fontSize: "1.5rem" }}
+                      icon={icon({ name: "folder-open", style: "regular" })}
+                    />
+                  </Grid>
+                  <Grid sm={12}>
+                    <p style={{ textAlign: "left", padding: ".5rem" }}>
+                      Full Stack Software Engineer. Based in Austin, TX.
+                      Background in the performing arts and education. Brings
+                      the passion and creativity of an artist combined with the
+                      patient persistence and skilled communication of a teacher
+                      to work as a software engineer. Thrives on creative
+                      problem-solving and collaboration. Experienced at meeting
+                      deadlines under pressure. Loves the challenge of bringing
+                      "What if?" to life.
+                    </p>
+                  </Grid>
+                </DisplayBox>
+              </Grid>
             </Grid>
-          </Grid>
-
-          <Grid xs={12}>
-            <h4
-              style={{
-                fontWeight: "bold",
-                fontSize: "1.5rem",
-                marginBottom: "1rem",
-              }}
-              className="permanent-marker"
-            >
-              Technical Skills
-            </h4>
-          </Grid>
-          <Grid container>
-            <Grid sm={12} md={2}></Grid>
-            <Grid sm={12} md={8}>
-              <DisplayBox elevation={12}>
-                <Grid
-                  container
-                  style={{
-                    textAlign: "center",
-                    fontWeight: "bold",
-                    marginTop: ".5rem",
-                    fontSize: ".9rem",
-                  }}
-                >
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    JavaScript ES6{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "square-js", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    HTML5{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "html5", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    CSS{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "css3-alt", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Responsive Web Design{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "mobile-alt", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Agile Methodology{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "tasks", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Command Line{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "terminal", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Node{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "node", style: "brands" })}
-                    />
-                  </Grid>
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Express{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "node-js", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    React{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "react", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    React Hooks{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "react", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    React Context API{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "react", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    React Router{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "react", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Material UI{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "react", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Bootstrap{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "bootstrap", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    MongoDB{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "database", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Mongoose{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "database", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    SQL{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "database", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Sequelize{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "database", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    MySQL{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "database", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    GitHub{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "github", style: "brands" })}
-                    />
-                  </Grid>
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Git Version Control{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "git-alt", style: "brands" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Heroku{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "git-alt", style: "brands" })}
-                    />
-                  </Grid>
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    bcrypt{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "key", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    JSON web tokens{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "key", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    RESTful APIs{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "code", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Handlebars{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "code", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    jQuery{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "code", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Object-Oriented Programming{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "code", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Test Driven Development{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "code", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Model-View-Controller(MVC){" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "code", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    PWA{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "mobile-alt", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    Service Workers{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "mobile-alt", style: "solid" })}
-                    />
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={4} lg={3}>
-                    IndexedDB{" "}
-                    <FontAwesomeIcon
-                      icon={icon({ name: "mobile-alt", style: "solid" })}
-                    />
-                  </Grid>
-                </Grid>
-
-                <Grid container spacing={1}>
-                  <Grid xs={2}></Grid>
-                  <Grid xs={8} style={{ marginTop: "2rem" }}>
-                    <ProgrammingIcons />
-                  </Grid>
-                  <Grid xs={2}></Grid>
-                </Grid>
-              </DisplayBox>
+            <Grid xs={12}>
+              <h4
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "1.5rem",
+                  marginBottom: "1rem",
+                }}
+                className="permanent-marker"
+              >
+                Education
+              </h4>
             </Grid>
-          </Grid>
+            <Grid container>
+              <Grid sm={12} md={2}></Grid>
+              <Grid sm={12} md={8}>
+                <DisplayBox elevation={12}>
+                  <Education />
+                </DisplayBox>
+              </Grid>
+            </Grid>
 
-          <Grid xs={12}>
-            <h4
-              style={{
-                fontWeight: "bold",
-                fontSize: "1.5rem",
-                marginBottom: 0,
-              }}
-              className="permanent-marker"
-            >
-              Relevant Work Experience
-            </h4>
-          </Grid>
-          <Grid container textAlign={"left"}>
-            <Grid sm={12} md={2}></Grid>
-            <Grid sm={12} md={8}>
-              <DisplayBox elevation={12}>
-                <Grid
-                  container
-                  spacing={1}
-                  textAlign={"center"}
-                  style={{ fontSize: "1.1rem", marginBottom: ".5rem" }}
-                >
-                  <Grid xs={12} sm={6} md={3}>
-                    <span style={{ fontWeight: "bold" }}>
-                      Software Engineer
-                    </span>
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={3}>
-                    <span style={{ fontWeight: "bold" }}>Freelance</span>
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={3}>
-                    <span style={{ fontWeight: "bold" }}>Part Time</span>
-                  </Grid>
-                  <Grid xs={12} sm={6} md={3}>
-                    <span style={{ fontWeight: "bold" }}>
-                      Oct. 2022 - Present
-                    </span>
-                  </Grid>
-
+            <Grid xs={12}>
+              <h4
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "1.5rem",
+                  marginBottom: "1rem",
+                }}
+                className="permanent-marker"
+              >
+                Technical Skills
+              </h4>
+            </Grid>
+            <Grid container>
+              <Grid sm={12} md={2}></Grid>
+              <Grid sm={12} md={8}>
+                <DisplayBox elevation={12}>
                   <Grid
-                    xs={12}
-                    style={{ fontSize: "2rem", marginBottom: "-1rem" }}
+                    container
+                    style={{
+                      textAlign: "center",
+                      fontWeight: "bold",
+                      marginTop: ".5rem",
+                      fontSize: ".9rem",
+                    }}
                   >
-                    <FontAwesomeIcon
-                      icon={icon({ name: "gear", style: "solid" })}
-                    />
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      JavaScript ES6{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "square-js", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      HTML5{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "html5", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      CSS{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "css3-alt", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Responsive Web Design{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "mobile-alt", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Agile Methodology{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "tasks", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Command Line{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "terminal", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Node{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "node", style: "brands" })}
+                      />
+                    </Grid>
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Express{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "node-js", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      React{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "react", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      React Hooks{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "react", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      React Context API{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "react", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      React Router{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "react", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Material UI{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "react", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Bootstrap{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "bootstrap", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      MongoDB{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "database", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Mongoose{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "database", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      SQL{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "database", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Sequelize{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "database", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      MySQL{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "database", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      GitHub{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "github", style: "brands" })}
+                      />
+                    </Grid>
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Git Version Control{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "git-alt", style: "brands" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Heroku{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "git-alt", style: "brands" })}
+                      />
+                    </Grid>
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      bcrypt{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "key", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      JSON web tokens{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "key", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      RESTful APIs{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "code", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Handlebars{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "code", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      jQuery{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "code", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Object-Oriented Programming{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "code", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Test Driven Development{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "code", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Model-View-Controller(MVC){" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "code", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      PWA{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "mobile-alt", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      Service Workers{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "mobile-alt", style: "solid" })}
+                      />
+                    </Grid>
+
+                    <Grid xs={12} sm={6} md={4} lg={3}>
+                      IndexedDB{" "}
+                      <FontAwesomeIcon
+                        icon={icon({ name: "mobile-alt", style: "solid" })}
+                      />
+                    </Grid>
                   </Grid>
-                </Grid>
-                <p style={{ marginLeft: ".25rem" }}>
-                  <span style={{ fontWeight: "bold" }}>Responsibilities: </span>
-                  Design, Develop, Update, and Maintain fully responsive web
-                  sites and web applications that meet client specifications,
-                  exceed client expectations, function well, are intuitive to
-                  use, and look great on any screen size.
-                </p>
 
-                <p style={{ marginLeft: ".25rem", fontWeight: "bold" }}>
-                  Current Projects:
-                </p>
-                <ul style={{ marginTop: 0, marginLeft: "2rem" }}>
-                  <li style={{ fontWeight: "bold" }}>
-                    <a
-                      href={projects[0].appHref}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {projects[0].title}
-                    </a>
-                  </li>
-                  <span>
-                    Deployed Application:
-                    <a
-                      style={{
-                        fontWeight: "bold",
-                        textDecoration: "underline",
-                      }}
-                      href={projects[0].appHref}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {" "}
-                      {projects[0].appLinkText}
-                    </a>
-                  </span>
-                  <br></br>
-                  <span>
-                    GitHub Repository:
-                    <a
-                      style={{
-                        fontWeight: "bold",
-                        textDecoration: "underline",
-                      }}
-                      href={projects[0].gitHref}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {" "}
-                      {projects[0].gitLinkText}
-                    </a>
-                  </span>
-                  <br></br>
-                  <p>
-                    <span style={{ fontWeight: "bold" }}>Description:</span>{" "}
-                    {projects[0].description}
-                  </p>
-                  <p>
-                    <span style={{ fontWeight: "bold" }}>Technologies:</span>{" "}
-                    {projects[0].technologies}
-                  </p>
-
-                  <li style={{ fontWeight: "bold" }}>
-                    <a
-                      style={{ fontWeight: "bold" }}
-                      href={projects[1].appHref}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {" "}
-                      {projects[1].title}
-                    </a>
-                  </li>
-                  <span>
-                    Deployed Application:
-                    <a
-                      style={{
-                        fontWeight: "bold",
-                        textDecoration: "underline",
-                      }}
-                      href={projects[1].appHref}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {" "}
-                      {projects[1].appLinkText}
-                    </a>
-                  </span>
-                  <br></br>
-                  <span>
-                    GitHub Repository:
-                    <a
-                      style={{
-                        fontWeight: "bold",
-                        textDecoration: "underline",
-                      }}
-                      href={projects[1].gitHref}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {" "}
-                      {projects[1].gitLinkText}
-                    </a>
-                  </span>
-                  <br></br>
-                  <p>
-                    <span style={{ fontWeight: "bold" }}>Description:</span>{" "}
-                    {projects[1].description}
-                  </p>
-                  <p>
-                    <span style={{ fontWeight: "bold" }}>Technologies:</span>{" "}
-                    {projects[1].technologies}
-                  </p>
-                </ul>
-              </DisplayBox>
+                  <Grid container spacing={1}>
+                    <Grid xs={2}></Grid>
+                    <Grid xs={8} style={{ marginTop: "2rem" }}>
+                      <ProgrammingIcons />
+                    </Grid>
+                    <Grid xs={2}></Grid>
+                  </Grid>
+                </DisplayBox>
+              </Grid>
             </Grid>
 
+            <Grid xs={12}>
+              <h4
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "1.5rem",
+                  marginBottom: 0,
+                }}
+                className="permanent-marker"
+              >
+                Relevant Work Experience
+              </h4>
+            </Grid>
             <Grid container textAlign={"left"}>
               <Grid sm={12} md={2}></Grid>
               <Grid sm={12} md={8}>
@@ -758,23 +608,20 @@ const Resume = () => {
                   >
                     <Grid xs={12} sm={6} md={3}>
                       <span style={{ fontWeight: "bold" }}>
-                        {jobs[1].title}
+                        Software Engineer
                       </span>
                     </Grid>
 
                     <Grid xs={12} sm={6} md={3}>
-                      <span style={{ fontWeight: "bold" }}>
-                        {jobs[1].company}
-                      </span>
+                      <span style={{ fontWeight: "bold" }}>Freelance</span>
                     </Grid>
 
                     <Grid xs={12} sm={6} md={3}>
-                      <span style={{ fontWeight: "bold" }}>{jobs[1].type}</span>
+                      <span style={{ fontWeight: "bold" }}>Part Time</span>
                     </Grid>
-
                     <Grid xs={12} sm={6} md={3}>
                       <span style={{ fontWeight: "bold" }}>
-                        {jobs[1].dates}
+                        Oct. 2022 - Present
                       </span>
                     </Grid>
 
@@ -787,22 +634,124 @@ const Resume = () => {
                       />
                     </Grid>
                   </Grid>
-
                   <p style={{ marginLeft: ".25rem" }}>
                     <span style={{ fontWeight: "bold" }}>
                       Responsibilities:{" "}
                     </span>
-                    {jobs[1].description}
+                    Design, Develop, Update, and Maintain fully responsive web
+                    sites and web applications that meet client specifications,
+                    exceed client expectations, function well, are intuitive to
+                    use, and look great on any screen size.
                   </p>
-                  <span style={{ marginLeft: ".25rem", fontWeight: "bold" }}>
-                    Key Accomplishment:
-                  </span>
+
+                  <p style={{ marginLeft: ".25rem", fontWeight: "bold" }}>
+                    Current Projects:
+                  </p>
                   <ul style={{ marginTop: 0, marginLeft: "2rem" }}>
-                    <li>{jobs[1].keyAccomplishments[0]}</li>
+                    <li style={{ fontWeight: "bold" }}>
+                      <a
+                        href={projects[0].appHref}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {projects[0].title}
+                      </a>
+                    </li>
+                    <span>
+                      Deployed Application:
+                      <a
+                        style={{
+                          fontWeight: "bold",
+                          textDecoration: "underline",
+                        }}
+                        href={projects[0].appHref}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {" "}
+                        {projects[0].appLinkText}
+                      </a>
+                    </span>
+                    <br></br>
+                    <span>
+                      GitHub Repository:
+                      <a
+                        style={{
+                          fontWeight: "bold",
+                          textDecoration: "underline",
+                        }}
+                        href={projects[0].gitHref}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {" "}
+                        {projects[0].gitLinkText}
+                      </a>
+                    </span>
+                    <br></br>
+                    <p>
+                      <span style={{ fontWeight: "bold" }}>Description:</span>{" "}
+                      {projects[0].description}
+                    </p>
+                    <p>
+                      <span style={{ fontWeight: "bold" }}>Technologies:</span>{" "}
+                      {projects[0].technologies}
+                    </p>
+
+                    <li style={{ fontWeight: "bold" }}>
+                      <a
+                        style={{ fontWeight: "bold" }}
+                        href={projects[1].appHref}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {" "}
+                        {projects[1].title}
+                      </a>
+                    </li>
+                    <span>
+                      Deployed Application:
+                      <a
+                        style={{
+                          fontWeight: "bold",
+                          textDecoration: "underline",
+                        }}
+                        href={projects[1].appHref}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {" "}
+                        {projects[1].appLinkText}
+                      </a>
+                    </span>
+                    <br></br>
+                    <span>
+                      GitHub Repository:
+                      <a
+                        style={{
+                          fontWeight: "bold",
+                          textDecoration: "underline",
+                        }}
+                        href={projects[1].gitHref}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {" "}
+                        {projects[1].gitLinkText}
+                      </a>
+                    </span>
+                    <br></br>
+                    <p>
+                      <span style={{ fontWeight: "bold" }}>Description:</span>{" "}
+                      {projects[1].description}
+                    </p>
+                    <p>
+                      <span style={{ fontWeight: "bold" }}>Technologies:</span>{" "}
+                      {projects[1].technologies}
+                    </p>
                   </ul>
                 </DisplayBox>
               </Grid>
-              {/* </Grid>   */}
 
               <Grid container textAlign={"left"}>
                 <Grid sm={12} md={2}></Grid>
@@ -816,22 +765,26 @@ const Resume = () => {
                     >
                       <Grid xs={12} sm={6} md={3}>
                         <span style={{ fontWeight: "bold" }}>
-                          Elementery School Teacher
+                          {jobs[1].title}
                         </span>
                       </Grid>
 
                       <Grid xs={12} sm={6} md={3}>
                         <span style={{ fontWeight: "bold" }}>
-                          Austin Discovery School
+                          {jobs[1].company}
                         </span>
                       </Grid>
 
                       <Grid xs={12} sm={6} md={3}>
-                        <span style={{ fontWeight: "bold" }}>Fulltime</span>
+                        <span style={{ fontWeight: "bold" }}>
+                          {jobs[1].type}
+                        </span>
                       </Grid>
 
                       <Grid xs={12} sm={6} md={3}>
-                        <span style={{ fontWeight: "bold" }}>2020 - 2021</span>
+                        <span style={{ fontWeight: "bold" }}>
+                          {jobs[1].dates}
+                        </span>
                       </Grid>
 
                       <Grid
@@ -839,7 +792,7 @@ const Resume = () => {
                         style={{ fontSize: "2rem", marginBottom: "-1rem" }}
                       >
                         <FontAwesomeIcon
-                          icon={icon({ name: "school", style: "solid" })}
+                          icon={icon({ name: "gear", style: "solid" })}
                         />
                       </Grid>
                     </Grid>
@@ -848,36 +801,17 @@ const Resume = () => {
                       <span style={{ fontWeight: "bold" }}>
                         Responsibilities:{" "}
                       </span>
-                      Utilized clear communication and critical thinking skills
-                      to develop and implement lesson plans for all subjects
-                      across two grade levels.
+                      {jobs[1].description}
                     </p>
                     <span style={{ marginLeft: ".25rem", fontWeight: "bold" }}>
                       Key Accomplishment:
                     </span>
                     <ul style={{ marginTop: 0, marginLeft: "2rem" }}>
-                      <li>
-                        Used no-code platform{" "}
-                        <a
-                          style={{
-                            fontWeight: "bold",
-                            textDecoration: "underline",
-                          }}
-                          href="https://web.seesaw.me/"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Seesaw
-                        </a>
-                        <span> </span>in conjunction with several other learning
-                        applications to successfully develop and implement an
-                        innovative online learning system for virtual learning,
-                        allowing students to learn effectively from home with
-                        minimal hands on support from parents and guardians.
-                      </li>
+                      <li>{jobs[1].keyAccomplishments[0]}</li>
                     </ul>
                   </DisplayBox>
                 </Grid>
+                {/* </Grid>   */}
 
                 <Grid container textAlign={"left"}>
                   <Grid sm={12} md={2}></Grid>
@@ -891,22 +825,23 @@ const Resume = () => {
                       >
                         <Grid xs={12} sm={6} md={3}>
                           <span style={{ fontWeight: "bold" }}>
-                            Theater Artist
+                            Elementery School Teacher
                           </span>
                         </Grid>
 
                         <Grid xs={12} sm={6} md={3}>
                           <span style={{ fontWeight: "bold" }}>
-                            Various Different Locations and Companies
+                            Austin Discovery School
                           </span>
                         </Grid>
 
                         <Grid xs={12} sm={6} md={3}>
                           <span style={{ fontWeight: "bold" }}>Fulltime</span>
                         </Grid>
+
                         <Grid xs={12} sm={6} md={3}>
                           <span style={{ fontWeight: "bold" }}>
-                            1998 - 2019
+                            2020 - 2021
                           </span>
                         </Grid>
 
@@ -915,10 +850,7 @@ const Resume = () => {
                           style={{ fontSize: "2rem", marginBottom: "-1rem" }}
                         >
                           <FontAwesomeIcon
-                            icon={icon({
-                              name: "masks-theater",
-                              style: "solid",
-                            })}
+                            icon={icon({ name: "school", style: "solid" })}
                           />
                         </Grid>
                       </Grid>
@@ -927,25 +859,108 @@ const Resume = () => {
                         <span style={{ fontWeight: "bold" }}>
                           Responsibilities:{" "}
                         </span>
-                        {jobs[3].description}
+                        Utilized clear communication and critical thinking
+                        skills to develop and implement lesson plans for all
+                        subjects across two grade levels.
                       </p>
                       <span
                         style={{ marginLeft: ".25rem", fontWeight: "bold" }}
                       >
-                        Key Accomplishments:
+                        Key Accomplishment:
                       </span>
                       <ul style={{ marginTop: 0, marginLeft: "2rem" }}>
-                        <li>{jobs[3].keyAccomplishments[0]}</li>
-                        <li>{jobs[3].keyAccomplishments[1]}</li>
-                        <li>{jobs[3].keyAccomplishments[2]}</li>
+                        <li>
+                          Used no-code platform{" "}
+                          <a
+                            style={{
+                              fontWeight: "bold",
+                              textDecoration: "underline",
+                            }}
+                            href="https://web.seesaw.me/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Seesaw
+                          </a>
+                          <span> </span>in conjunction with several other
+                          learning applications to successfully develop and
+                          implement an innovative online learning system for
+                          virtual learning, allowing students to learn
+                          effectively from home with minimal hands on support
+                          from parents and guardians.
+                        </li>
                       </ul>
                     </DisplayBox>
+                  </Grid>
+
+                  <Grid container textAlign={"left"}>
+                    <Grid sm={12} md={2}></Grid>
+                    <Grid sm={12} md={8}>
+                      <DisplayBox elevation={12}>
+                        <Grid
+                          container
+                          spacing={1}
+                          textAlign={"center"}
+                          style={{ fontSize: "1.1rem", marginBottom: ".5rem" }}
+                        >
+                          <Grid xs={12} sm={6} md={3}>
+                            <span style={{ fontWeight: "bold" }}>
+                              Theater Artist
+                            </span>
+                          </Grid>
+
+                          <Grid xs={12} sm={6} md={3}>
+                            <span style={{ fontWeight: "bold" }}>
+                              Various Different Locations and Companies
+                            </span>
+                          </Grid>
+
+                          <Grid xs={12} sm={6} md={3}>
+                            <span style={{ fontWeight: "bold" }}>Fulltime</span>
+                          </Grid>
+                          <Grid xs={12} sm={6} md={3}>
+                            <span style={{ fontWeight: "bold" }}>
+                              1998 - 2019
+                            </span>
+                          </Grid>
+
+                          <Grid
+                            xs={12}
+                            style={{ fontSize: "2rem", marginBottom: "-1rem" }}
+                          >
+                            <FontAwesomeIcon
+                              icon={icon({
+                                name: "masks-theater",
+                                style: "solid",
+                              })}
+                            />
+                          </Grid>
+                        </Grid>
+
+                        <p style={{ marginLeft: ".25rem" }}>
+                          <span style={{ fontWeight: "bold" }}>
+                            Responsibilities:{" "}
+                          </span>
+                          {jobs[3].description}
+                        </p>
+                        <span
+                          style={{ marginLeft: ".25rem", fontWeight: "bold" }}
+                        >
+                          Key Accomplishments:
+                        </span>
+                        <ul style={{ marginTop: 0, marginLeft: "2rem" }}>
+                          <li>{jobs[3].keyAccomplishments[0]}</li>
+                          <li>{jobs[3].keyAccomplishments[1]}</li>
+                          <li>{jobs[3].keyAccomplishments[2]}</li>
+                        </ul>
+                      </DisplayBox>
+                    </Grid>
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
-          </Grid>
-        </DisplayBox>
+          </DisplayBox>
+        </Grid>
       </Grid>
     </>
   );

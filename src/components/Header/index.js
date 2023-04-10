@@ -107,7 +107,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/kevinlong.dev">&lt; About /&gt;</Link>
+                    <Link to="/">&lt; About /&gt;</Link>
                   </li>
 
                   <li
@@ -189,7 +189,7 @@ const Header = () => {
             <Grid xs={12}>
               <MenuItem
                 component={Link}
-                to="/kevinlong.dev"
+                to="/"
                 onClick={handleMenuClose}
                 style={{
                   padding: "18px",

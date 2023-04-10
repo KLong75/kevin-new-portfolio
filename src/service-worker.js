@@ -73,9 +73,9 @@ self.addEventListener('message', (event) => {
 
 
 // take below out if something breaks
-self.addEventListener('visibilitychange', function() {
-  if (document.visibilityState === 'visible') {
-      console.log('APP resumed');
-      window.location.reload();
-  }
-});
+// self.addEventListener('visibilitychange', function() {
+//   if (document.visibilityState === 'visible') {
+//       console.log('APP resumed');
+//       window.location.reload();
+//   }
+// });

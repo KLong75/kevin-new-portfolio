@@ -79,6 +79,7 @@ const AboutMe = () => {
           <DisplayBox>
             <FontAwesomeIcon
               icon={icon({ name: "user-gear", style: "solid" })}
+              style={{ fontSize: "1.5rem" }}
             />
 
             <p>

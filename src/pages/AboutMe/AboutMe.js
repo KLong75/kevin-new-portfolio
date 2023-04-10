@@ -76,10 +76,10 @@ const AboutMe = () => {
             fontSize: "1.2rem",
           }}
         >
-          <DisplayBox>
+          <DisplayBox style={{padding: '1rem'}}>
             <FontAwesomeIcon
               icon={icon({ name: "user-gear", style: "solid" })}
-              style={{ fontSize: "1.5rem" }}
+              style={{ fontSize: "1.5rem", marginTop: "0.5rem" }}
             />
 
             <p>
@@ -104,10 +104,13 @@ const AboutMe = () => {
 
         <Grid sm={12} md={8}>
           {/* <DisplayBox> */}
-          <h4 className="permanent-marker" style={{ fontSize: "1.25rem" }}>
+          {/* <h4 className="permanent-marker" style={{ fontSize: "1.25rem" }}>
+            &lt; Currently /&gt;
+          </h4> */}
+          <DisplayBox style={{padding: '1rem'}}>
+          <h4 className="permanent-marker" style={{ fontSize: "1.25rem", marginTop: '0rem' }}>
             &lt; Currently /&gt;
           </h4>
-          <DisplayBox>
             <ul style={{ listStyleType: "none" }}>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Pursuing Freelance Work
@@ -150,6 +153,7 @@ const AboutMe = () => {
         <Grid xs={12}>
           <ScheduleAppointment />
         </Grid>
+
       </Grid>
     </section>
   );

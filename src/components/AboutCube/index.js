@@ -13,16 +13,15 @@ import "swiper/css/pagination";
 
 // import images
 import permanentMarkerWebDevLogo from '../../assets/logos/permanentMarkerWebDevLogo2.png';
-import kevHuck from '../../assets/images/kev-huck.jpg';
+import kevHuck from '../../assets/images/Kevin/kev-huck.jpg';
 import kevTeach from '../../assets/images/Kevin/kevTeach.png';
-import tromboneStilt from '../../assets/images/stiltTrombone.jpg';
-import trombone from '../../assets/images/trombone.jpg';
-import mayDayTiger from '../../assets/images/tiger.jpg';
-import gargoyle from '../../assets/images/gargoyle.jpg';
-// import marathon1 from '../../assets/images/marathon_1.jpg';
-import marathon2 from '../../assets/images/marathon_2.jpg';
-import marathonFinish from '../../assets/images/Finish_Line.jpg';
-import marathonMedal from '../../assets/images/medal.jpg';
+import tromboneStilt from '../../assets/images/Kevin/stiltTrombone.jpg';
+import trombone from '../../assets/images/Kevin/trombone.jpg';
+import mayDayTiger from '../../assets/images/Kevin/tiger.jpg';
+import gargoyle from '../../assets/images/Kevin/gargoyle.jpg';
+import marathon2 from '../../assets/images/Kevin/marathon_2.jpg';
+import marathonFinish from '../../assets/images/Kevin/Finish_Line.jpg';
+import marathonMedal from '../../assets/images/Kevin/medal.jpg';
 
 
 
@@ -75,9 +74,6 @@ const AboutCube = () => {
         <SwiperSlide>
           <img src={trombone} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
-        {/* <SwiperSlide>
-          <img src={marathon1} alt='' style={{display: 'block', width: '100%'}}/>
-        </SwiperSlide> */}
         <SwiperSlide>
           <img src={marathon2} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
@@ -90,7 +86,6 @@ const AboutCube = () => {
         <SwiperSlide>
           <img src={tromboneStilt} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
-
       </Swiper>
     </>
   );

@@ -12,9 +12,6 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { IconButton, Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-// import { styled } from '@mui/material/styles';
-// import { Paper } from '@mui/material';
-
 // import images/logos
 import webDev from "../../assets/logos/permanentMarkerWebDevLogo2crop.png";
 

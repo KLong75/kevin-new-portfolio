@@ -2,9 +2,10 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-// import webDevIcon from '../../assets/logos/webDevRound.png';
+// import image
 import permanentMarkerWebDevLogo from '../../assets/logos/permanentMarkerWebDevLogo2crop.png';
 
+// import styles
 import styles from './WebDevLogo.module.css';
 
 

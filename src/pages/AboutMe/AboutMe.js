@@ -28,7 +28,7 @@ const AboutMe = () => {
       <Grid
         container
         spacing={2}
-        justifyContent="center"
+        justifyContent=""
         textAlign="center"
         style={{ marginTop: "" }}
       >
@@ -50,6 +50,7 @@ const AboutMe = () => {
             &lt; About Me /&gt;
           </h3>
         </Grid>
+
         <Grid xs={12} style={{ marginTop: "", fontSize: "1.25rem" }}>
           <span className="permanent-marker">I am</span>
           <p
@@ -64,17 +65,22 @@ const AboutMe = () => {
           <AboutCube />
         </Grid>
 
+        <Grid sm={12} md={2} />
+
         <Grid
-          xs={12}
-          textAlign="center"
-          style={{ fontWeight: "bold", fontSize: "1.2rem" }}
+          sm={12}
+          md={8}
+          style={{
+            marginBottom: "-1.5rem",
+            fontWeight: "bold",
+            fontSize: "1.2rem",
+          }}
         >
           <DisplayBox>
-          <Grid xs={12} style={{marginBottom: '-1.5rem'}}>
             <FontAwesomeIcon
-                    icon={icon({ name: "user-gear", style: "solid" })}
-                  />
-            </Grid>
+              icon={icon({ name: "user-gear", style: "solid" })}
+            />
+
             <p>
               Full Stack Web Developer. Based in Austin, Texas. Certificate in
               Full Stack Web Development from the University of Texas at Austin.
@@ -91,7 +97,11 @@ const AboutMe = () => {
           </DisplayBox>
         </Grid>
 
-        <Grid xs={12}>
+        <Grid sm={12} md={2} />
+
+        <Grid sm={12} md={2} />
+
+        <Grid sm={12} md={8}>
           {/* <DisplayBox> */}
           <h4 className="permanent-marker" style={{ fontSize: "1.25rem" }}>
             &lt; Currently /&gt;

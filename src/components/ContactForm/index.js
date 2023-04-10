@@ -165,7 +165,7 @@ const ContactForm = () => {
 
         />
         <TextField label='Message' fullWidth required value={message} onChange={handleMessageChange} margin='dense' multiline rows={8}/>
-        <FormLabel id="interested-in">Thank you for sending me a message. I will get back to you right away!</FormLabel>
+        <FormLabel id="interested-in">Thank you for reaching out. I will get back to you right away!</FormLabel>
           {/* <RadioGroup
             aria-labelledby="interested-in"
             value={interestedIn}

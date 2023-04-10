@@ -33,7 +33,7 @@ const Education = () => {
       </Grid> */}
 
       <Grid xs={12} style={{ marginBottom: "1rem" }}>
-        <FontAwesomeIcon
+        <FontAwesomeIcon style={{fontSize: '1.5rem'}}
           icon={icon({ name: "graduation-cap", style: "solid" })}
         />
       </Grid>

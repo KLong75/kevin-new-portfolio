@@ -118,32 +118,32 @@ const AboutMe = () => {
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Pursuing Freelance Work
               </li>
-              <span style={{ fontSize: "1.1rem" }}>
+              <li style={{ fontSize: "1.1rem" }}>
                 If you are in need of a website or app for your creative
                 project, small business, or organization, I would love to talk!{" "}
-              </span>
+              </li>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Seeking Fulltime Employment
               </li>
-              <span>
+              <li>
                 As a developer, I am looking for a company that values
                 creativity, collaboration, and a passion for learning.
-              </span>
+              </li>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Teaching (Assistant) Full Stack Web Development Bootcamp (edX)
               </li>
-              <span>
+              <li>
                 I love helping students learn and grow, and I am excited to
                 continue to do so in this role.
-              </span>
+              </li>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Seeking New Tech Connections
               </li>
-              <span>
+              <li>
                 I am always looking to meet new people in the tech community. If
                 you are a developer, designer, or tech professional, I would
                 love to connect!
-              </span>
+              </li>
             </ul>
             <Grid>
               <span style={{ fontSize: "1rem", fontWeight: "bold" }}>

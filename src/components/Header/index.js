@@ -81,7 +81,7 @@ const Header = () => {
         }}
       >
         {isMobile ? (
-          <IconButton onClick={handleMenuOpen} size="large">
+          <IconButton onClick={handleMenuOpen} size="large" name='menu-button'>
             <MenuIcon />
           </IconButton>
         ) : (

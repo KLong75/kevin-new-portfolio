@@ -107,7 +107,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/">&lt; About /&gt;</Link>
+                    <Link to="/kevinlong.dev">&lt; About /&gt;</Link>
                   </li>
 
                   <li
@@ -117,7 +117,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/my_work">&lt; Projects /&gt;</Link>
+                    <Link to="/kevinlong.dev/my_work">&lt; Projects /&gt;</Link>
                   </li>
                   <li
                     style={{
@@ -126,7 +126,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/resume">&lt; Resume /&gt;</Link>
+                    <Link to="/kevinlong.dev/resume">&lt; Resume /&gt;</Link>
                   </li>
                   <li
                     style={{
@@ -135,7 +135,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/contact">&lt; Contact /&gt;</Link>
+                    <Link to="/kevinlong.dev/contact">&lt; Contact /&gt;</Link>
                   </li>
                 </ul>
               </nav>
@@ -189,7 +189,7 @@ const Header = () => {
             <Grid xs={12}>
               <MenuItem
                 component={Link}
-                to="/"
+                to="/kevinlong.dev"
                 onClick={handleMenuClose}
                 style={{
                   padding: "18px",
@@ -205,7 +205,7 @@ const Header = () => {
             <Grid xs={12}>
               <MenuItem
                 component={Link}
-                to="/my_work"
+                to="/kevinlong.dev/my_work"
                 onClick={handleMenuClose}
                 style={{
                   padding: "18px",
@@ -237,7 +237,7 @@ const Header = () => {
             <Grid xs={12}>
               <MenuItem
                 component={Link}
-                to="/contact"
+                to="/kevinlong.dev/contact"
                 onClick={handleMenuClose}
                 style={{
                   padding: "18px",

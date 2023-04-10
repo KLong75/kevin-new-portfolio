@@ -64,9 +64,9 @@ function App() {
             <Routes>
               {/* <Route path="/" element={<Home />} /> */}
               <Route path="/" element={<About />} />
-              <Route path="/kevinlong.dev/my_work" element={<MyWork />} />
-              <Route path="/kevinlong.dev/resume" element={<Resume />} />
-              <Route path="/kevinlong.dev/contact" element={<Contact />} />
+              <Route path="/my_work" element={<MyWork />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           <Footer />
       </Router>

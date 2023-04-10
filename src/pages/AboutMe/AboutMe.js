@@ -124,7 +124,7 @@ const AboutMe = () => {
                 creativity, collaboration, and a passion for learning.
               </span>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
-                Bootcamp Teaching Assistant
+                Teaching (Assistant) - edX - Full Stack Web Development Bootcamp
               </li>
               <span>
                 I love helping students learn and grow, and I am excited to

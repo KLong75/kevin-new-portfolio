@@ -89,7 +89,7 @@ const AboutMe = () => {
             <p>
               With a background in the performing arts and education, I bring
               the passion and creativity of an artist alongside the patient
-              persistence and skilled communication of a teacher.
+              persistence and skilled communication of a teacher to my work as an engineer.
             </p>
             <p>
               I thrive on creative problem-solving and collaboration. I love the

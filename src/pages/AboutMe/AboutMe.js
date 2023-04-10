@@ -70,6 +70,7 @@ const AboutMe = () => {
         <Grid
           sm={12}
           md={8}
+          
           style={{
             marginBottom: "-1.5rem",
             fontWeight: "bold",
@@ -78,10 +79,11 @@ const AboutMe = () => {
         >
           <DisplayBox style={{padding: '1rem'}}>
             <FontAwesomeIcon
+            
               icon={icon({ name: "user-gear", style: "solid" })}
               style={{ fontSize: "1.5rem", marginTop: "0.5rem" }}
             />
-
+            <Grid textAlign={'left'}>
             <p>
               Full Stack Web Developer. Based in Austin, Texas. Certificate in
               Full Stack Web Development from the University of Texas at Austin.
@@ -95,6 +97,7 @@ const AboutMe = () => {
               I thrive on creative problem-solving and collaboration. I love the
               challenge of attempting to answer the question, "What if...?"
             </p>
+            </Grid>
           </DisplayBox>
         </Grid>
 

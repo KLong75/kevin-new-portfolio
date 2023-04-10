@@ -22,10 +22,7 @@ import Resume from './pages/Resume/Resume';
 const theme = createTheme({
   typography: {
     fontFamily: [
-      // 'Courgette',
-      // 'sans-serif',
-      // 'Cormorant',
-      'Roboto Flex',
+      // 'Roboto Flex',
       'Roboto',
       'sans-serif',
     ].join(','),

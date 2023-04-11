@@ -104,7 +104,7 @@ const ContactForm = () => {
       .then((result) => {
         console.log(result.text);
         // console.log(firstName, lastName, email, message, interestedIn);
-        toast(<ContactFormToast style={{color: 'black' }} message='Thank you for message! I will be in touch soon!' icon={WebDevLogo}/>);
+        toast(<ContactFormToast style={{color: 'black' }} message='Thank you for your message! I will be in touch soon!' icon={WebDevLogo}/>);
       }, (error) => {
         console.log(error.text);
       });

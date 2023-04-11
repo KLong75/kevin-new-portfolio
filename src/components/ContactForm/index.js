@@ -102,8 +102,8 @@ const ContactForm = () => {
       process.env.REACT_APP_EMAILJS_USER_ID
     )
       .then((result) => {
-        console.log(result.text);
-        console.log(firstName, lastName, email, message, interestedIn);
+        // console.log(result.text);
+        // console.log(firstName, lastName, email, message, interestedIn);
         toast(<ContactFormToast style={{color: 'black' }} message='Thank you for message! I will be in touch soon!' icon={WebDevLogo}/>);
       }, (error) => {
         console.log(error.text);

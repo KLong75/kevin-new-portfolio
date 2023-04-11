@@ -83,7 +83,7 @@ const AboutMe = () => {
               icon={icon({ name: "user-gear", style: "solid" })}
               style={{ fontSize: "1.5rem", marginTop: "0.5rem" }}
             />
-            <Grid textAlign={'left'}>
+            <Grid textAlign={'center'}>
             <p>
               Full Stack Web Developer. Based in Austin, Texas. Certificate in
               Full Stack Web Development from the University of Texas at Austin.

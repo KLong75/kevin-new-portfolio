@@ -115,17 +115,20 @@ const Project = () => {
                 </Grid>
 
                 <Grid>
+                  <a href={project.appHref} target="_blank" rel="noreferrer">
                   <img
                     style={{ width: "40%", height: "auto" }}
                     src={project.mobile_img_src}
                     alt={project.alt}
                     className="mobile-img"
                   />
+                  </a>
                   <br></br>
                   <span className="permanent-marker">Mobile View</span>
                 </Grid>
                 
                 <Grid>
+                  <a href={project.appHref} target="_blank" rel="noreferrer">
                   <img
                     style={{ 
                       width: "100%", 
@@ -136,6 +139,7 @@ const Project = () => {
                     alt={project.alt}
                     className="mobile-img"
                   />
+                  </a>
                   <br></br>
                   <span className="permanent-marker">Desktop View</span>
                 </Grid>

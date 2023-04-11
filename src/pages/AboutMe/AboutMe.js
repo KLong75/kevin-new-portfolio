@@ -19,7 +19,7 @@ const phrases = [
   "A Musician",
   "A Long Distance Runner",
   "A Marathon Finisher",
-  "A Stilt Walker",
+  // "A Stilt Walker",
 ];
 
 const AboutMe = () => {

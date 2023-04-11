@@ -15,7 +15,7 @@ import "swiper/css/pagination";
 import permanentMarkerWebDevLogo from '../../assets/logos/permanentMarkerWebDevLogo2.png';
 import kevHuck from '../../assets/images/Kevin/kev-huck.jpg';
 import kevTeach from '../../assets/images/Kevin/kevTeach.png';
-import tromboneStilt from '../../assets/images/Kevin/stiltTrombone.jpg';
+// import tromboneStilt from '../../assets/images/Kevin/stiltTrombone.jpg';
 import trombone from '../../assets/images/Kevin/trombone.jpg';
 import mayDayTiger from '../../assets/images/Kevin/tiger.jpg';
 import gargoyle from '../../assets/images/Kevin/gargoyle.jpg';
@@ -83,9 +83,9 @@ const AboutCube = () => {
         <SwiperSlide>
           <img src={marathonMedal} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={tromboneStilt} alt='' style={{display: 'block', width: '100%'}}/>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

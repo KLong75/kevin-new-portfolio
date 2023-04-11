@@ -12,8 +12,6 @@
       "sizes": "32x32",
       "type": "image/png"
     },
-
-
     {
       "src": "favicon.ico",
       "sizes": "48x48",
@@ -43,7 +41,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "hsla(120,100%,75%,0.3)",
+  "theme_color": "#000000",
   "background_color": "hsla(120,100%,75%,0.3)",
   "id": "/"
 }

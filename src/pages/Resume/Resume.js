@@ -341,7 +341,7 @@ const Resume = () => {
                       textAlign: "center",
                       fontWeight: "bold",
                       marginTop: ".5rem",
-                      fontSize: ".9rem",
+                      fontSize: ".89rem",
                     }}
                   >
                     <Grid xs={12} sm={6} md={4} lg={3}>
@@ -645,9 +645,9 @@ const Resume = () => {
                   </p>
 
                   <p style={{ marginLeft: ".25rem", fontWeight: "bold" }}>
-                    Current Projects:
+                    Current Clients:
                   </p>
-                  <ul style={{ marginTop: 0, marginLeft: "2rem" }}>
+                  <ul style={{ marginTop: 0, marginLeft: "1rem", paddingRight: '.25rem' }}>
                     <li style={{ fontWeight: "bold" }}>
                       <a
                         href={projects[0].appHref}
@@ -663,6 +663,7 @@ const Resume = () => {
                         style={{
                           fontWeight: "bold",
                           textDecoration: "underline",
+                          fontSize: '.9rem'
                         }}
                         href={projects[0].appHref}
                         target="_blank"
@@ -673,12 +674,14 @@ const Resume = () => {
                       </a>
                     </span>
                     <br></br>
+                    <br></br>
                     <span>
                       GitHub Repository:
                       <a
                         style={{
                           fontWeight: "bold",
                           textDecoration: "underline",
+                          fontSize: '.9rem'
                         }}
                         href={projects[0].gitHref}
                         target="_blank"
@@ -715,6 +718,7 @@ const Resume = () => {
                         style={{
                           fontWeight: "bold",
                           textDecoration: "underline",
+                          fontSize: '.9rem'
                         }}
                         href={projects[1].appHref}
                         target="_blank"
@@ -731,6 +735,7 @@ const Resume = () => {
                         style={{
                           fontWeight: "bold",
                           textDecoration: "underline",
+                          fontSize: '.9rem'
                         }}
                         href={projects[1].gitHref}
                         target="_blank"

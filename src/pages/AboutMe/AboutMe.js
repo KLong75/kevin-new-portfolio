@@ -90,8 +90,8 @@ const AboutMe = () => {
             </p>
             <p>
               With a background in the performing arts and education, I bring
-              the passion and creativity of an artist alongside the patient
-              persistence and skilled communication of a teacher to my work as an engineer.
+              the passion and creativity of an artist, alongside the patient
+              persistence and skilled communication of a teacher, to my work as an software engineer.
             </p>
             <p>
               I thrive on creative problem-solving and collaboration. I love the
@@ -133,7 +133,7 @@ const AboutMe = () => {
                 Teaching (Assistant) Full Stack Web Development Bootcamp (edX)
               </li>
               <li>
-                I love helping students learn and grow, and I am excited to
+                I love helping students learn and grow. I am excited to
                 continue to do so in this role.
               </li>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>

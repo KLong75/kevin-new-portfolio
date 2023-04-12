@@ -85,13 +85,13 @@ const AboutMe = () => {
             />
             <Grid textAlign={'center'}>
             <p>
-              Full Stack Web Developer. Based in Austin, Texas. Certificate in
-              Full Stack Web Development from the University of Texas at Austin.
+              Full Stack Web Developer. Based in Austin, Texas. 
             </p>
             <p>
-              With a background in the performing arts and education, I bring
-              the passion and creativity of an artist, alongside the patient
-              persistence and skilled communication of a teacher, to my work as an software engineer.
+              Certificate in Full Stack Web Development from the University of Texas.
+            </p>
+            <p>
+              With a background in the performing arts and education, I bring the passion and creativity of an artist, along with the patient persistence, and skilled communication of a teacher, to my work as a software engineer.
             </p>
             <p>
               I thrive on creative problem-solving and collaboration. I love the

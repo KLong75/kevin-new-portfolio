@@ -99,7 +99,7 @@ const jobs = [
     keyAccomplishments: [
       `Performed in 18 states and 2 foreign countries (South Korea and The Dominican Republic)`,
       `Staff Artist for MayDay Parade and Festival (2001, 2006 - 2012) - annual outdoor giant puppet spectacle produced by In The Heart of the Beast Puppet and Mask Theater involving hundreds of performers and attended by tens of thousands in Minneapolis, MN.`,
-      `While on the Mayday Staff worked to streamline the post parade clean up process, resulting in a 30% reduction in clean up time.`,
+      `While on the Mayday Staff worked to streamline the post parade clean up process, resulting in a 20% reduction in clean up time.`,
     ],
   },
 ];
@@ -284,11 +284,11 @@ const Resume = () => {
                     />
                   </Grid>
                   <Grid sm={12}>
-                    <p style={{ textAlign: "left", padding: ".5rem" }}>
+                    <p style={{ padding: ".5rem" }}>
                       Full Stack Software Engineer. Based in Austin, TX.
                       Background in the performing arts and education. Brings
-                      the passion and creativity of an artist combined with the
-                      patient persistence and skilled communication of a teacher
+                      the passion and creativity of an artist, combined with the
+                      patient persistence, and skilled communication of a teacher,
                       to work as a software engineer. Thrives on creative
                       problem-solving and collaboration. Experienced at meeting
                       deadlines under pressure. Loves the challenge of bringing
@@ -596,7 +596,7 @@ const Resume = () => {
                 Relevant Work Experience
               </h4>
             </Grid>
-            <Grid container textAlign={"left"}>
+            <Grid container textAlign={""}>
               <Grid sm={12} md={2}></Grid>
               <Grid sm={12} md={8}>
                 <DisplayBox elevation={12}>
@@ -619,6 +619,7 @@ const Resume = () => {
                     <Grid xs={12} sm={6} md={3}>
                       <span style={{ fontWeight: "bold" }}>Part Time</span>
                     </Grid>
+
                     <Grid xs={12} sm={6} md={3}>
                       <span style={{ fontWeight: "bold" }}>
                         Oct. 2022 - Present
@@ -634,7 +635,7 @@ const Resume = () => {
                       />
                     </Grid>
                   </Grid>
-                  <p style={{ marginLeft: ".25rem" }}>
+                  <p style={{ marginLeft: "" }}>
                     <span style={{ fontWeight: "bold" }}>
                       Responsibilities:{" "}
                     </span>
@@ -644,10 +645,10 @@ const Resume = () => {
                     use, and look great on any screen size.
                   </p>
 
-                  <p style={{ marginLeft: ".25rem", fontWeight: "bold" }}>
+                  <p style={{ marginLeft: "", fontWeight: "bold", fontSize: '1.25rem' }}>
                     Current Clients:
                   </p>
-                  <ul style={{ marginTop: 0, marginLeft: "1rem", paddingRight: '.25rem' }}>
+                  <ul style={{ marginTop: 0, marginLeft: "", paddingRight: '', listStyle: 'none' }}>
                     <li style={{ fontWeight: "bold" }}>
                       <a
                         href={projects[0].appHref}
@@ -758,7 +759,7 @@ const Resume = () => {
                 </DisplayBox>
               </Grid>
 
-              <Grid container textAlign={"left"}>
+              <Grid container textAlign={""}>
                 <Grid sm={12} md={2}></Grid>
                 <Grid sm={12} md={8}>
                   <DisplayBox elevation={12}>
@@ -802,23 +803,22 @@ const Resume = () => {
                       </Grid>
                     </Grid>
 
-                    <p style={{ marginLeft: ".25rem" }}>
+                    <p style={{ marginLeft: "" }}>
                       <span style={{ fontWeight: "bold" }}>
                         Responsibilities:{" "}
                       </span>
                       {jobs[1].description}
                     </p>
-                    <span style={{ marginLeft: ".25rem", fontWeight: "bold" }}>
+                    <span style={{ fontWeight: "bold" }}>
                       Key Accomplishment:
                     </span>
-                    <ul style={{ marginTop: 0, marginLeft: "2rem" }}>
+                    <ul style={{ marginTop: 0, listStyle: 'none' }}>
                       <li>{jobs[1].keyAccomplishments[0]}</li>
                     </ul>
                   </DisplayBox>
                 </Grid>
-                {/* </Grid>   */}
 
-                <Grid container textAlign={"left"}>
+                <Grid container textAlign={""}>
                   <Grid sm={12} md={2}></Grid>
                   <Grid sm={12} md={8}>
                     <DisplayBox elevation={12}>
@@ -860,7 +860,7 @@ const Resume = () => {
                         </Grid>
                       </Grid>
 
-                      <p style={{ marginLeft: ".25rem" }}>
+                      <p>
                         <span style={{ fontWeight: "bold" }}>
                           Responsibilities:{" "}
                         </span>
@@ -869,11 +869,11 @@ const Resume = () => {
                         subjects across two grade levels.
                       </p>
                       <span
-                        style={{ marginLeft: ".25rem", fontWeight: "bold" }}
+                        style={{ fontWeight: "bold" }}
                       >
                         Key Accomplishment:
                       </span>
-                      <ul style={{ marginTop: 0, marginLeft: "2rem" }}>
+                      <ul style={{ marginTop: 0, listStyle: 'none' }}>
                         <li>
                           Used no-code platform{" "}
                           <a
@@ -898,7 +898,7 @@ const Resume = () => {
                     </DisplayBox>
                   </Grid>
 
-                  <Grid container textAlign={"left"}>
+                  <Grid container textAlign={""}>
                     <Grid sm={12} md={2}></Grid>
                     <Grid sm={12} md={8}>
                       <DisplayBox elevation={12}>
@@ -921,7 +921,7 @@ const Resume = () => {
                           </Grid>
 
                           <Grid xs={12} sm={6} md={3}>
-                            <span style={{ fontWeight: "bold" }}>Fulltime</span>
+                            <span style={{ fontWeight: "bold" }}>Contract</span>
                           </Grid>
                           <Grid xs={12} sm={6} md={3}>
                             <span style={{ fontWeight: "bold" }}>
@@ -942,20 +942,22 @@ const Resume = () => {
                           </Grid>
                         </Grid>
 
-                        <p style={{ marginLeft: ".25rem" }}>
+                        <p>
                           <span style={{ fontWeight: "bold" }}>
                             Responsibilities:{" "}
                           </span>
                           {jobs[3].description}
                         </p>
                         <span
-                          style={{ marginLeft: ".25rem", fontWeight: "bold" }}
+                          style={{ fontWeight: "bold" }}
                         >
                           Key Accomplishments:
                         </span>
-                        <ul style={{ marginTop: 0, marginLeft: "2rem" }}>
+                        <ul style={{ marginTop: 0, listStyle: 'none' }}>
                           <li>{jobs[3].keyAccomplishments[0]}</li>
+                          <br />
                           <li>{jobs[3].keyAccomplishments[1]}</li>
+                          <br />
                           <li>{jobs[3].keyAccomplishments[2]}</li>
                         </ul>
                       </DisplayBox>

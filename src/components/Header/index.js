@@ -68,7 +68,7 @@ const Header = () => {
             className={`permanent-marker ${styles.appSubHeadline}`}
             style={{ margin: 0, fontSize: "3rem" }}
           >
-            &lt; Full Stack Web Developer /&gt;
+            &lt; Full Stack Software Engineer /&gt;
           </h2>
         </Grid>
       </Grid>
@@ -171,19 +171,21 @@ const Header = () => {
         >
           <Grid container spacing={0} alignItems="" textAlign="center">
             <TyeDyeDarkBackground />
-            <Grid item xs={12} style={{ marginTop: "-2rem" }}>
+            <Grid item xs={12} style={{ marginTop: "-2rem", marginBottom:'2rem' }}>
               <img
                 src={webDev}
                 alt=" Logo"
                 style={{
                   width: "30%",
                   height: "auto",
-                  marginBottom: "2rem",
                 }}
               />
-              <h1 style={{ fontSize: ".95rem" }} className="permanent-marker">
-                &lt; Kevin Long | Web Developer /&gt;
+              <h1 style={{ fontSize: "1.5rem" }} className="permanent-marker">
+                &lt; Kevin Long /&gt;
               </h1>
+              <h2 style={{ fontSize: "1.5rem" }} className={`permanent-marker ${styles.mobileMenuSubHeadline}`}>
+                &lt; Full Stack Software Engineer /&gt;
+              </h2>
             </Grid>
 
             <Grid xs={12}>

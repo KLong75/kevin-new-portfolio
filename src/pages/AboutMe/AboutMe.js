@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const phrases = [
-  "A Full Stack Web Developer",
+  "A Full Stack Software Engineer",
   "A Teacher",
   "A Puppeteer",
   "A Musician",
@@ -85,7 +85,7 @@ const AboutMe = () => {
             />
             <Grid textAlign={'center'}>
             <p>
-              Full Stack Web Developer. Based in Austin, Texas. 
+              Full Stack Software Engineer. Based in Austin, Texas. 
             </p>
             <p>
               Certificate in Full Stack Web Development from the University of Texas.

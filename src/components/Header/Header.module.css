@@ -62,6 +62,9 @@
   .appSubHeadline {
     font-size: 1.5rem !important;
   }
+  .mobileMenuSubHeadline {
+    font-size: 1.25rem !important;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -75,16 +78,25 @@
   .appSubHeadline {
     font-size: 1.15rem !important;
   }
+  .mobileMenuSubHeadline {
+    font-size: 1rem !important;
+  }
 }
 
 @media screen and (max-width: 350px) {
   .appSubHeadline {
     font-size: 1rem !important;
   }
+  .mobileMenuSubHeadline {
+    font-size: .9rem !important;
+  }
 }
 
 @media screen and (max-width: 310px) {
   .appSubHeadline {
+    font-size: .8rem !important;
+  }
+  .mobileMenuSubHeadline {
     font-size: .8rem !important;
   }
 }

@@ -9,7 +9,7 @@ import Education from "../../components/Education";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 // import pdf
-import pdf from "../../assets/resume/Kevin_Long_Resume.pdf";
+import pdf from "../../assets/resume/Kevin_Long_Full_Stack_Software_Engineer-Resume.pdf";
 
 // import images
 import shtDesktop from "../../assets/images/projectImages/shtDesktop.png";
@@ -115,7 +115,7 @@ const Resume = () => {
           >
             &lt; Resume /&gt;
           </h2>
-          <a href={pdf} download="Kevin Long Web Developer Resume">
+          <a href={pdf} download="Kevin Long Full Stack Software Engineer - Resume">
             <span className={`permanent-marker ${styles.resumeDownload}`}>
               &lt; Click here to download a PDF of my resume. /&gt;
             </span>

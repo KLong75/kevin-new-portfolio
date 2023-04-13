@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 
 
 // import images
-import permanentMarkerWebDevLogo from '../../assets/logos/permanentMarkerWebDevLogo2.png';
+import devKevLogo from '../../assets/logos/devKevLogo.png';
 import kevHuck from '../../assets/images/Kevin/kev-huck.jpg';
 import kevTeach from '../../assets/images/Kevin/kevTeach.png';
 // import tromboneStilt from '../../assets/images/Kevin/stiltTrombone.jpg';
@@ -57,7 +57,7 @@ const AboutCube = () => {
         className="galleryCubeSwiper"
       >
         <SwiperSlide>
-          <img src={permanentMarkerWebDevLogo} alt='' style={{display: 'block', width: '100%'}}/>
+          <img src={devKevLogo} alt='' style={{display: 'block', width: '100%'}}/>
         </SwiperSlide>
         <SwiperSlide>
           <img src={kevHuck} alt='' style={{display: 'block', width: '100%'}}/>

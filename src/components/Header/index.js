@@ -12,8 +12,6 @@ import Grid from "@mui/material/Unstable_Grid2";
 import { IconButton, Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-// import images/logos
-import webDev from "../../assets/logos/permanentMarkerWebDevLogo2crop.png";
 
 // import styles
 import styles from "./Header.module.css";
@@ -171,15 +169,8 @@ const Header = () => {
         >
           <Grid container spacing={0} alignItems="" textAlign="center">
             <TyeDyeDarkBackground />
-            <Grid item xs={12} style={{ marginTop: "-2rem", marginBottom:'2rem' }}>
-              <img
-                src={webDev}
-                alt=" Logo"
-                style={{
-                  width: "30%",
-                  height: "auto",
-                }}
-              />
+            <Grid item xs={12} style={{ marginTop: "-8rem", marginBottom:'2rem' }}>
+              <WebDevLogo />
               <h1 style={{ fontSize: "1.5rem" }} className="permanent-marker">
                 &lt; Kevin Long /&gt;
               </h1>

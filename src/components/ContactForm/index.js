@@ -22,11 +22,10 @@ import Grid from '@mui/material/Unstable_Grid2';
 // import { Paper } from '@mui/material';
 
 // import components
-import WebDevLogo from '../../components/WebDevLogo';
 import TyeDyeDarkBackground from '../TyeDyeDarkBackground';
 
 // import images
-import webDev from '../../assets/logos/permanentMarkerWebDevLogo2.png';
+import webDev from '../../assets/logos/devKevLogo.png';
 
 // import from utils
 import { validateEmail } from '../../utils/helpers';
@@ -34,8 +33,7 @@ import { validateEmail } from '../../utils/helpers';
 
 const ContactFormToast = ({message, icon}) => (
   <div>
-    
-    <img src={webDev} alt="" style={{width: '80%', height: 'auto', borderRadius: '50%', border: ''}}/>
+    <img src={webDev} alt="" style={{width: '40%', height: 'auto', borderRadius: '50%', border: ''}}/>
     <p style={{color: '#black', fontSize: '20px', marginTop: '10px', fontWeight: 'bold'}} className='permanent-marker'>{message}</p>
     <TyeDyeDarkBackground />
   </div>
@@ -104,7 +102,7 @@ const ContactForm = () => {
       .then((result) => {
         console.log(result.text);
         // console.log(firstName, lastName, email, message, interestedIn);
-        toast(<ContactFormToast style={{color: 'black' }} message='Thank you for your message! I will be in touch soon!' icon={WebDevLogo}/>);
+        toast(<ContactFormToast style={{color: 'black' }} message='Thank you for your message! I will be in touch soon!' />);
       }, (error) => {
         console.log(error.text);
       });
@@ -194,18 +192,15 @@ const ContactForm = () => {
         </Button>
         </Grid>
       </FormControl>
-      
     </form>
-</Grid>
-    <ToastContainer
-          position="top-center"
-          autoClose={5000}
-          transition={Zoom}
-          // theme="light"
-          style={{ color: 'black'}}
-          
-        />
-    
+    </Grid>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        transition={Zoom}
+        // theme="light"
+        style={{ color: 'black'}}
+      />
     </Grid>
   );
 }

@@ -19,7 +19,7 @@ const ContactIcons = () => {
 
 
       {/* <Grid xs={1} > */}
-      <a href="mailto:kevinjlong75@gmail.com.com">
+      <a href="mailto:devkev.long@gmail.com">
       <EmailIcon style={{ fontSize: '30px'}} />
       </a>
       {/* </Grid> */}
@@ -40,7 +40,7 @@ const ContactIcons = () => {
 
       {/* <Grid xs={1} > */}
       <a 
-        href='https://www.linkedin.com/in/klong75/' 
+        href='https://www.linkedin.com/in/devkevlong' 
         target='_blank' 
         rel='noreferrer' 
         aria-label="Link to Kevin's LinkedIn Profile"

@@ -124,8 +124,7 @@ const TyeDyeBackground = () => {
     let hue = 0;
     let frameCount = 0;
     let centerX = canvas.width / 2;
-    // changed height in line below from 2 to 4
-    let centerY = canvas.height / 4;
+    let centerY = canvas.height / 2;
     let radius = 100;
     let velocityX = 0.5;
     let velocityY = 0.5;

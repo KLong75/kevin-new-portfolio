@@ -55,7 +55,7 @@ const ContactInfo = () => {
       <Grid xs={12} sm={6} md={4}>
         <span>Email</span>
         <br />
-        <a href="mailto:devkev.long@gmail.com">
+        <a href="mailto:kevinlong.dev@gmail.com">
           <span
             style={{
               fontWeight: "bolder",
@@ -64,7 +64,7 @@ const ContactInfo = () => {
           >
           <EmailIcon style={{ fontSize: '2rem'}} />
           <br/>
-            devkev.long@gmail.com
+            kevinlong.dev@gmail.com
           </span>
         </a>
       </Grid>
@@ -117,7 +117,7 @@ const ContactInfo = () => {
         <span>LinkedIn</span>
         <br />
         <a
-          href="https://www.linkedin.com/in/devkevlong"
+          href="https://www.linkedin.com/in/kevinlongdev"
           target="_blank"
           rel="noreferrer"
           aria-label="Link to Kevin's LinkedIn Profile"
@@ -126,7 +126,7 @@ const ContactInfo = () => {
           >
           <LinkedIn style={{ fontSize: '2rem'}} />
             <br/>                                              
-            linkedin.com/in/devkevlong
+            linkedin.com/in/kevinlongdev
           </span>
         </a>
       </Grid>

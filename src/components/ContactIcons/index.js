@@ -11,22 +11,14 @@ const ContactIcons = () => {
     <>
     <Grid container direction={'row'} justifyContent={'space-evenly'}  style={{ padding: '16px'}}>
 
-      {/* <Grid xs={1} > */}
       <a href="tel:512-975-0082">
       <PhoneAndroidIcon style={{ fontSize: '30px'}} />
       </a>
-      {/* </Grid> */}
-
-
-      {/* <Grid xs={1} > */}
-      <a href="mailto:devkev.long@gmail.com">
+      
+      <a href="mailto:kevinlong.dev@gmail.com">
       <EmailIcon style={{ fontSize: '30px'}} />
       </a>
-      {/* </Grid> */}
-
-  
-
-      {/* <Grid xs={1} > */}
+   
       <a 
         href='https://github.com/KLong75' 
         target='_blank' 
@@ -35,21 +27,15 @@ const ContactIcons = () => {
       >
         <GitHubIcon style={{ fontSize: '30px'}} />
       </a>  
-      {/* </Grid> */}
-
-
-      {/* <Grid xs={1} > */}
+     
       <a 
-        href='https://www.linkedin.com/in/devkevlong' 
+        href='https://www.linkedin.com/in/kevinlongdev' 
         target='_blank' 
         rel='noreferrer' 
         aria-label="Link to Kevin's LinkedIn Profile"
       >
         <LinkedIn style={{ fontSize: '30px'}} />
       </a>
-      {/* </Grid>   */}
-
-    
     </Grid>
     </>
   );

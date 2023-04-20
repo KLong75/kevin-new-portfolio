@@ -66,7 +66,7 @@ const Header = () => {
             className={`permanent-marker ${styles.appSubHeadline}`}
             style={{ margin: 0, fontSize: "3rem" }}
           >
-            &lt; Full Stack Software Engineer /&gt;
+            &lt; Full Stack Web Developer /&gt;
           </h2>
         </Grid>
       </Grid>

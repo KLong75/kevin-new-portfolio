@@ -13,13 +13,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const phrases = [
-  "A Full Stack Software Engineer",
+  "A Full Stack Web Developer",
   "A Teacher",
   "A Puppeteer",
   "A Musician",
   "A Long Distance Runner",
   "A Marathon Finisher",
-  // "A Stilt Walker",
 ];
 
 const AboutMe = () => {
@@ -85,13 +84,13 @@ const AboutMe = () => {
             />
             <Grid textAlign={'center'}>
             <p>
-              Full Stack Software Engineer. Based in Austin, Texas. 
+              Full Stack Web Developer. Based in Austin, Texas. 
             </p>
             <p>
               Certificate in Full Stack Web Development from the University of Texas.
             </p>
             <p>
-              With a background in the performing arts and education, I bring the passion and creativity of an artist, along with the patient persistence, and skilled communication of a teacher, to my work as a software engineer.
+              With a background in the performing arts and education, I bring the passion and creativity of an artist, along with the patient persistence, and skilled communication of a teacher, to my work as a developer.
             </p>
             <p>
               I thrive on creative problem-solving and collaboration. I love the
@@ -120,7 +119,7 @@ const AboutMe = () => {
               </li>
               <li style={{ fontSize: "1.1rem" }}>
                 If you are in need of a website or app for your creative
-                project, small business, or organization, I would love to talk!{" "}
+                project, small business, or organization, I would love to talk!
               </li>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Seeking Fulltime Employment
@@ -130,7 +129,7 @@ const AboutMe = () => {
                 creativity, collaboration, and a passion for learning.
               </li>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
-                Teaching (Assistant) Full Stack Web Development Bootcamp (edX)
+                Teaching (Assistant) Full Stack Web Development Bootcamp (2U)
               </li>
               <li>
                 I love helping students learn and grow. I am excited to

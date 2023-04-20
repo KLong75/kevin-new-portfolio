@@ -99,7 +99,6 @@ const jobs = [
     keyAccomplishments: [
       `Performed in 18 states and 2 foreign countries (South Korea and The Dominican Republic)`,
       `Staff Artist for MayDay Parade and Festival (2001, 2006 - 2012) - annual outdoor giant puppet spectacle produced by In The Heart of the Beast Puppet and Mask Theater involving hundreds of performers and attended by tens of thousands in Minneapolis, MN.`,
-      `While on the Mayday Staff worked to streamline the post parade clean up process, resulting in a 20% reduction in clean up time.`,
     ],
   },
 ];
@@ -115,7 +114,7 @@ const Resume = () => {
           >
             &lt; Resume /&gt;
           </h2>
-          <a href={pdf} download="Kevin Long Full Stack Software Engineer - Resume">
+          <a href={pdf} download="Kevin Long Full Stack Web Developer - Resume">
             <span className={`permanent-marker ${styles.resumeDownload}`}>
               &lt; Click here to download a PDF of my resume. /&gt;
             </span>
@@ -157,109 +156,6 @@ const Resume = () => {
               </Grid>
             </Grid>
 
-            {/* <Grid container spacing={1} style={{marginBottom: '.5rem'}}>
-              <DisplayBox elevation={12}>
-                <Grid xs={12}>
-                  <FontAwesomeIcon icon={icon({ name: "folder-open", style: "regular" })}/>
-                </Grid>
-                <Grid xs={12} sm={6} md={4}>
-                  <span style={{ fontWeight: "bold" }}>Austin, TX</span>
-                </Grid>
-                <br></br>
-                <Grid xs={12} sm={6} md={4}>
-                  <a href="tel:512-975-0082">
-                    <span>Phone: </span>
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        textDecoration: "underline",
-                      }}
-                    >
-                      512-975-0082
-                    </span>
-                  </a>
-                </Grid>
-                <br></br>
-                <Grid xs={12} sm={6} md={4}>
-                  <a href="mailto:kevinjlong75@gmail.com.com">
-                    <span>Email: </span>
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        textDecoration: "underline",
-                      }}
-                    >
-                      kevinjlong75@gmail.com
-                    </span>
-                  </a>
-                </Grid>
-                <br></br>
-                <Grid xs={12} sm={6} md={4}>
-                  <a
-                    href="https://www.linkedin.com/in/klong75/"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Link to Kevin's LinkedIn Profile"
-                  >
-                    <span>
-                      LinkedIn:{" "}
-                      <span
-                        style={{
-                          fontWeight: "bolder",
-                          textDecoration: "underline",
-                        }}
-                      >
-                        linkedin.com/in/klong75
-                      </span>
-                    </span>
-                  </a>
-                </Grid>
-                <br></br>
-                <Grid xs={12} sm={6} md={4}>
-                  <a
-                    href="https://kevinlong.dev"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Link to Kevin's Portfolio"
-                  >
-                    <span>
-                      Portfolio:{" "}
-                      <span
-                        style={{
-                          fontWeight: "bolder",
-                          textDecoration: "underline",
-                        }}
-                      >
-                        kevinlong.dev
-                      </span>
-                    </span>
-                  </a>
-                </Grid>
-                <br></br>
-                <Grid xs={12} sm={6} md={4}>
-                  <a
-                    href="https://github.com/KLong75"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Link to Kevin's GitHub Profile"
-                  >
-                    <span>
-                      GitHub:{" "}
-                      <span
-                        style={{
-                          fontWeight: "bolder",
-                          textDecoration: "underline",
-                        }}
-                      >
-                        github.com/KLong75
-                      </span>
-                    </span>
-                  </a>
-                </Grid>
-              </Grid> */}
-            {/* </DisplayBox>
-          </Grid> */}
-
             <Grid xs={12}>
               <h4
                 style={{
@@ -285,11 +181,11 @@ const Resume = () => {
                   </Grid>
                   <Grid sm={12}>
                     <p style={{ padding: ".5rem" }}>
-                      Full Stack Software Engineer. Based in Austin, TX.
+                      Full Stack Web Developer. Based in Austin, TX.
                       Background in the performing arts and education. Brings
                       the passion and creativity of an artist, combined with the
-                      patient persistence, and skilled communication of a teacher,
-                      to work as a software engineer. Thrives on creative
+                      patient persistence of a teacher,
+                      to work as a developer. Thrives on creative
                       problem-solving and collaboration. Experienced at meeting
                       deadlines under pressure. Loves the challenge of bringing
                       "What if?" to life.
@@ -608,7 +504,7 @@ const Resume = () => {
                   >
                     <Grid xs={12} sm={6} md={3}>
                       <span style={{ fontWeight: "bold" }}>
-                        Software Engineer
+                        Full Stack Web Developer
                       </span>
                     </Grid>
 
@@ -635,7 +531,7 @@ const Resume = () => {
                       />
                     </Grid>
                   </Grid>
-                  <p style={{ marginLeft: "" }}>
+                  <p>
                     <span style={{ fontWeight: "bold" }}>
                       Responsibilities:{" "}
                     </span>
@@ -645,7 +541,7 @@ const Resume = () => {
                     use, and look great on any screen size.
                   </p>
 
-                  <p style={{ marginLeft: "", fontWeight: "bold", fontSize: '1.25rem' }}>
+                  <p style={{ fontWeight: "bold", fontSize: '1.1rem' }}>
                     Current Clients:
                   </p>
                   <ul style={{ marginTop: 0, marginLeft: "", paddingRight: '', listStyle: 'none' }}>

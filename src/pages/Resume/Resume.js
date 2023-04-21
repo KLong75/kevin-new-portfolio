@@ -9,7 +9,7 @@ import Education from "../../components/Education";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 // import pdf
-import pdf from "../../assets/resume/Kevin_Long_Full_Stack_Software_Engineer-Resume.pdf";
+import pdf from "../../assets/resume/Kevin_Long_Full_Stack_Web_Developer-Resume.pdf";
 
 // import images
 import shtDesktop from "../../assets/images/projectImages/shtDesktop.png";
@@ -853,8 +853,6 @@ const Resume = () => {
                           <li>{jobs[3].keyAccomplishments[0]}</li>
                           <br />
                           <li>{jobs[3].keyAccomplishments[1]}</li>
-                          <br />
-                          <li>{jobs[3].keyAccomplishments[2]}</li>
                         </ul>
                       </DisplayBox>
                     </Grid>

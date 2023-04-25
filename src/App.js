@@ -9,6 +9,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import TyeDyeBackground from './components/TyeDyeBackground';
 
+
 // import Swiper from './components/Swiper';
 
 // import page components

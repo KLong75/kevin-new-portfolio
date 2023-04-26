@@ -65,7 +65,7 @@
 
 // static colors - pretty good
 import React, { useEffect, useRef } from "react";
-// import "./TyeDyeBackground.css";
+import "./TyeDyeBackground.css";
 
 const TyeDyeBackground = () => {
   const canvasRef = useRef(null);

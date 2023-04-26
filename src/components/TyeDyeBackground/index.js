@@ -64,50 +64,50 @@
 // export default TyeDyeBackground;
 
 // static colors - pretty good
-import React, { useEffect, useRef } from "react";
-import "./TyeDyeBackground.css";
+// import React, { useEffect, useRef } from "react";
+// import "./TyeDyeBackground.css";
 
-const TyeDyeBackground = () => {
-  const canvasRef = useRef(null);
+// const TyeDyeBackground = () => {
+//   const canvasRef = useRef(null);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
+//   useEffect(() => {
+//     const canvas = canvasRef.current;
+//     const ctx = canvas.getContext("2d");
 
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
-    // const radius = 100;
+//     const centerX = canvas.width / 2;
+//     const centerY = canvas.height / 2;
+//     // const radius = 100;
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+//     canvas.width = window.innerWidth;
+//     canvas.height = window.innerHeight;
 
-    const gradient = ctx.createRadialGradient(
-      centerX,
-      centerY,
-      50,
-      centerX,
-      centerY,
-      canvas.width
-    );
+//     const gradient = ctx.createRadialGradient(
+//       centerX,
+//       centerY,
+//       50,
+//       centerX,
+//       centerY,
+//       canvas.width
+//     );
 
-    gradient.addColorStop(0, `hsla(120,100%,50%,1)`);
-    gradient.addColorStop(0.25, `hsla(80,100%,50%,1)`);
-    gradient.addColorStop(0.5, `hsla(240,100%,50%,1)`);
-    gradient.addColorStop(0.75, `hsla(120,100%,50%,1)`);
-    gradient.addColorStop(1, `hsla(80,100%,50%,1)`);
+//     gradient.addColorStop(0, `hsla(120,100%,50%,1)`);
+//     gradient.addColorStop(0.25, `hsla(80,100%,50%,1)`);
+//     gradient.addColorStop(0.5, `hsla(240,100%,50%,1)`);
+//     gradient.addColorStop(0.75, `hsla(120,100%,50%,1)`);
+//     gradient.addColorStop(1, `hsla(80,100%,50%,1)`);
 
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-  }, []);
+//     ctx.fillStyle = gradient;
+//     ctx.fillRect(0, 0, canvas.width, canvas.height);
+//   }, []);
 
-  return (
-    <div className="northern-lights-background">
-      <canvas ref={canvasRef} />
-    </div>
-  );
-};
+//   return (
+//     <div className="northern-lights-background">
+//       <canvas ref={canvasRef} />
+//     </div>
+//   );
+// };
 
-export default TyeDyeBackground;
+// export default TyeDyeBackground;
 
 // import React, { useEffect, useRef } from "react";
 // import "./TyeDyeBackground.css";
@@ -150,44 +150,44 @@ export default TyeDyeBackground;
 // export default TyeDyeBackground;
 
 // prism
-// import React, { useEffect, useRef } from "react";
-// import "./TyeDyeBackground.css";
+import React, { useEffect, useRef } from "react";
+import "./TyeDyeBackground.css";
 
-// const TyeDyeBackground = () => {
-//   const canvasRef = useRef(null);
+const TyeDyeBackground = () => {
+  const canvasRef = useRef(null);
 
-//   useEffect(() => {
-//     const canvas = canvasRef.current;
-//     const ctx = canvas.getContext("2d");
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
 
-//     canvas.width = window.innerWidth;
-//     canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-//     const gradient = ctx.createLinearGradient(
-//       0,
-//       0,
-//       canvas.width,
-//       canvas.height
-//     );
-//     gradient.addColorStop(0, `hsla(0,100%,50%,1)`);
-//     gradient.addColorStop(0.2, `hsla(20,100%,50%,1)`);
-//     gradient.addColorStop(0.4, `hsla(80,100%,50%,1)`);
-//     gradient.addColorStop(0.6, `hsla(120,100%,50%,1)`);
-//     gradient.addColorStop(0.8, `hsla(240,100%,50%,1)`);
-//     gradient.addColorStop(1.0, `hsla(280,100%,50%,1)`);
+    const gradient = ctx.createLinearGradient(
+      0,
+      0,
+      canvas.width,
+      canvas.height
+    );
+    gradient.addColorStop(0, `hsla(0,100%,50%,1)`);
+    gradient.addColorStop(0.2, `hsla(20,100%,50%,1)`);
+    gradient.addColorStop(0.4, `hsla(80,100%,50%,1)`);
+    gradient.addColorStop(0.6, `hsla(120,100%,50%,1)`);
+    gradient.addColorStop(0.8, `hsla(240,100%,50%,1)`);
+    gradient.addColorStop(1.0, `hsla(280,100%,50%,1)`);
 
-//     ctx.fillStyle = gradient;
-//     ctx.fillRect(0, 0, canvas.width, canvas.height);
-//   }, []);
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  }, []);
 
-//   return (
-//     <div className="northern-lights-background">
-//       <canvas ref={canvasRef} />
-//     </div>
-//   );
-// };
+  return (
+    <div className="northern-lights-background">
+      <canvas ref={canvasRef} />
+    </div>
+  );
+};
 
-// export default TyeDyeBackground;
+export default TyeDyeBackground;
 
 // dots background - kinda cool
 // import React, { useEffect, useRef } from "react";

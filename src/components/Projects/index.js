@@ -33,7 +33,7 @@ const Project = () => {
       alt: "screenshot of app",
       description:
         "Fully responsive web application for Sam Hahn Travel. Installable Progressive Web Application. Single Page Application. Users can browse the site for information about Sam Hahn Travel and the services they offer. Users can also contact Sam Hahn Travel via the contact form.",
-      technologies: "React, Material UI, JavaScript, HTML, CSS",
+      technologies: "React, React router, Material UI, JavaScript, HTML, CSS, Email.js",
       appHref: "https://klong75.github.io/sam-hahn-travel",
       gitHref: "https://github.com/KLong75/sam-hahn-travel",
       mobile_img_src: `${shtMobile}`,

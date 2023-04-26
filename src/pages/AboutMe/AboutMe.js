@@ -34,7 +34,7 @@ const AboutMe = () => {
         <Grid
           xs={12}
           style={{
-            marginTop: "",
+            marginTop: "-2rem",
             marginBottom: "",
           }}
         >
@@ -50,7 +50,7 @@ const AboutMe = () => {
           </h3>
         </Grid>
 
-        <Grid xs={12} style={{ marginTop: "", fontSize: "1.25rem" }}>
+        <Grid xs={12} style={{ marginTop: "-.5rem", fontSize: "1.25rem" }}>
           <span className="permanent-marker">I am</span>
           <p
             className="permanent-marker"
@@ -60,7 +60,7 @@ const AboutMe = () => {
             <TextFade fadeSpeed={3600} phrases={phrases} />
           </p>
         </Grid>
-        <Grid xs={12}>
+        <Grid xs={12} style={{marginTop: '-.2rem'}}>
           <AboutCube />
         </Grid>
 
@@ -87,10 +87,13 @@ const AboutMe = () => {
               Full Stack Web Developer. Based in Austin, Texas. 
             </p>
             <p>
+              React | Node | Express | MongoDB | JavaScript 
+            </p>
+            <p>
               Certificate in Full Stack Web Development from the University of Texas.
             </p>
             <p>
-              With a background in the performing arts and education, I bring the passion and creativity of an artist, along with the patient persistence, and skilled communication of a teacher, to my work as a developer.
+              With a background in the performing arts and education, I bring the passion and creativity of an artist, along with the patient persistence of a teacher, to my work as a developer.
             </p>
             <p>
               I thrive on creative problem-solving and collaboration. I love the

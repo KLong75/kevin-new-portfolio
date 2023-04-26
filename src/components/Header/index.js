@@ -50,7 +50,7 @@ const Header = () => {
         <Grid
           item
           xs={12}
-          style={{ marginTop: "-.5rem", marginBottom: ".5rem" }}
+          style={{ marginTop: "-2rem", marginBottom: "-1rem" }}
         >
           <WebDevLogo />
         </Grid>
@@ -58,16 +58,20 @@ const Header = () => {
         <Grid xs={12}>
           <h1
             className={`permanent-marker ${styles.appHeadline}`}
-            style={{ margin: 0, fontSize: "3rem" }}
+            style={{ margin: 0, fontSize: "2rem" }}
           >
             &lt; Kevin Long /&gt;
           </h1>
           <h2
             className={`permanent-marker ${styles.appSubHeadline}`}
-            style={{ margin: 0, fontSize: "3rem" }}
+            style={{ margin: 0, fontSize: "2rem" }}
           >
             &lt; Full Stack Web Developer /&gt;
           </h2>
+          <h3 className={` ${styles.appSubSubHeadline}`}
+              style={{ margin: 0, fontSize: ".8rem" }}
+          
+          >&lt; React | Node | Express | MongoDB | JavaScript /&gt; </h3>
         </Grid>
       </Grid>
 
@@ -163,7 +167,7 @@ const Header = () => {
               alignItems: "center",
               color: "",
               // opacity: ".8",
-              backgroundColor: "hsla(120,100%,75%,0.3)",
+              backgroundColor: "hsla(120,100%,50%,.4)",
             },
           }}
         >
@@ -175,7 +179,7 @@ const Header = () => {
                 &lt; Kevin Long /&gt;
               </h1>
               <h2 style={{ fontSize: "1.5rem" }} className={`permanent-marker ${styles.mobileMenuSubHeadline}`}>
-                &lt; Full Stack Software Engineer /&gt;
+                &lt; Full Stack Web Developer /&gt;
               </h2>
             </Grid>
 

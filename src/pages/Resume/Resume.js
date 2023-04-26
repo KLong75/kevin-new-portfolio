@@ -186,7 +186,7 @@ const Resume = () => {
                     Skilled at building fully responsive web applications to
                     meet client specifications. Background in the performing
                     arts and education. Brings the passion and creativity of an
-                    artist, combined with the patient persistence of a teacher.
+                    artist, along with the patient persistence of a teacher.
                   </p>
                 </Grid>
               </DisplayBox>

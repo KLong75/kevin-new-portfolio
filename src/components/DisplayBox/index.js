@@ -6,7 +6,7 @@ import { Paper } from '@mui/material';
 const DisplayBox = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(1),
   margin: theme.spacing(4),
-  backgroundColor: 'hsla(120,100%,50%,.8)',
+  backgroundColor: 'hsla(120,100%,50%,.4)',
 }));
 
 export default DisplayBox;

@@ -1,26 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.c843b413.css",
-    "main.js": "/static/js/main.d55b9372.js",
+    "main.js": "/static/js/main.8180e806.js",
     "static/js/787.8de9fc1c.chunk.js": "/static/js/787.8de9fc1c.chunk.js",
     "static/media/musicologyDesktop.gif": "/static/media/musicologyDesktop.572eb27c52d7a4777f69.gif",
-    "static/media/Nodejsb.gif": "/static/media/Nodejsb.3a159f1ea692b6645b88.gif",
     "static/media/Finish_Line.jpg": "/static/media/Finish_Line.5d452fe295df005b418f.jpg",
-    "static/media/Express.gif": "/static/media/Express.d64dff293579299deb28.gif",
     "static/media/medal.jpg": "/static/media/medal.afb32d70a7445df113fc.jpg",
     "static/media/marathon_2.jpg": "/static/media/marathon_2.8dea9f193321dacb7785.jpg",
     "static/media/kev-huck.jpg": "/static/media/kev-huck.444c4c945d2ca19cdfba.jpg",
-    "static/media/Html5b.gif": "/static/media/Html5b.cb7541dfb4d1e1d4108c.gif",
-    "static/media/css3b.gif": "/static/media/css3b.30be625f5fe96abc68a4.gif",
-    "static/media/javascriptb.gif": "/static/media/javascriptb.4c623bc5dfe5659cbe0b.gif",
-    "static/media/Reactb.gif": "/static/media/Reactb.6bc7e38fdc6f27ec649e.gif",
-    "static/media/MongoDb.gif": "/static/media/MongoDb.16ab4757f8e3280cae87.gif",
     "static/media/kevTeach.png": "/static/media/kevTeach.607d62ebbd81c54e1555.png",
-    "static/media/VSCode.gif": "/static/media/VSCode.1ba430c61f86d1d14e71.gif",
     "static/media/vainMainDesktop.png": "/static/media/vainMainDesktop.6bbee1ef51a9ab61d10a.png",
     "static/media/vainMainMobile.png": "/static/media/vainMainMobile.da8ee0add5f078d23105.png",
     "static/media/gargoyle.jpg": "/static/media/gargoyle.454414b06772ad076114.jpg",
-    "static/media/Github.gif": "/static/media/Github.c94c361eccf4ec9582cb.gif",
     "static/media/musicologyMobile.jpg": "/static/media/musicologyMobile.c29f13145e57663f5975.jpg",
     "static/media/shtDesktop.png": "/static/media/shtDesktop.2eb1dc78edf4b0f82ab7.png",
     "static/media/trombone.jpg": "/static/media/trombone.f1959a0d73625ff12e88.jpg",
@@ -29,13 +20,18 @@
     "service-worker.js": "/service-worker.js",
     "static/media/Kevin_Long_Full_Stack_Web_Developer-Resume.pdf": "/static/media/Kevin_Long_Full_Stack_Web_Developer-Resume.2493008694051fdb23e1.pdf",
     "static/media/devKevLogo.png": "/static/media/devKevLogo.7cc0e2db34e78b826bc4.png",
+    "static/media/react.png": "/static/media/react.0ec0c99a95afa14a0c49.png",
+    "static/media/mongodb.png": "/static/media/mongodb.126a91e36a39f28de22e.png",
+    "static/media/css3.png": "/static/media/css3.8cf5cbec43989c548e10.png",
+    "static/media/html5.png": "/static/media/html5.3e012db1e67e149bee73.png",
+    "static/media/javascript.png": "/static/media/javascript.590b1af72242a57147e7.png",
     "index.html": "/index.html",
     "main.c843b413.css.map": "/static/css/main.c843b413.css.map",
-    "main.d55b9372.js.map": "/static/js/main.d55b9372.js.map",
+    "main.8180e806.js.map": "/static/js/main.8180e806.js.map",
     "787.8de9fc1c.chunk.js.map": "/static/js/787.8de9fc1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c843b413.css",
-    "static/js/main.d55b9372.js"
+    "static/js/main.8180e806.js"
   ]
 }

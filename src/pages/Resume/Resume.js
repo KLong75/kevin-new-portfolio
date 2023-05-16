@@ -55,7 +55,7 @@ const projects = [
 
 const jobs = [
   {
-    title: "Software Engineer",
+    title: "Full Stack Web Developer",
     company: "Self-Employed",
     type: "Freelance",
     location: "Remote",
@@ -65,7 +65,7 @@ const jobs = [
     keyAccomplishments: [""],
   },
   {
-    title: "Bootcamp Teaching Assistant - Full Stack Web Development",
+    title: "Teaching Assistant - Full Stack Web Development Boot Camp",
     company: "2U",
     type: "Part Time",
     location: "Remote",
@@ -76,31 +76,31 @@ const jobs = [
       "Plan and facilitate bi-weekly homework help sessions based on student need resulting in a 15% increase in student homework submissions.",
     ],
   },
-  {
-    title: "Elementary School Teacher",
-    company: "Austin Discovery School",
-    type: "Fulltime",
-    location: "Austin, TX (Remote and In-Person)",
-    dates: "2020 - 2021",
-    description:
-      "Utilized clear communication and critical thinking skills to develop and implement lesson plans for all subjects across two grade levels.",
-    keyAccomplishments: [
-      "Used no-code platform Seesaw in conjunction with several other learning applications to successfully develop and implement an innovative online learning system for virtual learning, allowing students to learn effectively from home with minimal hands on support from parents and guardians.",
-    ],
-  },
-  {
-    title: "Theater Artist",
-    company: "Various Companies, Artists, and Organizations",
-    type: "Contract",
-    location: "Various Locations",
-    dates: "1998 - 2019",
-    description:
-      "Worked with several theater companies in various capacities including puppeteer, actor, director, technical director, lighting designer, set designer, and theater technician.",
-    keyAccomplishments: [
-      `Performed in 18 states and 2 foreign countries (South Korea and The Dominican Republic)`,
-      `Staff Artist for MayDay Parade and Festival (2001, 2006 - 2012) - annual outdoor giant puppet spectacle produced by In The Heart of the Beast Puppet and Mask Theater involving hundreds of performers and attended by tens of thousands in Minneapolis, MN.`,
-    ],
-  },
+  // {
+  //   title: "Elementary School Teacher",
+  //   company: "Austin Discovery School",
+  //   type: "Fulltime",
+  //   location: "Austin, TX (Remote and In-Person)",
+  //   dates: "2020 - 2021",
+  //   description:
+  //     "Utilized clear communication and critical thinking skills to develop and implement lesson plans for all subjects across two grade levels.",
+  //   keyAccomplishments: [
+  //     "Used no-code platform Seesaw in conjunction with several other learning applications to successfully develop and implement an innovative online learning system for virtual learning, allowing students to learn effectively from home with minimal hands on support from parents and guardians.",
+  //   ],
+  // },
+  // {
+  //   title: "Theater Artist",
+  //   company: "Various Companies, Artists, and Organizations",
+  //   type: "Contract",
+  //   location: "Various Locations",
+  //   dates: "1998 - 2019",
+  //   description:
+  //     "Worked with several theater companies in various capacities including puppeteer, actor, director, technical director, lighting designer, set designer, and theater technician.",
+  //   keyAccomplishments: [
+  //     `Performed in 18 states and 2 foreign countries (South Korea and The Dominican Republic)`,
+  //     `Staff Artist for MayDay Parade and Festival (2001, 2006 - 2012) - annual outdoor giant puppet spectacle produced by In The Heart of the Beast Puppet and Mask Theater involving hundreds of performers and attended by tens of thousands in Minneapolis, MN.`,
+  //   ],
+  // },
 ];
 
 const Resume = () => {
@@ -127,36 +127,7 @@ const Resume = () => {
 
       <Grid container textAlign={"center"} style={{ padding: ".25rem" }}>
         <Grid xs={12}>
-          {/* <DisplayBox elevation={12}> */}
           <Grid xs={12} style={{ marginTop: "-1rem" }}>
-            {/* <h3
-                style={{
-                  marginTop: "",
-                  marginBottom: "1rem",
-                  fontSize: "2rem",
-                }}
-                className="permanent-marker"
-              >
-                Kevin Long
-              </h3> */}
-            {/* <FontAwesomeIcon
-                style={{ fontSize: "1.75rem" }}
-                icon={icon({ name: "user-gear", style: "solid" })}
-              /> */}
-
-            {/* <Grid
-                container
-                textAlign="center"
-                justifyContent={"center"}
-                spacing={1}
-                style={{ marginBottom: ".5rem" }}
-              >
-                <Grid xs={12} md={8}>
-                  <DisplayBox elevation={12}>
-                    <ContactInfo />
-                  </DisplayBox>
-                </Grid>
-              </Grid> */}
           </Grid>
 
           <Grid container>
@@ -186,7 +157,7 @@ const Resume = () => {
                     Skilled at building fully responsive web applications to
                     meet client specifications. Background in the performing
                     arts and education. Brings the passion and creativity of an
-                    artist, along with the patient persistence of a teacher.
+                    artist, along with the patient persistence of a teacher to work as a developer.
                   </p>
                 </Grid>
               </DisplayBox>
@@ -432,6 +403,11 @@ const Resume = () => {
                     <FontAwesomeIcon
                       icon={icon({ name: "key", style: "solid" })}
                     />
+                    <br />
+                    Wordpress{" "}
+                    <FontAwesomeIcon
+                      icon={icon({ name: "code", style: "solid" })}
+                    />
                   </Grid>
                 </Grid>
 
@@ -625,7 +601,9 @@ const Resume = () => {
               </DisplayBox>
             </Grid>
 
-            <Grid container textAlign={""}>
+            
+
+            {/* <Grid container textAlign={""}>
               <Grid sm={12} md={2}></Grid>
               <Grid sm={12} md={8}>
                 <DisplayBox elevation={12}>
@@ -682,7 +660,7 @@ const Resume = () => {
                 </DisplayBox>
               </Grid>
 
-              <Grid container textAlign={""}>
+              {/* <Grid container textAlign={""}>
                 <Grid sm={12} md={2}></Grid>
                 <Grid sm={12} md={8}>
                   <DisplayBox elevation={12}>
@@ -818,10 +796,78 @@ const Resume = () => {
                     </DisplayBox>
                   </Grid>
                 </Grid>
-              </Grid>
-            </Grid>
+              </Grid> */}
+
+            {/* </Grid>  */}
           </Grid>
-          {/* </DisplayBox> */}
+
+
+
+
+          <Grid container textAlign={""}>
+            <Grid sm={12} md={2}></Grid>
+            <Grid sm={12} md={8}>
+              <DisplayBox elevation={12}>
+                
+                <Grid
+                  container
+                  spacing={1}
+                  textAlign={"center"}
+                  style={{ fontSize: "1.1rem", marginBottom: ".5rem" }}
+                >
+                  <Grid xs={12} sm={6} md={3}>
+                    <span style={{ fontWeight: "bold" }}>
+                    {jobs[1].title}
+                    </span>
+                  </Grid>
+
+                  <Grid xs={12} sm={6} md={3}>
+                    <span style={{ fontWeight: "bold" }}>
+                      {jobs[1].company}
+                    </span>
+                  </Grid>
+
+                  <Grid xs={12} sm={6} md={3}>
+                  <span style={{ fontWeight: "bold" }}>{jobs[1].type}</span>
+                  </Grid>
+
+                  <Grid xs={12} sm={6} md={3}>
+                    <span style={{ fontWeight: "bold" }}>
+                      {jobs[1].dates}
+                    </span>
+                  </Grid>
+
+                  <Grid
+                    xs={12}
+                    style={{ fontSize: "2rem", marginBottom: "-1rem" }}
+                  >
+                    <FontAwesomeIcon
+                      icon={icon({ name: "gear", style: "solid" })}
+                    />
+                  </Grid>
+                </Grid>
+                <p style={{ marginLeft: "" }}>
+                    <span style={{ fontWeight: "bold" }}>
+                      Responsibilities:{" "}
+                    </span>
+                    {jobs[1].description}
+                  </p>
+                  <span style={{ fontWeight: "bold" }}>
+                    Key Accomplishment:
+                  </span>
+                  <ul style={{ marginTop: 0, listStyle: "none" }}>
+                    <li>{jobs[1].keyAccomplishments[0]}</li>
+                  </ul>
+              </DisplayBox>
+            </Grid>
+
+            
+          </Grid>
+
+
+
+
+
         </Grid>
       </Grid>
     </>

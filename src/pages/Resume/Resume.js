@@ -184,7 +184,7 @@ const Resume = () => {
             </Grid>
           </Grid>
 
-          <Grid container>
+          <Grid container  >
             <Grid sm={12} md={2}></Grid>
             <Grid sm={12} md={8}>
               <DisplayBox elevation={12}>

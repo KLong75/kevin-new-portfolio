@@ -9,7 +9,7 @@ import Education from "../../components/Education";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 // import pdf
-import pdf from "../../assets/resume/Kevin_Long_Full_Stack_Web_Developer-Resume.pdf";
+import pdf from "../../assets/resume/Kevin_Long-Full_Stack_Developer-Resume.pdf";
 
 // import images
 import shtDesktop from "../../assets/images/projectImages/shtDesktop.png";
@@ -115,7 +115,7 @@ const Resume = () => {
           >
             &lt; Resume /&gt;
           </h2>
-          <a href={pdf} download="Kevin Long Full Stack Web Developer - Resume">
+          <a href={pdf} download="Kevin Long Full Stack Developer - Resume">
             <span
               className={`permanent-marker ${styles.resumeDownload}`}
               style={{ fontSize: "1rem" }}
@@ -154,7 +154,7 @@ const Resume = () => {
                 </Grid>
                 <Grid sm={12}>
                   <p style={{ padding: ".5rem" }}>
-                    Full Stack Web Developer. JavaScript. React. Express. Node.
+                    Full Stack Web Developer. JavaScript. React. Node. Express. MongoDB. 
                     Skilled at building fully responsive web applications to
                     meet client specifications. Background in the performing
                     arts and education. Brings the passion and creativity of an

@@ -43,7 +43,7 @@ const projects = [
     alt: "screenshot of app",
     description:
       "The official web application for indie rock musician Vain Mainstream, promoting his latest tour and album. Users can listen to and download album tracks and watch videos from the tour. This fully responsive single page React application is an installable progressive web app with offline functionality.",
-    technologies: "React, Material UI, JavaScript, HTML, CSS",
+    technologies: "React, Material UI, JavaScript, HTML, CSS, Google Analytics, Google Fonts",
     appHref: "https://vainmainstream.com/",
     appLinkText: "vainmainstream.com",
     gitHref: "https://github.com/KLong75/vain-mainstream",
@@ -71,9 +71,10 @@ const jobs = [
     location: "Remote",
     dates: "Oct 2022 - Present",
     description:
-      "Assist with instruction during class sessions, support students with class activities, homework assignments, projects, and technical issues.",
+      "Assist with instruction of the Full Stack Curriculum with a focus on React, Node, Express, MongoDB, JavaScript, HTML, and CSS. Support students with class activities, homework assignments, projects, and technical issues.",
     keyAccomplishments: [
-      "Plan and facilitate bi-weekly homework help sessions based on student need resulting in a 15% increase in student homework submissions.",
+      "Planned and facilitated bi-weekly homework help sessions resulting in a 15% increase in student homework submissions. ",
+      "This cohort had the highest graduation rate in program history, approximately 20% above the program average."
     ],
   },
   // {
@@ -517,7 +518,6 @@ const Resume = () => {
                     </a>
                   </span>
                   <br></br>
-                  <br></br>
                   <span>
                     GitHub Repository:
                     <a
@@ -801,9 +801,6 @@ const Resume = () => {
             {/* </Grid>  */}
           </Grid>
 
-
-
-
           <Grid container textAlign={""}>
             <Grid sm={12} md={2}></Grid>
             <Grid sm={12} md={8}>
@@ -851,23 +848,56 @@ const Resume = () => {
                       Responsibilities:{" "}
                     </span>
                     {jobs[1].description}
+                </p>
+                  <p style={{ fontWeight: "bold", fontSize: '1.1rem', marginBottom: '-1rem' }}>
+                    Cohorts:
                   </p>
-                  <span style={{ fontWeight: "bold" }}>
-                    Key Accomplishment:
+                  <br />
+
+                {/* <Grid
+                  container
+                  spacing={1}
+                  textAlign={"center"}
+                  style={{ fontSize: "1rem", marginBottom: ".5rem" }}
+                >
+                  <Grid xs={12} sm={6} >
+                    <span style={{ fontWeight: "bold" }}>
+                    University of Texas at Austin
+                    </span>
+                  </Grid>
+
+                  <Grid xs={12} sm={6} >
+                    <span style={{ fontWeight: "bold" }}>
+                      April 2023 - Present
+                    </span>
+                  </Grid>
+                </Grid> */}
+                 
+                  <span style={{ fontWeight: "bold", marginTop: '2rem' }}>
+                      University of Texas at Austin{" "}
                   </span>
-                  <ul style={{ marginTop: 0, listStyle: "none" }}>
+                  <br />
+                  <span style={{ fontWeight: "bold" }}>
+                    April 2023 - Present
+                  </span>
+                  <br />
+                  <br />
+                  <span style={{ fontWeight: "bold" }}>
+                    University of Minnestota{" "}
+                  </span>
+                  <br />
+                  <span style={{ fontWeight: "bold" }}>
+                    Oct 2022 - April 2023
+                  </span>
+                
+                  <ul style={{ marginTop: 0, listStyle: "none", }}>
                     <li>{jobs[1].keyAccomplishments[0]}</li>
+                  
+                    <li>{jobs[1].keyAccomplishments[1]}</li>
                   </ul>
               </DisplayBox>
             </Grid>
-
-            
           </Grid>
-
-
-
-
-
         </Grid>
       </Grid>
     </>

@@ -84,7 +84,7 @@ const AboutMe = () => {
             />
             <Grid textAlign={'center'}>
             <p>
-              Full Stack Web Developer. Based in Austin, Texas. 
+              Full Stack Web Developer. Based in St. Louis, Missouri. 
             </p>
             <p>
               React | Node | Express | MongoDB | JavaScript 
@@ -120,28 +120,28 @@ const AboutMe = () => {
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Pursuing Freelance Work
               </li>
-              <li style={{ fontSize: "1.1rem" }}>
+              <li style={{ fontSize: "1.1rem", marginBottom: "1rem" }}>
                 If you are in need of a website or app for your creative
                 project, small business, or organization, I would love to talk!
               </li>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Seeking Fulltime Employment
               </li>
-              <li>
+              <li style={{ fontSize: "1.1rem", marginBottom: "1rem" }}>
                 As a developer, I am looking for a company that values
                 creativity, collaboration, and a passion for learning.
               </li>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Teaching (Assistant) Full Stack Web Development Bootcamp (2U)
               </li>
-              <li>
+              <li style={{ fontSize: "1.1rem", marginBottom: "1rem" }}>
                 I love helping students learn and grow. I am excited to
                 continue to do so in this role.
               </li>
               <li style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
                 Seeking New Tech Connections
               </li>
-              <li>
+              <li style={{ fontSize: "1.1rem", marginBottom: "1rem" }}>
                 I am always looking to meet new people in the tech community. If
                 you are a developer, designer, or tech professional, I would
                 love to connect!

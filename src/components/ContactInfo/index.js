@@ -23,14 +23,14 @@ const ContactInfo = () => {
         <span>Location</span>
         <br />
         <a
-          href="https://en.wikipedia.org/wiki/Austin,_Texas"
+          href="https://en.wikipedia.org/wiki/St._Louis"
           target="_blank"
           rel="noreferrer"
-          aria-label="Link to Austin, TX Wikipedia Page"
+          aria-label="Link to St. Louis Wikipedia Page"
         >
           <LocationOnIcon style={{ fontSize: '2rem'}} />
           <br/>
-          <span style={{fontWeight: 'bold', textDecoration: 'underline'}}>Austin, TX</span>
+          <span style={{fontWeight: 'bold', textDecoration: 'underline'}}>St. Louis, Missouri</span>
         </a>
         
       </Grid>

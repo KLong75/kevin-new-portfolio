@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c843b413.css",
-    "main.js": "/static/js/main.11ade678.js",
+    "main.js": "/static/js/main.ece31a1b.js",
     "static/js/787.8de9fc1c.chunk.js": "/static/js/787.8de9fc1c.chunk.js",
     "static/media/musicologyDesktop.gif": "/static/media/musicologyDesktop.572eb27c52d7a4777f69.gif",
     "static/media/Finish_Line.jpg": "/static/media/Finish_Line.5d452fe295df005b418f.jpg",
@@ -17,8 +17,8 @@
     "static/media/trombone.jpg": "/static/media/trombone.f1959a0d73625ff12e88.jpg",
     "static/media/tiger.jpg": "/static/media/tiger.e9b8fe48416bcf64ed34.jpg",
     "static/media/shtMobile.png": "/static/media/shtMobile.e521f0d3a37c3495c151.png",
+    "static/media/Kevin_Long-Full_Stack_Developer-Resume.pdf": "/static/media/Kevin_Long-Full_Stack_Developer-Resume.8d09d85a2d634fc7c0a2.pdf",
     "service-worker.js": "/service-worker.js",
-    "static/media/Kevin_Long_Full_Stack_Web_Developer-Resume.pdf": "/static/media/Kevin_Long_Full_Stack_Web_Developer-Resume.2493008694051fdb23e1.pdf",
     "static/media/devKevLogo.png": "/static/media/devKevLogo.7cc0e2db34e78b826bc4.png",
     "static/media/react.png": "/static/media/react.0ec0c99a95afa14a0c49.png",
     "static/media/mongodb.png": "/static/media/mongodb.126a91e36a39f28de22e.png",
@@ -27,11 +27,11 @@
     "static/media/javascript.png": "/static/media/javascript.590b1af72242a57147e7.png",
     "index.html": "/index.html",
     "main.c843b413.css.map": "/static/css/main.c843b413.css.map",
-    "main.11ade678.js.map": "/static/js/main.11ade678.js.map",
+    "main.ece31a1b.js.map": "/static/js/main.ece31a1b.js.map",
     "787.8de9fc1c.chunk.js.map": "/static/js/787.8de9fc1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c843b413.css",
-    "static/js/main.11ade678.js"
+    "static/js/main.ece31a1b.js"
   ]
 }

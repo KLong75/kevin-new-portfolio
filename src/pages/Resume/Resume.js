@@ -444,17 +444,17 @@ const Resume = () => {
                   textAlign={"center"}
                   style={{ fontSize: "1.1rem", marginBottom: ".5rem" }}
                 >
-                  <Grid xs={12} sm={6} md={4}>
+                  <Grid xs={12} md={4}>
                     <span style={{ fontWeight: "bold" }}>
                       Full Stack Web Developer
                     </span>
                   </Grid>
 
-                  <Grid xs={12} sm={6} md={4}>
+                  <Grid xs={12} md={4}>
                     <span style={{ fontWeight: "bold" }}>Freelance</span>
                   </Grid>
 
-                  <Grid xs={12} sm={6} md={4}>
+                  <Grid xs={12} md={4}>
                     <span style={{ fontWeight: "bold" }}>
                       Oct. 2022 - Present
                     </span>
@@ -845,11 +845,7 @@ const Resume = () => {
                     </span>
                     {jobs[1].description}
                 </p>
-                  <p style={{ fontWeight: "bold", fontSize: '1.1rem', marginBottom: '-1rem' }}>
-                    Cohorts:
-                  </p>
-                  <br />
-
+               
                 {/* <Grid
                   container
                   spacing={1}
@@ -870,16 +866,16 @@ const Resume = () => {
                 </Grid> */}
                  
                   <span style={{ fontWeight: "bold", marginTop: '2rem' }}>
-                      University of Texas at Austin{" "}
+                      University of Texas at Austin
                   </span>
                   <br />
                   <span style={{ fontWeight: "bold" }}>
                     April 2023 - Present
                   </span>
                   <br />
-                  <br />
+                  
                   <span style={{ fontWeight: "bold" }}>
-                    University of Minnestota{" "}
+                    University of Minnestota
                   </span>
                   <br />
                   <span style={{ fontWeight: "bold" }}>

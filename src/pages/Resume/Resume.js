@@ -444,17 +444,17 @@ const Resume = () => {
                   textAlign={"center"}
                   style={{ fontSize: "1.1rem", marginBottom: ".5rem" }}
                 >
-                  <Grid xs={12} sm={6} md={3}>
+                  <Grid xs={12} sm={6} md={4}>
                     <span style={{ fontWeight: "bold" }}>
                       Full Stack Web Developer
                     </span>
                   </Grid>
 
-                  <Grid xs={12} sm={6} md={3}>
+                  <Grid xs={12} sm={6} md={4}>
                     <span style={{ fontWeight: "bold" }}>Freelance</span>
                   </Grid>
 
-                  <Grid xs={12} sm={6} md={3}>
+                  <Grid xs={12} sm={6} md={4}>
                     <span style={{ fontWeight: "bold" }}>
                       Oct. 2022 - Present
                     </span>

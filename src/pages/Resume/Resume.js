@@ -455,10 +455,6 @@ const Resume = () => {
                   </Grid>
 
                   <Grid xs={12} sm={6} md={3}>
-                    <span style={{ fontWeight: "bold" }}>Part Time</span>
-                  </Grid>
-
-                  <Grid xs={12} sm={6} md={3}>
                     <span style={{ fontWeight: "bold" }}>
                       Oct. 2022 - Present
                     </span>

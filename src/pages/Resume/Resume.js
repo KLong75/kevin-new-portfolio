@@ -9,7 +9,7 @@ import Education from "../../components/Education";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 // import pdf
-import pdf from "../../assets/resume/Kevin_Long-Full_Stack_Developer-Resume.pdf";
+import pdf from "../../assets/resume/Kevin_Long_Resume-Full_Stack_Developer.pdf";
 
 // import images
 import shtDesktop from "../../assets/images/projectImages/shtDesktop.png";

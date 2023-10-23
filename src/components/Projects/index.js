@@ -13,8 +13,9 @@ import vainMainMobile from "../../assets/images/projectImages/vainMainMobile.png
 import vainMainDesktop from "../../assets/images/projectImages/vainMainDesktop.png";
 import musicologyDesktop from "../../assets/images/projectImages/musicologyDesktop.gif";
 import musicologyMobile from "../../assets/images/projectImages/musicologyMobile.jpg";
+import watchTVMobile from "../../assets/images/projectImages/watchTVLandingMobile.png"
 // import moviesMobile from '../../assets/images/projectImages/moviesMobile.jpg';
-// import moviesDesktop from '../../assets/images/projectImages/moviesDesktop.gif';
+import watchTVDesktop from '../../assets/images/projectImages/rogueOne.png';
 // import whoDoMobile from '../../assets/images/projectImages/whoDoMobile.jpg';
 // import whoDoDesktop from '../../assets/images/projectImages/whoDoDesktop.png';
 
@@ -27,6 +28,18 @@ import musicologyMobile from "../../assets/images/projectImages/musicologyMobile
 
 const Project = () => {
   const projects = [
+    {
+      title: "WatchTV",
+      src: "rogueOne.png",
+      alt: "screenshot of app",
+      description:
+        "Full stack application. React. Node. MongoDB. Express. Serves as a central hub for all of a user's subscription streaming accounts. Search for any TV show or movie and link to where it is available online to stream, rent, or buy. Multiple search methods enable users to find what they want to watch and where they can watch it. Users can search all sources or just the ones they are subscribed to. Save titles to a watchlist for later viewing. The watchlist can be filtered by source, type, and genre. Guest credentials for login: email: guest@email.com, password: Guest#1",
+      technologies: "React, Node, MongoDB, Express, Material UI, React Router, React Context, Apollo, GraphQL, JSON web tokens, bcrypt, Mongoose, Swiperjs, JavaScript, HTML, CSS,",
+      appHref: "https://streamhub-e4fc2af8fdfc.herokuapp.com/",
+      gitHref: "https://github.com/KLong75/stream-hub",
+      mobile_img_src: `${watchTVMobile}`,
+      desktop_img_src: `${watchTVDesktop}`,
+    },
     {
       title: "Sam Hahn Travel",
       src: "sht_home_desktop.png",

@@ -1,10 +1,8 @@
 // import components
-// import Header from '../../components/Header';
 import ProgrammingIcons from "../../components/ProgrammingIcons";
 import DisplayBox from "../../components/DisplayBox";
 // import ContactInfo from "../../components/ContactInfo";
 import Education from "../../components/Education";
-
 // import from Material UI
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
@@ -12,50 +10,50 @@ import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import pdf from "../../assets/resume/Kevin_Long_Resume-Full_Stack_Developer.pdf";
 
 // import images
-import shtDesktop from "../../assets/images/projectImages/shtDesktop.png";
-import shtMobile from "../../assets/images/projectImages/shtMobile.png";
-import vainMainMobile from "../../assets/images/projectImages/vainMainMobile.png";
-import vainMainDesktop from "../../assets/images/projectImages/vainMainDesktop.png";
+// import shtDesktop from "../../assets/images/projectImages/shtDesktop.png";
+// import shtMobile from "../../assets/images/projectImages/shtMobile.png";
+// import vainMainMobile from "../../assets/images/projectImages/vainMainMobile.png";
+// import vainMainDesktop from "../../assets/images/projectImages/vainMainDesktop.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 import styles from "./Resume.module.css";
 
-const projects = [
-  {
-    title: "Sam Hahn Travel",
-    src: "sht_home_desktop.png",
-    alt: "screenshot of app",
-    description:
-      "Fully responsive web application for Sam Hahn Travel. Installable Progressive Web Application. Single Page Application. Users can browse the site for information about Sam Hahn Travel and the services they offer. Users can also contact Sam Hahn Travel via the contact form.",
-    technologies: "React, Material UI, JavaScript, HTML, CSS",
-    appHref: "https://klong75.github.io/sam-hahn-travel",
-    appLinkText: "klong75.github.io/sam-hahn-travel",
-    gitHref: "https://github.com/KLong75/sam-hahn-travel",
-    gitLinkText: "github.com/KLong75/sam-hahn-travel",
-    mobile_img_src: `${shtMobile}`,
-    desktop_img_src: `${shtDesktop}`,
-  },
-  {
-    title: "Vain Mainstream",
-    src: "vainmain-radio.png",
-    alt: "screenshot of app",
-    description:
-      "The official web application for indie rock musician Vain Mainstream, promoting his latest tour and album. Users can listen to and download album tracks and watch videos from the tour. This fully responsive single page React application is an installable progressive web app with offline functionality.",
-    technologies: "React, Material UI, JavaScript, HTML, CSS, Google Analytics, Google Fonts",
-    appHref: "https://vainmainstream.com/",
-    appLinkText: "vainmainstream.com",
-    gitHref: "https://github.com/KLong75/vain-mainstream",
-    gitLinkText: "github.com/KLong75/vain-mainstream",
-    mobile_img_src: `${vainMainMobile}`,
-    desktop_img_src: `${vainMainDesktop}`,
-  },
-];
+// const projects = [
+//   {
+//     title: "Sam Hahn Travel",
+//     src: "sht_home_desktop.png",
+//     alt: "screenshot of app",
+//     description:
+//       "Fully responsive web application for Sam Hahn Travel. Installable Progressive Web Application. Single Page Application. Users can browse the site for information about Sam Hahn Travel and the services they offer. Users can also contact Sam Hahn Travel via the contact form.",
+//     technologies: "React, Material UI, JavaScript, HTML, CSS",
+//     appHref: "https://klong75.github.io/sam-hahn-travel",
+//     appLinkText: "klong75.github.io/sam-hahn-travel",
+//     gitHref: "https://github.com/KLong75/sam-hahn-travel",
+//     gitLinkText: "github.com/KLong75/sam-hahn-travel",
+//     mobile_img_src: `${shtMobile}`,
+//     desktop_img_src: `${shtDesktop}`,
+//   },
+//   {
+//     title: "Vain Mainstream",
+//     src: "vainmain-radio.png",
+//     alt: "screenshot of app",
+//     description:
+//       "The official web application for indie rock musician Vain Mainstream, promoting his latest tour and album. Users can listen to and download album tracks and watch videos from the tour. This fully responsive single page React application is an installable progressive web app with offline functionality.",
+//     technologies: "React, Material UI, JavaScript, HTML, CSS, Google Analytics, Google Fonts",
+//     appHref: "https://vainmainstream.com/",
+//     appLinkText: "vainmainstream.com",
+//     gitHref: "https://github.com/KLong75/vain-mainstream",
+//     gitLinkText: "github.com/KLong75/vain-mainstream",
+//     mobile_img_src: `${vainMainMobile}`,
+//     desktop_img_src: `${vainMainDesktop}`,
+//   },
+// ];
 
 const jobs = [
   {
-    title: "Full Stack Web Developer",
+    title: "Full Stack Developer",
     company: "Self-Employed",
     type: "Freelance",
     location: "Remote",
@@ -71,10 +69,9 @@ const jobs = [
     location: "Remote",
     dates: "Oct 2022 - Present",
     description:
-      "Assist with instruction of the Full Stack Curriculum with a focus on React, Node, Express, MongoDB, JavaScript, HTML, and CSS. Support students with class activities, homework assignments, projects, and technical issues.",
+      "Assist with instruction of the Full Stack Curriculum with a focus on React, Node, Express, MongoDB, JavaScript, HTML, CSS, and SQL. Support students with class activities, homework assignments, projects, and technical issues.",
     keyAccomplishments: [
-      "Planned and facilitated bi-weekly homework help sessions resulting in a 15% increase in student homework submissions. ",
-      "This cohort had the highest graduation rate in program history, approximately 20% above the program average."
+      "Oct 2022 - April 2023: Planned and facilitated bi-weekly homework help sessions resulting in a 15% increase in student homework submissions, contributing to the highest graduation rate in program history, approximately 20% above the program average."
     ],
   },
   // {
@@ -154,9 +151,9 @@ const Resume = () => {
                 </Grid>
                 <Grid sm={12}>
                   <p style={{ padding: ".5rem" }}>
-                    Full Stack Web Developer. JavaScript. React. Node. Express. MongoDB. 
+                    Full Stack Developer. JavaScript. React. Node. Express. MongoDB. SQL.
                     Skilled at building fully responsive web applications to
-                    meet client specifications. Background in the performing
+                    meet specifications. Background in the performing
                     arts and education. Brings the passion and creativity of an
                     artist, along with the patient persistence of a teacher to work as a developer.
                   </p>
@@ -435,7 +432,7 @@ const Resume = () => {
                     style={{ fontWeight: "bold", fontSize: "1.5rem" }}
                     className="permanent-marker"
                   >
-                    Work Experience
+                    Relevant  Experience
                   </h4>
                 </Grid>
                 <Grid
@@ -446,7 +443,7 @@ const Resume = () => {
                 >
                   <Grid xs={12} md={4}>
                     <span style={{ fontWeight: "bold" }}>
-                      Full Stack Web Developer
+                      Full Stack Developer
                     </span>
                   </Grid>
 
@@ -477,7 +474,7 @@ const Resume = () => {
                   use, and look great on any screen size.
                 </p>
 
-                <p style={{ fontWeight: "bold", fontSize: "1.1rem" }}>
+                {/* <p style={{ fontWeight: "bold", fontSize: "1.1rem" }}>
                   Current Clients:
                 </p>
                 <ul
@@ -593,7 +590,7 @@ const Resume = () => {
                     <span style={{ fontWeight: "bold" }}>Technologies:</span>{" "}
                     {projects[1].technologies}
                   </p>
-                </ul>
+                </ul> */}
               </DisplayBox>
             </Grid>
 
@@ -865,12 +862,12 @@ const Resume = () => {
                   </Grid>
                 </Grid> */}
                  
-                  <span style={{ fontWeight: "bold", marginTop: '2rem' }}>
+                  {/* <span style={{ fontWeight: "bold", marginTop: '2rem' }}>
                       University of Texas at Austin
                   </span>
                   <br />
                   <span style={{ fontWeight: "bold" }}>
-                    April 2023 - Present
+                    April 2023 - October 2023
                   </span>
                   <br />
                   
@@ -880,7 +877,7 @@ const Resume = () => {
                   <br />
                   <span style={{ fontWeight: "bold" }}>
                     Oct 2022 - April 2023
-                  </span>
+                  </span> */}
                 
                   <ul style={{ marginTop: 0, listStyle: "none", }}>
                     <li>{jobs[1].keyAccomplishments[0]}</li>

@@ -66,10 +66,10 @@ const Header = () => {
             className={`permanent-marker ${styles.appSubHeadline}`}
             style={{ margin: 0, fontSize: "2rem" }}
           >
-            &lt; Full Stack Web Developer /&gt;
+            &lt; Full Stack Developer /&gt;
           </h2>
           <h3 className={` ${styles.appSubSubHeadline}`}
-              style={{ margin: 0, fontSize: ".8rem" }}
+              style={{  fontSize: ".8rem" }}
           
           >&lt; React | Node | Express | MongoDB | JavaScript /&gt; </h3>
         </Grid>
@@ -179,7 +179,7 @@ const Header = () => {
                 &lt; Kevin Long /&gt;
               </h1>
               <h2 style={{ fontSize: "1.5rem" }} className={`permanent-marker ${styles.mobileMenuSubHeadline}`}>
-                &lt; Full Stack Web Developer /&gt;
+                &lt; Full Stack Developer /&gt;
               </h2>
             </Grid>
 

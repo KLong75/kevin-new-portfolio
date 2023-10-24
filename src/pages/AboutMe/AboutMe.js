@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const phrases = [
-  "A Full Stack Web Developer",
+  "A Full Stack Developer",
   "A Teacher",
   "A Puppeteer",
   "A Musician",
@@ -84,7 +84,7 @@ const AboutMe = () => {
             />
             <Grid textAlign={'center'}>
             <p>
-              Full Stack Web Developer. Based in St. Louis, Missouri. 
+              Full Stack Developer. Based in St. Louis, Missouri. 
             </p>
             <p>
               React | Node | Express | MongoDB | JavaScript 
@@ -112,7 +112,7 @@ const AboutMe = () => {
           {/* <h4 className="permanent-marker" style={{ fontSize: "1.25rem" }}>
             &lt; Currently /&gt;
           </h4> */}
-          <DisplayBox style={{padding: '1rem'}}>
+          {/* <DisplayBox style={{padding: '1rem'}}>
           <h4 className="permanent-marker" style={{ fontSize: "1.25rem", marginTop: '0rem' }}>
             &lt; Currently /&gt;
           </h4>
@@ -152,7 +152,7 @@ const AboutMe = () => {
                 I'm always up for a chat. Let's talk!
               </span>
             </Grid>
-          </DisplayBox>
+          </DisplayBox> */}
         </Grid>
 
         <Grid xs={12}>

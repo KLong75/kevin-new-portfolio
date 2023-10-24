@@ -13,18 +13,16 @@ import vainMainMobile from "../../assets/images/projectImages/vainMainMobile.png
 import vainMainDesktop from "../../assets/images/projectImages/vainMainDesktop.png";
 import musicologyDesktop from "../../assets/images/projectImages/musicologyDesktop.gif";
 import musicologyMobile from "../../assets/images/projectImages/musicologyMobile.jpg";
-import watchTVMobile from "../../assets/images/projectImages/watchTVLandingMobile.png"
+import watchTVMobile from "../../assets/images/projectImages/watchTVLandingMobile.png";
 // import moviesMobile from '../../assets/images/projectImages/moviesMobile.jpg';
-import watchTVDesktop from '../../assets/images/projectImages/rogueOne.png';
+import watchTVDesktop from "../../assets/images/projectImages/rogueOne.png";
 // import whoDoMobile from '../../assets/images/projectImages/whoDoMobile.jpg';
 // import whoDoDesktop from '../../assets/images/projectImages/whoDoDesktop.png';
-
-
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 // import { faGlobe, faVolumeHigh, faMusic } from "@fortawesome/free-solid-svg-icons";
-
-
+// import styles
+import styles from "./Projects.module.css";
 
 const Project = () => {
   const projects = [
@@ -33,8 +31,9 @@ const Project = () => {
       src: "rogueOne.png",
       alt: "screenshot of app",
       description:
-        "Full stack application. React. Node. MongoDB. Express. Serves as a central hub for all of a user's subscription streaming accounts. Search for any TV show or movie and link to where it is available online to stream, rent, or buy. Multiple search methods enable users to find what they want to watch and where they can watch it. Users can search all sources or just the ones they are subscribed to. Save titles to a watchlist for later viewing. The watchlist can be filtered by source, type, and genre. Guest credentials for login: email: guest@email.com, password: Guest#1",
-      technologies: "React, Node, MongoDB, Express, Material UI, React Router, React Context, Apollo, GraphQL, JSON web tokens, bcrypt, Mongoose, Swiperjs, JavaScript, HTML, CSS,",
+        "React. Node. MongoDB. Express. Full stack application. Serves as a central hub for all of a user's subscription streaming accounts. Search for any TV show or movie and link to where it is available online to stream, rent, or buy. Multiple search methods enable users to find what they want to watch and where they can watch it. Users can search all sources or just the ones they are subscribed to. Save titles to a watchlist for later viewing. The watchlist can be filtered by source, type, and genre. Guest credentials for login: email: guest@email.com, password: Guest#1",
+      technologies:
+        "React, Node, MongoDB, Express, Material UI, React Router, React Context, Apollo, GraphQL, JSON web tokens, bcrypt, Mongoose, Swiperjs, JavaScript, HTML, CSS,",
       appHref: "https://streamhub-e4fc2af8fdfc.herokuapp.com/",
       gitHref: "https://github.com/KLong75/stream-hub",
       mobile_img_src: `${watchTVMobile}`,
@@ -46,7 +45,8 @@ const Project = () => {
       alt: "screenshot of app",
       description:
         "Fully responsive web application for Sam Hahn Travel. Installable Progressive Web Application. Single Page Application. Users can browse the site for information about Sam Hahn Travel and the services they offer. Users can also contact Sam Hahn Travel via the contact form.",
-      technologies: "React, React router, Material UI, JavaScript, HTML, CSS, Email.js",
+      technologies:
+        "React, React router, Material UI, JavaScript, HTML, CSS, Email.js",
       appHref: "https://klong75.github.io/sam-hahn-travel",
       gitHref: "https://github.com/KLong75/sam-hahn-travel",
       mobile_img_src: `${shtMobile}`,
@@ -108,11 +108,9 @@ const Project = () => {
           container
           spacing={4}
           justifyContent="space-evenly"
-          textAlign={"center"}
-        >
+          textAlign={"center"}>
           {projects.map((project) => (
-  
-            <Grid sm={12} md ={6} lg={4} key={project.title}>
+            <Grid sm={12} md={6} lg={4} key={project.title}>
               <DisplayBox elevation={12} style={{ fontWeight: "bold" }}>
                 <Grid textAlign={"center"}>
                   <h4
@@ -122,65 +120,81 @@ const Project = () => {
                       margin: "0",
                       padding: "0",
                       fontWeight: "bold",
-                      marginBottom: '-1rem'
-                    }}
-                  >{`"${project.title}"`}</h4>
+                      marginBottom: "-1rem",
+                    }}>{`"${project.title}"`}</h4>
+                </Grid>
+
+                <Grid textAlign={"left"}>
+                  <p style={{ margin: "0" }}>
+                    <span className="permanent-marker">Technologies:</span>
+                    {` ${project.technologies}`}
+                  </p>
                 </Grid>
 
                 <Grid>
                   <a href={project.appHref} target="_blank" rel="noreferrer">
-                  <img
-                    style={{ width: "40%", height: "auto" }}
-                    src={project.mobile_img_src}
-                    alt={project.alt}
-                    className="mobile-img"
-                  />
+                    <img
+                      className={styles.projectMobileImage}
+                      src={project.mobile_img_src}
+                      alt={project.alt}
+                    />
                   </a>
                   <br></br>
                   <span className="permanent-marker">Mobile View</span>
                 </Grid>
-                
+
                 <Grid>
                   <a href={project.appHref} target="_blank" rel="noreferrer">
-                  <img
-                    style={{ 
-                      width: "100%", 
-                      height: "auto",
-                      marginTop: '-.5rem',
-                      marginBottom: '' }}
-                    src={project.desktop_img_src}
-                    alt={project.alt}
-                    className="mobile-img"
-                  />
+                    <img
+                      src={project.desktop_img_src}
+                      alt={project.alt}
+                      className={styles.projectDesktopImage}
+                    />
                   </a>
                   <br></br>
                   <span className="permanent-marker">Desktop View</span>
                 </Grid>
 
-                <Grid textAlign={"left"} style={{marginTop: '-2rem', marginBottom: '-2.5rem'}}>
-                  <p><span className="permanent-marker">Description:</span> {`${project.description}`}</p>
+                <Grid
+                  textAlign={"left"}
+                  style={{ marginTop: "-2rem", marginBottom: "-2.5rem" }}>
+                  <p>
+                    <span className="permanent-marker">Description:</span>{" "}
+                    {`${project.description}`}
+                  </p>
                 </Grid>
 
-                <Grid textAlign={"left"}>
+                {/* <Grid textAlign={"left"}>
                   <p><span className="permanent-marker">Technologies:</span>{` ${project.technologies}`}</p>
-                </Grid>
+                </Grid> */}
 
-                <Grid style={{marginBottom: '-1.5rem', marginTop: '-2rem'}}>
+                <Grid style={{ marginBottom: "-1.5rem", marginTop: "-2rem" }}>
                   <span className="permanent-marker">Links:</span>
                 </Grid>
 
                 <Grid textAlign={"center"}>
-                  <a href={project.appHref} target="_blank" rel="noreferrer">
-                    <div className="permanent-marker" style={{marginBottom: '.5rem'}}>
+                  <a
+                    className={styles.projectLink}
+                    href={project.appHref}
+                    target="_blank"
+                    rel="noreferrer">
+                    <div
+                      className="permanent-marker"
+                      style={{ marginBottom: ".5rem" }}>
                       &lt; Deployed Application /&gt;
                     </div>
                   </a>
-               
-                <a href={project.gitHref} target="_blank" rel="noreferrer">
-                  <div className="permanent-marker">
-                    &lt; GitHub Repository <GitHubIcon style={{marginBottom: '-.25rem'}}/> /&gt;
-                  </div>
-                </a>
+
+                  <a
+                    className={styles.projectLink}
+                    href={project.gitHref}
+                    target="_blank"
+                    rel="noreferrer">
+                    <div className="permanent-marker">
+                      &lt; GitHub Repository{" "}
+                      <GitHubIcon style={{ marginBottom: "-.25rem" }} /> /&gt;
+                    </div>
+                  </a>
                 </Grid>
               </DisplayBox>
             </Grid>

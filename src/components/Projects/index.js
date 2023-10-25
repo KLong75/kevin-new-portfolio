@@ -31,7 +31,7 @@ const Project = () => {
       src: "rogueOne.png",
       alt: "screenshot of app",
       description:
-        "React. Node. MongoDB. Express. Full stack application. Serves as a central hub for all of a user's subscription streaming accounts. Search for any TV show or movie and link to where it is available online to stream, rent, or buy. Multiple search methods enable users to find what they want to watch and where they can watch it. Users can search all sources or just the ones they are subscribed to. Save titles to a watchlist for later viewing. The watchlist can be filtered by source, type, and genre. Guest credentials for login: email: guest@email.com, password: Guest#1",
+        "React. Node. MongoDB. Express. Full stack application. Serves as a central hub for all of a user's subscription streaming accounts. Search for any TV show or movie and link to where it is available online to stream, rent, or buy. Multiple search methods enable users to find what they want to watch and where they can watch it. Users can search all sources or just the ones they are subscribed to. Save titles to a watchlist for later viewing. The watchlist can be filtered by source, type, and genre. Guest credentials for login - email: guest@email.com, password: Guest#1",
       technologies:
         "React, Node, MongoDB, Express, Material UI, React Router, React Context, Apollo, GraphQL, JSON web tokens, bcrypt, Mongoose, Swiperjs, JavaScript, HTML, CSS,",
       appHref: "https://streamhub-e4fc2af8fdfc.herokuapp.com/",

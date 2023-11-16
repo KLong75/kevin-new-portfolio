@@ -1,5 +1,5 @@
-// import from React
-
+// import styles
+import styles from './ScheduleAppointment.module.css';
 // import from MUI
 import Grid from '@mui/material/Unstable_Grid2';
 import Button from '@mui/material/Button';
@@ -17,7 +17,7 @@ const ScheduleAppointment = () => {
           className='calendly-link' 
           aria-label='Schedule'
         >
-          <Button variant="contained" size='small' style={{width: '6rem', backgroundColor: 'black', marginTop: '-20px'}}>
+          <Button className={styles.scheduleButton} variant="contained" size='small' style={{width: '6rem', backgroundColor: 'black', marginTop: '-20px'}}>
             Schedule
           </Button>
         </a>

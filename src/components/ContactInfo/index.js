@@ -6,6 +6,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import EmailIcon from '@mui/icons-material/Email';
 import WorkIcon from '@mui/icons-material/Work';
+// import styles
+import styles from "./ContactInfo.module.css";
 
 const ContactInfo = () => {
   return (
@@ -19,7 +21,7 @@ const ContactInfo = () => {
         <h4 style={{margin: 0}}className="permanent-marker">&lt; My Contact Info /&gt;</h4>
       </Grid> */}
 
-      <Grid xs={12} sm={6} md={4} >
+      <Grid className={styles.contactLinks} xs={12} sm={6} md={4} >
         <span>Location</span>
         <br />
         <a
@@ -35,7 +37,7 @@ const ContactInfo = () => {
         
       </Grid>
 
-      <Grid xs={12} sm={6} md={4}>
+      <Grid className={styles.contactLinks} xs={12} sm={6} md={4}>
         <span>Phone</span>
         <br />
         <a href="tel:512-975-0082">
@@ -52,7 +54,7 @@ const ContactInfo = () => {
         </a>
       </Grid>
 
-      <Grid xs={12} sm={6} md={4}>
+      <Grid className={styles.contactLinks} xs={12} sm={6} md={4}>
         <span>Email</span>
         <br />
         <a href="mailto:kevinlong.dev@gmail.com">
@@ -69,7 +71,7 @@ const ContactInfo = () => {
         </a>
       </Grid>
 
-      <Grid xs={12} sm={6} md={4}>
+      <Grid className={styles.contactLinks} xs={12} sm={6} md={4}>
         <span>Portfolio</span>
         <br />
         <a
@@ -91,7 +93,7 @@ const ContactInfo = () => {
         </a>
       </Grid>
 
-      <Grid xs={12} sm={6} md={4}>
+      <Grid className={styles.contactLinks} xs={12} sm={6} md={4}>
         <span>GitHub</span>
         <br />
         <a
@@ -113,7 +115,7 @@ const ContactInfo = () => {
         </a>
       </Grid>
 
-      <Grid xs={12} sm={6} md={4}>
+      <Grid xs={12} sm={6} md={4} className={styles.contactLinks}>
         <span>LinkedIn</span>
         <br />
         <a

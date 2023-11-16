@@ -103,6 +103,7 @@ const Header = () => {
                   <Link to="/">&lt; Home /&gt;</Link>
               </li> */}
                   <li
+                    className={styles.navLink}
                     style={{
                       margin: "20px 20px",
                       fontSize: "18px",
@@ -113,6 +114,7 @@ const Header = () => {
                   </li>
 
                   <li
+                    className={styles.navLink}
                     style={{
                       margin: "20px 20px",
                       fontSize: "18px",
@@ -122,6 +124,7 @@ const Header = () => {
                     <Link to="/my_work">&lt; Projects /&gt;</Link>
                   </li>
                   <li
+                    className={styles.navLink}
                     style={{
                       margin: "20px 20px",
                       fontSize: "18px",
@@ -131,6 +134,7 @@ const Header = () => {
                     <Link to="/resume">&lt; Resume /&gt;</Link>
                   </li>
                   <li
+                    className={styles.navLink}
                     style={{
                       margin: "20px 20px",
                       fontSize: "18px",

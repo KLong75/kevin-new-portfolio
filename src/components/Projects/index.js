@@ -173,24 +173,19 @@ const Project = () => {
                 </Grid>
 
                 <Grid textAlign={"center"}>
-                  <a
-                    className={styles.projectLink}
-                    href={project.appHref}
-                    target="_blank"
-                    rel="noreferrer">
+                  <a href={project.appHref} target="_blank" rel="noreferrer">
                     <div
-                      className="permanent-marker"
+                      className={`${styles.projectLink} permanent-marker`}
                       style={{ marginBottom: ".5rem" }}>
                       &lt; Deployed Application /&gt;
                     </div>
                   </a>
-
                   <a
                     className={styles.projectLink}
                     href={project.gitHref}
                     target="_blank"
                     rel="noreferrer">
-                    <div className="permanent-marker">
+                    <div className={`${styles.projectLink} permanent-marker`}>
                       &lt; GitHub Repository{" "}
                       <GitHubIcon style={{ marginBottom: "-.25rem" }} /> /&gt;
                     </div>

@@ -1,8 +1,9 @@
 // import from Material UI
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-
 // import components
 import ContactIcons from "../ContactIcons";
+// import styles
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
         <span> ©2023 </span>
       </Grid>
 
-      <Grid xs={12} style={{marginTop: '-1rem', marginBottom: '1rem', fontSize: '1.25rem'}}>
+      <Grid className={styles.footerLink} xs={12} style={{marginTop: '-1rem', marginBottom: '1rem', fontSize: '1.25rem'}}>
         <a href="https://kevinlong.dev/" target="_blank" rel="noreferrer">
           <span className="permanent-marker">www.kevinlong.dev</span>
         </a>  

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb4bea44.css",
-    "main.js": "/static/js/main.9e5c2897.js",
+    "main.css": "/static/css/main.e5c794f6.css",
+    "main.js": "/static/js/main.bfa2217e.js",
     "static/js/787.8de9fc1c.chunk.js": "/static/js/787.8de9fc1c.chunk.js",
     "static/media/musicologyDesktop.gif": "/static/media/musicologyDesktop.572eb27c52d7a4777f69.gif",
     "static/media/rogueOne.png": "/static/media/rogueOne.4e8de6163c684b9c2b13.png",
@@ -28,12 +28,12 @@
     "static/media/html5.png": "/static/media/html5.3e012db1e67e149bee73.png",
     "static/media/javascript.png": "/static/media/javascript.590b1af72242a57147e7.png",
     "index.html": "/index.html",
-    "main.bb4bea44.css.map": "/static/css/main.bb4bea44.css.map",
-    "main.9e5c2897.js.map": "/static/js/main.9e5c2897.js.map",
+    "main.e5c794f6.css.map": "/static/css/main.e5c794f6.css.map",
+    "main.bfa2217e.js.map": "/static/js/main.bfa2217e.js.map",
     "787.8de9fc1c.chunk.js.map": "/static/js/787.8de9fc1c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb4bea44.css",
-    "static/js/main.9e5c2897.js"
+    "static/css/main.e5c794f6.css",
+    "static/js/main.bfa2217e.js"
   ]
 }

@@ -68,8 +68,8 @@ const Header = () => {
           >
             &lt; Full Stack Developer /&gt;
           </h2>
-          <h3 className={` ${styles.appSubSubHeadline}`}
-              style={{  fontSize: ".8rem" }}
+          <h3 className={styles.appSubSubHeadline}
+              style={{  fontSize: "1rem" }}
           
           >&lt; React | Node | Express | MongoDB | JavaScript /&gt; </h3>
         </Grid>

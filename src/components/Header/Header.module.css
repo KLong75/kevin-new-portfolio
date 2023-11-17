@@ -72,6 +72,9 @@
   .appSubHeadline {
     font-size: 1.1rem !important;
   }
+  .appSubSubHeadline {
+    font-size: .9rem !important;
+  }
 }
 
 

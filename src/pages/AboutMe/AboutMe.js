@@ -6,11 +6,11 @@ import AboutCube from "../../components/AboutCube";
 import TextFade from "../../components/TextFade";
 import DisplayBox from "../../components/DisplayBox";
 import ScheduleAppointment from "../../components/ScheduleAppointment";
-
 // import images
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
+// import styles
+import styles from "./AboutMe.module.css";
 
 const phrases = [
   "A Full Stack Developer",
@@ -84,14 +84,14 @@ const AboutMe = () => {
             />
             <Grid textAlign={'center'}>
             <p>
-              Full Stack Developer. Based in St. Louis, Missouri. 
+              Full Stack Developer
             </p>
-            <p>
+            <p className={styles.aboutMeTech}>
               React | Node | Express | MongoDB | JavaScript 
             </p>
-            <p>
+            {/* <p>
               Certificate in Full Stack Web Development from the University of Texas.
-            </p>
+            </p> */}
             <p>
               With a background in the performing arts and education, I bring the passion and creativity of an artist, along with the patient persistence of a teacher, to my work as a developer.
             </p>

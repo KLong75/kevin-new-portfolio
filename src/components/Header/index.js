@@ -99,9 +99,6 @@ const Header = () => {
                     padding: 0,
                   }}
                 >
-                  {/* <li style={{ margin: '20px 20px', fontSize: '18px', fontWeight: 'bold' }}>
-                  <Link to="/">&lt; Home /&gt;</Link>
-              </li> */}
                   <li
                     className={styles.navLink}
                     style={{

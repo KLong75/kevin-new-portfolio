@@ -1,19 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 // import from MUI
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-
 // import components
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TyeDyeBackground from './components/TyeDyeBackground';
-
-
-// import Swiper from './components/Swiper';
-
 // import page components
-// import Home from './pages/Home/Home';
 import About from './pages/AboutMe/AboutMe';
 import Contact from './pages/Contact/Contact';
 import MyWork from './pages/MyWork/MyWork';

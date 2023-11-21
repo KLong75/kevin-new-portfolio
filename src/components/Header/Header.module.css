@@ -1,5 +1,6 @@
 .navLink:hover {
   transform : scale(1.1);
+  color: white;
 }
 
 @media screen and (max-width: 1200px) {

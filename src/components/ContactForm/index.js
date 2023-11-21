@@ -1,13 +1,10 @@
 // import from React
 import React, { useState } from 'react';
-
 // import from emailjs
 import emailjs from '@emailjs/browser'
-
 // import from react-toastify
 import { ToastContainer, toast, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 // import from Material UI
 import TextField from '@mui/material/TextField';
 // import Radio from '@mui/material/Radio';
@@ -17,18 +14,14 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Unstable_Grid2';
-
-// import { styled } from '@mui/material/styles';
-// import { Paper } from '@mui/material';
-
 // import components
 import TyeDyeDarkBackground from '../TyeDyeDarkBackground';
-
 // import images
 import webDev from '../../assets/logos/devKevLogo.png';
-
 // import from utils
 import { validateEmail } from '../../utils/helpers';
+// import styles
+import styles from './ContactForm.module.css';
 
 
 const ContactFormToast = ({message, icon}) => (
@@ -178,9 +171,10 @@ const ContactForm = () => {
           <br/>
         <Grid xs={12}>
         <Button 
+          className={styles.submitButton}
           type='submit' 
           size='small' 
-          color='primary' 
+          
           variant='contained' 
           style={{
             width: '6rem', 

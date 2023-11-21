@@ -51,29 +51,29 @@ import styles from "./Resume.module.css";
 //   },
 // ];
 
-const jobs = [
-  {
-    title: "Full Stack Developer",
-    company: "Self-Employed",
-    type: "Freelance",
-    location: "Remote",
-    dates: "Jan 2022 - Present",
-    description:
-      "Design, Develop, Update, and Maintain reaponsive web applications based on client specifications.",
-    keyAccomplishments: [""],
-  },
-  {
-    title: "Teaching Assistant - Full Stack Web Development Boot Camp",
-    company: "2U",
-    type: "Part Time",
-    location: "Remote",
-    dates: "Oct 2022 - Present",
-    description:
-      "Assist with instruction of the Full Stack Curriculum with a focus on React, Node, Express, MongoDB, JavaScript, HTML, CSS, and SQL. Support students with class activities, homework assignments, projects, and technical issues.",
-    keyAccomplishments: [
-      "Oct 2022 - April 2023: Planned and facilitated bi-weekly homework help sessions resulting in a 15% increase in student homework submissions, contributing to the highest graduation rate in program history, approximately 20% above the program average."
-    ],
-  },
+// const jobs = [
+//   {
+//     title: "Full Stack Developer",
+//     company: "Self-Employed",
+//     type: "Freelance",
+//     location: "Remote",
+//     dates: "Jan 2022 - Present",
+//     description:
+//       "Design, Develop, Update, and Maintain reaponsive web applications based on client specifications.",
+//     keyAccomplishments: [""],
+//   },
+//   {
+//     title: "Teaching Assistant - Full Stack Web Development Boot Camp",
+//     company: "2U",
+//     type: "Part Time",
+//     location: "Remote",
+//     dates: "Oct 2022 - Present",
+//     description:
+//       "Assist with instruction of the Full Stack Curriculum with a focus on React, Node, Express, MongoDB, JavaScript, HTML, CSS, and SQL. Support students with class activities, homework assignments, projects, and technical issues.",
+//     keyAccomplishments: [
+//       "Oct 2022 - April 2023: Planned and facilitated bi-weekly homework help sessions resulting in a 15% increase in student homework submissions, contributing to the highest graduation rate in program history, approximately 20% above the program average."
+//     ],
+//   },
   // {
   //   title: "Elementary School Teacher",
   //   company: "Austin Discovery School",
@@ -99,7 +99,7 @@ const jobs = [
   //     `Staff Artist for MayDay Parade and Festival (2001, 2006 - 2012) - annual outdoor giant puppet spectacle produced by In The Heart of the Beast Puppet and Mask Theater involving hundreds of performers and attended by tens of thousands in Minneapolis, MN.`,
   //   ],
   // },
-];
+// ];
 
 const Resume = () => {
   return (
@@ -115,7 +115,7 @@ const Resume = () => {
           <a href={pdf} download="Kevin Long Full Stack Developer - Resume">
             <span
               className={`permanent-marker ${styles.resumeDownload}`}
-              style={{ fontSize: "1rem" }}
+              
             >
               &lt; Click here to download my resume. /&gt;
             </span>
@@ -125,7 +125,7 @@ const Resume = () => {
 
       <Grid container textAlign={"center"} style={{ padding: ".25rem" }}>
         <Grid xs={12}>
-          <Grid xs={12} style={{ marginTop: "-1rem" }}>
+          <Grid xs={12} >
           </Grid>
 
           <Grid container>
@@ -420,7 +420,7 @@ const Resume = () => {
             </Grid>
           </Grid>
 
-          <Grid container textAlign={""}>
+          {/* <Grid container textAlign={""}>
             <Grid sm={12} md={2}></Grid>
             <Grid sm={12} md={8}>
               <DisplayBox elevation={12}>
@@ -472,7 +472,7 @@ const Resume = () => {
                   sites and web applications that meet client specifications,
                   exceed client expectations, function well, are intuitive to
                   use, and look great on any screen size.
-                </p>
+                </p> */}
 
                 {/* <p style={{ fontWeight: "bold", fontSize: "1.1rem" }}>
                   Current Clients:
@@ -591,8 +591,8 @@ const Resume = () => {
                     {projects[1].technologies}
                   </p>
                 </ul> */}
-              </DisplayBox>
-            </Grid>
+              {/* </DisplayBox>
+            </Grid> */}
 
             
 
@@ -792,9 +792,9 @@ const Resume = () => {
               </Grid> */}
 
             {/* </Grid>  */}
-          </Grid>
+          {/* </Grid> */}
 
-          <Grid container textAlign={""}>
+          {/* <Grid container textAlign={""}>
             <Grid sm={12} md={2}></Grid>
             <Grid sm={12} md={8}>
               <DisplayBox elevation={12}>
@@ -842,7 +842,7 @@ const Resume = () => {
                     </span>
                     {jobs[1].description}
                 </p>
-               
+                */}
                 {/* <Grid
                   container
                   spacing={1}
@@ -879,14 +879,14 @@ const Resume = () => {
                     Oct 2022 - April 2023
                   </span> */}
                 
-                  <ul style={{ marginTop: 0, listStyle: "none", }}>
+                  {/* <ul style={{ marginTop: 0, listStyle: "none", }}>
                     <li>{jobs[1].keyAccomplishments[0]}</li>
                   
                     <li>{jobs[1].keyAccomplishments[1]}</li>
-                  </ul>
-              </DisplayBox>
-            </Grid>
-          </Grid>
+                  </ul> */}
+              {/* </DisplayBox>
+            </Grid> */}
+          {/* </Grid> */}
         </Grid>
       </Grid>
     </>

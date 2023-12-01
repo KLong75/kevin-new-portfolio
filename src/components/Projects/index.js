@@ -154,7 +154,7 @@ const Project = () => {
                   <a href={project.appHref} target="_blank" rel="noreferrer">
                     <div
                       className={`${styles.projectLink} permanent-marker`}
-                      style={{ marginBottom: ".5rem" }}>
+                      style={{ marginBottom: ".5rem", color: 'blue', textDecoration: 'underline' }}>
                       &lt; Deployed Application /&gt;
                     </div>
                   </a>
@@ -163,7 +163,7 @@ const Project = () => {
                     href={project.gitHref}
                     target="_blank"
                     rel="noreferrer">
-                    <div className={`${styles.projectLink} permanent-marker`}>
+                    <div style= {{ color: 'blue', textDecoration: 'underline'}} className={`${styles.projectLink} permanent-marker`}>
                       &lt; GitHub Repository{" "}
                       <GitHubIcon style={{ marginBottom: "-.25rem" }} /> /&gt;
                     </div>

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 
 const Ball = ({ x, y, z, size, color }) => {
@@ -11,7 +12,9 @@ const Ball = ({ x, y, z, size, color }) => {
         height: `${size}px`,
         borderRadius: '50%',
         backgroundColor: color,
-        boxShadow: `0 0 ${z}px 5px ${color}33`
+        boxShadow: `0 0 ${z}px 5px ${color}33`,
+        opacity: '0.3',
+        zIndex: '-100'
       }}
     ></div>
   );

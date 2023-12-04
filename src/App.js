@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 // import components
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import TyeDyeBackground from './components/TyeDyeBackground';
+import TyeDyeBackground from './components/TyeDyeBackground';
 // import page components
 import About from './pages/AboutMe/AboutMe';
 import Contact from './pages/Contact/Contact';
@@ -23,7 +23,8 @@ const theme = createTheme({
   },
   palette: {
     background: {
-      // default: '#3182ce',
+      // default: '#757263',
+      // default: '#fbdecc',
     },
     text: {
       primary: '#000000',
@@ -51,7 +52,7 @@ function App() {
     <>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {/* <TyeDyeBackground /> */}
+      <TyeDyeBackground />
       <Router>
           <Header />
             <Routes>

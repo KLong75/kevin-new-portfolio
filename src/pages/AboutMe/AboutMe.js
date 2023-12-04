@@ -15,6 +15,7 @@ import styles from "./AboutMe.module.css";
 const phrases = [
   "A Full Stack Developer",
   "A Teacher",
+  "A Puppeteer",
   "A Musician",
   "A Long Distance Runner",
   "A Marathon Finisher",

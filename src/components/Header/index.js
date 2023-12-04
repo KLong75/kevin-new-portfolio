@@ -47,13 +47,13 @@ const Header = () => {
       }}
     >
       <Grid container spacing={0} alignItems="center" textAlign="center">
-        {/* <Grid
+        <Grid
           item
           xs={12}
           style={{ marginTop: "-2rem", marginBottom: "-1rem" }}
         >
           <WebDevLogo />
-        </Grid> */}
+        </Grid>
 
         <Grid xs={12}>
           <h1
@@ -107,7 +107,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/" style={{ color: 'blue', textDecoration: "underline" }}>&lt; About /&gt;</Link>
+                    <Link to="/">&lt; About /&gt;</Link>
                   </li>
 
                   <li
@@ -116,10 +116,9 @@ const Header = () => {
                       margin: "20px 20px",
                       fontSize: "18px",
                       fontWeight: "bold",
-                      
                     }}
                   >
-                    <Link to="/my_work" style={{ color: 'blue', textDecoration: "underline", }}>&lt; Projects /&gt;</Link>
+                    <Link to="/my_work">&lt; Projects /&gt;</Link>
                   </li>
                   <li
                     className={styles.navLink}
@@ -129,7 +128,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/resume" style={{ color: 'blue', textDecoration: "underline" }}>&lt; Resume /&gt;</Link>
+                    <Link to="/resume">&lt; Resume /&gt;</Link>
                   </li>
                   <li
                     className={styles.navLink}
@@ -139,7 +138,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/contact" style={{ color: 'blue', textDecoration: "underline" }}>&lt; Contact /&gt;</Link>
+                    <Link to="/contact">&lt; Contact /&gt;</Link>
                   </li>
                 </ul>
               </nav>

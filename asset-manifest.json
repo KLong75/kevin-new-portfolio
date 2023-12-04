@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.72697cd4.css",
-    "main.js": "/static/js/main.d369d9c6.js",
+    "main.css": "/static/css/main.05448a71.css",
+    "main.js": "/static/js/main.3b2e40b1.js",
     "static/js/787.8de9fc1c.chunk.js": "/static/js/787.8de9fc1c.chunk.js",
     "static/media/musicologyDesktop.gif": "/static/media/musicologyDesktop.572eb27c52d7a4777f69.gif",
     "static/media/rogueOne.png": "/static/media/rogueOne.4e8de6163c684b9c2b13.png",
@@ -12,10 +12,12 @@
     "static/media/kevTeach.png": "/static/media/kevTeach.607d62ebbd81c54e1555.png",
     "static/media/vainMainDesktop.png": "/static/media/vainMainDesktop.6bbee1ef51a9ab61d10a.png",
     "static/media/vainMainMobile.png": "/static/media/vainMainMobile.da8ee0add5f078d23105.png",
+    "static/media/gargoyle.jpg": "/static/media/gargoyle.454414b06772ad076114.jpg",
     "static/media/musicologyMobile.jpg": "/static/media/musicologyMobile.c29f13145e57663f5975.jpg",
     "static/media/shtDesktop.png": "/static/media/shtDesktop.2eb1dc78edf4b0f82ab7.png",
     "static/media/watchTVLandingMobile.png": "/static/media/watchTVLandingMobile.76aac4d1df088ab12698.png",
     "static/media/trombone.jpg": "/static/media/trombone.f1959a0d73625ff12e88.jpg",
+    "static/media/tiger.jpg": "/static/media/tiger.e9b8fe48416bcf64ed34.jpg",
     "static/media/Kevin_Long_Resume-Full_Stack_Developer.pdf": "/static/media/Kevin_Long_Resume-Full_Stack_Developer.eef977eb6375528267cd.pdf",
     "static/media/shtMobile.png": "/static/media/shtMobile.e521f0d3a37c3495c151.png",
     "service-worker.js": "/service-worker.js",
@@ -26,12 +28,12 @@
     "static/media/html5.png": "/static/media/html5.3e012db1e67e149bee73.png",
     "static/media/javascript.png": "/static/media/javascript.590b1af72242a57147e7.png",
     "index.html": "/index.html",
-    "main.72697cd4.css.map": "/static/css/main.72697cd4.css.map",
-    "main.d369d9c6.js.map": "/static/js/main.d369d9c6.js.map",
+    "main.05448a71.css.map": "/static/css/main.05448a71.css.map",
+    "main.3b2e40b1.js.map": "/static/js/main.3b2e40b1.js.map",
     "787.8de9fc1c.chunk.js.map": "/static/js/787.8de9fc1c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72697cd4.css",
-    "static/js/main.d369d9c6.js"
+    "static/css/main.05448a71.css",
+    "static/js/main.3b2e40b1.js"
   ]
 }

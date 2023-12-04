@@ -104,7 +104,7 @@ import styles from "./Resume.module.css";
 const Resume = () => {
   return (
     <>
-      <Grid container textAlign={"center"} style={{ padding: ".25rem", marginTop: '-2rem' }}>
+      <Grid container textAlign={"center"} style={{ padding: ".25rem" }}>
         <Grid xs={12}>
           <h2
             style={{ margin: "0", fontSize: "2rem" }}
@@ -115,7 +115,7 @@ const Resume = () => {
           <a href={pdf} download="Kevin Long Full Stack Developer - Resume">
             <span
               className={`permanent-marker ${styles.resumeDownload}`}
-              style={{color: 'blue', textDecoration: 'underline'}}
+              
             >
               &lt; Click here to download my resume. /&gt;
             </span>

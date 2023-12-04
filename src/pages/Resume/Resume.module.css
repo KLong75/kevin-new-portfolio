@@ -3,7 +3,7 @@
 }
 
 .resumeDownload:hover {
-  transform: scale(1.1);
+  color: purple;
 }
 
 @media screen and (max-width: 500px) {

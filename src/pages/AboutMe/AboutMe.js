@@ -75,7 +75,7 @@ const AboutMe = () => {
             fontSize: "1.2rem",
           }}
         >
-          <DisplayBox style={{padding: '1rem'}} elevation={12}>
+          <DisplayBox style={{padding: '1rem'}}>
             <FontAwesomeIcon
             
               icon={icon({ name: "user-gear", style: "solid" })}

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.05448a71.css",
-    "main.js": "/static/js/main.71f98aae.js",
+    "main.js": "/static/js/main.80e8a64b.js",
     "static/js/787.8de9fc1c.chunk.js": "/static/js/787.8de9fc1c.chunk.js",
     "static/media/musicologyDesktop.gif": "/static/media/musicologyDesktop.572eb27c52d7a4777f69.gif",
     "static/media/rogueOne.png": "/static/media/rogueOne.4e8de6163c684b9c2b13.png",
@@ -25,11 +25,11 @@
     "static/media/javascript.png": "/static/media/javascript.590b1af72242a57147e7.png",
     "index.html": "/index.html",
     "main.05448a71.css.map": "/static/css/main.05448a71.css.map",
-    "main.71f98aae.js.map": "/static/js/main.71f98aae.js.map",
+    "main.80e8a64b.js.map": "/static/js/main.80e8a64b.js.map",
     "787.8de9fc1c.chunk.js.map": "/static/js/787.8de9fc1c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.05448a71.css",
-    "static/js/main.71f98aae.js"
+    "static/js/main.80e8a64b.js"
   ]
 }

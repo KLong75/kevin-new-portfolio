@@ -15,9 +15,7 @@ import styles from "./AboutMe.module.css";
 const phrases = [
   "A Full Stack Developer",
   "A Teacher",
-  "A Puppeteer",
   "A Musician",
-  "A Long Distance Runner",
   "A Marathon Finisher",
 ];
 
@@ -57,7 +55,7 @@ const AboutMe = () => {
             style={{ marginTop: 0, marginBottom: 0 }}
           >
             {" "}
-            <TextFade fadeSpeed={3600} phrases={phrases} />
+            <TextFade fadeSpeed={2200} phrases={phrases} />
           </p>
         </Grid>
         <Grid xs={12} style={{marginTop: '-.2rem'}}>

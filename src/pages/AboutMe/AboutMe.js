@@ -55,7 +55,7 @@ const AboutMe = () => {
             style={{ marginTop: 0, marginBottom: 0 }}
           >
             {" "}
-            <TextFade fadeSpeed={2200} phrases={phrases} />
+            <TextFade fadeSpeed={1800} phrases={phrases} />
           </p>
         </Grid>
         <Grid xs={12} style={{marginTop: '-.2rem'}}>

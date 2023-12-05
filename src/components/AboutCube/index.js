@@ -25,7 +25,7 @@ const AboutCube = () => {
   return (
     <>
       <Swiper
-        speed={1700}
+        speed={1800}
         style={{
           width: '300px',
           height: '300px',
@@ -42,7 +42,7 @@ const AboutCube = () => {
           shadowScale: 0.94,
         }}
         autoplay={{
-          // delay: 2400,
+          delay: 1800,
           disableOnInteraction: false,
         }}
         pagination={false}

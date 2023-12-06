@@ -42,6 +42,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "hsla(120,100%,50%,0.8)",
+  "background_color": "#ffffff",
   "id": "/"
 }

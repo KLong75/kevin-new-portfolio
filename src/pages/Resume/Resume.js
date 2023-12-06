@@ -104,7 +104,7 @@ import styles from "./Resume.module.css";
 const Resume = () => {
   return (
     <>
-      <Grid container textAlign={"center"} style={{ padding: ".25rem" }}>
+      <Grid container textAlign={"center"} style={{ padding: ".25rem", marginTop: '-2rem' }}>
         <Grid xs={12}>
           <h2
             style={{ margin: "0", fontSize: "2rem" }}

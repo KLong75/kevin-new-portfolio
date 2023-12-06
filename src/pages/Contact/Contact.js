@@ -20,25 +20,19 @@ import Grid from '@mui/material/Unstable_Grid2';
 const Contact = () => {
   return (
     <>
-    <Grid container spacing={6} justifyContent='space-evenly' textAlign='center' >
-     
+    <Grid container spacing={6} justifyContent='space-evenly' textAlign='center' style={{marginTop: '-3rem'}} >
       <Grid xs={12} style={{ marginTop: ''}}>
-        <h3 className='permanent-marker' style={{ fontSize: '2rem', marginTop: '0'}}>&lt; Let's Talk! /&gt;</h3>
+        <h3 className='permanent-marker' style={{ fontSize: '2rem', margin: '0'}}>&lt; Let's Talk! /&gt;</h3>
       </Grid>
-
       <Grid sm={12} md={4} />
-      
-      <Grid  sm={12} md={4} style={{ marginTop: '-80px'}} height=''>
+      <Grid  sm={12} md={4} style={{ marginTop: '-100px'}} height=''>
         <DisplayBox elevation={12} >
           <ScheduleAppointment  />
         </DisplayBox>
       </Grid>
-
       <Grid sm={12} md={4} />
-
       <Grid sm={12} md={2} />
-
-      <Grid  sm={12} md={8}  style={{ marginTop: '-80px'}} height=''>
+      <Grid  sm={12} md={8}  style={{ marginTop: '-110px'}} height=''>
         <DisplayBox elevation={12} >
         <Grid xs={12} style={{marginTop: '', marginBottom: '-2rem'}}>
         <h4 style={{margin: 0}}className="permanent-marker">&lt; My Contact Info /&gt;</h4>

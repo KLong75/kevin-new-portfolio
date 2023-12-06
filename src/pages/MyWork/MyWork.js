@@ -7,7 +7,7 @@ import Projects from '../../components/Projects';
 const MyWork = () => {
     return (
         <section>
-          <Grid container spacing={2} justifyContent="center" textAlign='center' style={{marginTop: 'center'}}>
+          <Grid container spacing={2} justifyContent="center" textAlign='center' style={{marginTop: '-2rem'}}>
 
             <Grid xs={12} >
               <h3 className='permanent-marker' style={{fontSize: '2rem', margin: 0}}>&lt; My Projects /&gt;</h3>

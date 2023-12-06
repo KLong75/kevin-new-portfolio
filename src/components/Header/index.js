@@ -50,7 +50,7 @@ const Header = () => {
         <Grid
           item
           xs={12}
-          style={{ marginTop: "-2rem", marginBottom: "-1rem" }}
+          style={{ marginTop: "-2rem", marginBottom: "-.5rem" }}
         >
           <WebDevLogo />
         </Grid>

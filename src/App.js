@@ -6,6 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TyeDyeBackground from './components/TyeDyeBackground';
+import ScrollToTopButton from './components/ScrollToTopButton'
 // import page components
 import About from './pages/AboutMe/AboutMe';
 import Contact from './pages/Contact/Contact';
@@ -62,6 +63,7 @@ function App() {
               <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
+            <ScrollToTopButton/>
           <Footer />
       </Router>
     </ThemeProvider>

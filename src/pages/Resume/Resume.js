@@ -113,12 +113,11 @@ const Resume = () => {
             &lt; Resume /&gt;
           </h2>
           <a href={pdf} download="Kevin Long Full Stack Developer - Resume">
-            <span
-              className={`permanent-marker ${styles.resumeDownload}`}
-              
+            <div
+              className={`permanent-marker ${styles.resumeDownload}`} 
             >
               &lt; Click here to download my resume. /&gt;
-            </span>
+            </div>
           </a>
         </Grid>
       </Grid>

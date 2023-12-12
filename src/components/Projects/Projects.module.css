@@ -24,6 +24,5 @@
 }
 
 .projectLink:hover {
-  color: purple;
   transform: scale(1.1);
 }

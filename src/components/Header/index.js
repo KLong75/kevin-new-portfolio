@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // import components
-import WebDevLogo from "../WebDevLogo";
+// import WebDevLogo from "../WebDevLogo";
 
 import TyeDyeDarkBackground from "../../components/TyeDyeDarkBackground";
 
@@ -47,23 +47,23 @@ const Header = () => {
       }}
     >
       <Grid container spacing={0} alignItems="center" textAlign="center">
-        <Grid
+        {/* <Grid
           item
           xs={12}
           style={{ marginTop: "-2rem", marginBottom: "-.5rem" }}
         >
           <WebDevLogo />
-        </Grid>
+        </Grid> */}
 
         <Grid xs={12}>
           <h1
-            className={`permanent-marker ${styles.appHeadline}`}
+            className={` ${styles.appHeadline}`}
             style={{ margin: 0, fontSize: "2rem" }}
           >
             &lt; Kevin Long /&gt;
           </h1>
           <h2
-            className={`permanent-marker ${styles.appSubHeadline}`}
+            className={` ${styles.appSubHeadline}`}
             style={{ margin: 0, fontSize: "2rem" }}
           >
             &lt; Full Stack Developer /&gt;
@@ -91,7 +91,7 @@ const Header = () => {
             <Grid xs={12}>
               <nav style={{ margin: 0, padding: 0 }}>
                 <ul
-                  className="permanent-marker"
+                  className=""
                   style={{
                     display: "flex",
                     listStyle: "none",
@@ -175,11 +175,11 @@ const Header = () => {
           <Grid container spacing={0} alignItems="" textAlign="center">
             <TyeDyeDarkBackground />
             <Grid item xs={12} style={{ marginTop: "-8rem", marginBottom:'2rem' }}>
-              <WebDevLogo />
-              <h1 style={{ fontSize: "1.5rem" }} className="permanent-marker">
+              {/* <WebDevLogo /> */}
+              <h1 style={{ fontSize: "1.5rem" }} className="">
                 &lt; Kevin Long /&gt;
               </h1>
-              <h2 style={{ fontSize: "1.5rem" }} className={`permanent-marker ${styles.mobileMenuSubHeadline}`}>
+              <h2 style={{ fontSize: "1.5rem" }} className={` ${styles.mobileMenuSubHeadline}`}>
                 &lt; Full Stack Developer /&gt;
               </h2>
             </Grid>
@@ -196,7 +196,7 @@ const Header = () => {
                   fontWeight: "bolder",
                 }}
               >
-                <span className="permanent-marker">&lt; About Me /&gt;</span>
+                <span className="">&lt; About Me /&gt;</span>
               </MenuItem>
             </Grid>
 
@@ -213,7 +213,7 @@ const Header = () => {
                   fontWeight: "bolder",
                 }}
               >
-                <span className="permanent-marker">&lt; Projects /&gt;</span>
+                <span className="">&lt; Projects /&gt;</span>
               </MenuItem>
             </Grid>
             <Grid xs={12}>
@@ -228,7 +228,7 @@ const Header = () => {
                   fontWeight: "bolder",
                 }}
               >
-                <span className="permanent-marker">&lt; Resume /&gt;</span>
+                <span className="">&lt; Resume /&gt;</span>
               </MenuItem>
             </Grid>
 
@@ -244,7 +244,7 @@ const Header = () => {
                   fontWeight: "bolder",
                 }}
               >
-                <span className="permanent-marker">&lt; Contact /&gt;</span>
+                <span className="">&lt; Contact /&gt;</span>
               </MenuItem>
             </Grid>
           </Grid>

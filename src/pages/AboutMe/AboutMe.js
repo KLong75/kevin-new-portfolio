@@ -37,7 +37,7 @@ const AboutMe = () => {
           }}
         >
           <h3
-            className="permanent-marker"
+            className=""
             style={{
               fontSize: "2rem",
               marginTop: 0,

@@ -177,9 +177,18 @@ const TyeDyeBackground = () => {
     // gradient.addColorStop(1.0, `hsla(260,100%,50%,1)`);
 
 
-     gradient.addColorStop(0, `hsla(0, 0%, 0%, 1)`);
-     gradient.addColorStop(0.45, `hsla(0, 0%, 80%, 1)`);
-     gradient.addColorStop(1, `hsla(0, 0%, 100%, 1)`);
+    //  gradient.addColorStop(0, `hsla(0, 0%, 0%, 1)`);
+    //  gradient.addColorStop(0.45, `hsla(0, 0%, 80%, 1)`);
+    //  gradient.addColorStop(1, `hsla(0, 0%, 100%, 1)`);
+
+    // gradient.addColorStop(0, `hsla(60,100%,50%,1)`);
+    // gradient.addColorStop(.5, `hsla(130,100%,50%,1)`);
+    // gradient.addColorStop(1, `hsla(240,100%,50%,1)`);
+
+    gradient.addColorStop(0, `hsla(60, 100%, 50%, 0.75)`); // Semi-transparent yellow
+gradient.addColorStop(0.5, `hsla(240, 100%, 50%, 0.75)`); // Semi-transparent blue
+gradient.addColorStop(1, `hsla(120, 100%, 50%, 0.75)`); // Semi-transparent green
+
      
 
     ctx.fillStyle = gradient;

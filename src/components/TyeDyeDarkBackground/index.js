@@ -33,12 +33,19 @@ const TyeDyeDarkBackground = () => {
 
       const gradient = ctx.createRadialGradient(centerX, centerY, 50, centerX, centerY, canvas.width);
 
-      gradient.addColorStop(0, `hsla(${hue}, 0%, 50%, 1)`);
+      // gradient.addColorStop(0, `hsla(${hue}, 0%, 50%, 1)`);
       // gradient.addColorStop(0, `hsla(${hue}, 100%, 50%, 1)`);
-      gradient.addColorStop(0.5, `hsla(${hue}, 0%, 100%, 1)`);
+      // gradient.addColorStop(0.5, `hsla(${hue}, 0%, 100%, 1)`);
       // gradient.addColorStop(0.5, `hsla(${hue + 100},100%,50%,1)`);
-      gradient.addColorStop(1, `hsla(${hue}, 0%, 50%, 1)`);
+      // gradient.addColorStop(1, `hsla(${hue}, 0%, 50%, 1)`);
       // gradient.addColorStop(1, `hsla(${hue + 200},100%,50%,1)`);
+
+      gradient.addColorStop(0, `hsla(${hue + 60}, 100%, 50%, 1)`); // Semi-transparent yellow
+      gradient.addColorStop(0.5, `hsla(${hue +240}, 100%, 50%, 1)`); // Semi-transparent blue
+      gradient.addColorStop(1, `hsla(${hue + 120}, 100%, 50%, 1)`); // Semi-transparent green
+
+
+
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       frameCount++;

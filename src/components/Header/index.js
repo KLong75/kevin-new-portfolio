@@ -194,9 +194,10 @@ const Header = () => {
                   fontSize: "22px",
                   justifyContent: "center",
                   fontWeight: "bolder",
+                  textDecoration: 'underline'
                 }}
               >
-                <span className="">&lt; About Me /&gt;</span>
+                <span>&lt; About Me /&gt;</span>
               </MenuItem>
             </Grid>
 
@@ -211,6 +212,7 @@ const Header = () => {
 
                   justifyContent: "center",
                   fontWeight: "bolder",
+                  textDecoration: 'underline'
                 }}
               >
                 <span className="">&lt; Projects /&gt;</span>
@@ -226,6 +228,7 @@ const Header = () => {
                   fontSize: "22px",
                   justifyContent: "center",
                   fontWeight: "bolder",
+                  textDecoration: 'underline'
                 }}
               >
                 <span className="">&lt; Resume /&gt;</span>
@@ -242,6 +245,7 @@ const Header = () => {
                   fontSize: "22px",
                   justifyContent: "center",
                   fontWeight: "bolder",
+                  textDecoration: 'underline'
                 }}
               >
                 <span className="">&lt; Contact /&gt;</span>

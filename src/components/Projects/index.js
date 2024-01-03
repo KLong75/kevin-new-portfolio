@@ -144,20 +144,17 @@ const Project = () => {
                   </p>
                 </Grid>
 
-                {
-  project.guest_username && project.guest_password && (
-    <Grid textAlign={"left"}>
-      <p>
-        <span className="permanent-marker">Guest Login:</span>
-        <br />
-        <span>{project.guest_username}</span> 
-        <br />
-        <span>{project.guest_password}</span>
-      </p>
-    </Grid>
-  )
-}
-
+                {project.guest_username && project.guest_password && (
+                  <Grid textAlign={"left"}>
+                    <p>
+                      <span className="permanent-marker">Guest Login:</span>
+                      <br />
+                      <span>{project.guest_username}</span>
+                      <br />
+                      <span>{project.guest_password}</span>
+                    </p>
+                  </Grid>
+                )}
 
                 <Grid style={{ marginBottom: "-1.5rem", marginTop: "-2rem" }}>
                   <span className="permanent-marker">Links:</span>

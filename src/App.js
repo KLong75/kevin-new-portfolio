@@ -18,7 +18,7 @@ const theme = createTheme({
   typography: {
     fontFamily: [
       // 'Roboto Flex',
-      'Roboto',
+      'Rubik',
       'sans-serif',
     ].join(','),
   },

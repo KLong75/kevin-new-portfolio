@@ -31,20 +31,22 @@ const Project = () => {
       src: "rogueOne.png",
       alt: "screenshot of app",
       description:
-        "React. Node. MongoDB. Express. Full stack application. Serves as a central hub for all of a user's subscription streaming accounts. Search for any TV show or movie and link to where it is available online to stream, rent, or buy. Multiple search methods enable users to find what they want to watch and where they can watch it. Users can search all sources or just the ones they are subscribed to. Save titles to a watchlist for later viewing. The watchlist can be filtered by source, type, and genre. Guest credentials for login - email: guest@email.com, password: Guest#1",
+        "React. Node. MongoDB. Express. Full stack application. Serves as a central hub for all of a user's subscription streaming accounts. Search for any TV show or movie and link to where it is available online to stream, rent, or buy. Multiple search methods enable users to find what they want to watch and where they can watch it. Users can search all sources or just the ones they are subscribed to. Save titles to a watchlist for later viewing. The watchlist can be filtered by source, type, and genre.",
       technologies:
         "React, Node, MongoDB, Express, Material UI, React Router, React Context, Apollo, GraphQL, JSON web tokens, bcrypt, Mongoose, Swiperjs, JavaScript, HTML, CSS,",
       appHref: "https://streamhub-e4fc2af8fdfc.herokuapp.com/",
       gitHref: "https://github.com/KLong75/stream-hub",
       mobile_img_src: `${watchTVMobile}`,
       desktop_img_src: `${watchTVDesktop}`,
+      guest_username: "email: guest@email.com",
+      guest_password: "password: Guest#1",
     },
     {
       title: "MUSICOLOGY",
       src: "musicology-gif.gif",
       alt: "screenshot of app",
       description:
-        "Full MERN stack application. A networking app for musicians. Users can sign up, create a profile describing their musical abilities and interests, make posts on the bulletin board, respond to posts made by other users, and connect with other musicians for creative and business purposes.",
+        "React. Node. MongoDB. Express. Full stack application. A networking app for musicians. Users can sign up, create a profile describing their musical abilities and interests, make posts on the bulletin board, respond to posts made by other users, and connect with other musicians for creative and business purposes.",
       technologies:
         "MongoDB, Express, React, Node.js, GraphQL, Mongoose, Bootstrap, Material UI, bcrypt, Apollo, React router, JSON web tokens, JavaScript, CSS",
       appHref: "https://musicology-umekev.herokuapp.com/",
@@ -88,7 +90,7 @@ const Project = () => {
           justifyContent="space-evenly"
           textAlign={"center"}>
           {projects.map((project) => (
-            <Grid sm={12} md={6} lg={5}  key={project.title}>
+            <Grid sm={12} md={6} lg={5} key={project.title}>
               <DisplayBox elevation={12} style={{ fontWeight: "bold" }}>
                 <Grid textAlign={"center"}>
                   <h4
@@ -118,7 +120,7 @@ const Project = () => {
                     />
                   </a>
                   <br></br>
-                  <span className="permanent-marker">Mobile View</span>
+                  <span>Mobile View</span>
                 </Grid>
 
                 <Grid>
@@ -130,7 +132,7 @@ const Project = () => {
                     />
                   </a>
                   <br></br>
-                  <span className="permanent-marker">Desktop View</span>
+                  <span>Desktop View</span>
                 </Grid>
 
                 <Grid
@@ -142,9 +144,20 @@ const Project = () => {
                   </p>
                 </Grid>
 
-                {/* <Grid textAlign={"left"}>
-                  <p><span className="permanent-marker">Technologies:</span>{` ${project.technologies}`}</p>
-                </Grid> */}
+                {
+  project.guest_username && project.guest_password && (
+    <Grid textAlign={"left"}>
+      <p>
+        <span className="permanent-marker">Guest Login:</span>
+        <br />
+        <span>{project.guest_username}</span> 
+        <br />
+        <span>{project.guest_password}</span>
+      </p>
+    </Grid>
+  )
+}
+
 
                 <Grid style={{ marginBottom: "-1.5rem", marginTop: "-2rem" }}>
                   <span className="permanent-marker">Links:</span>

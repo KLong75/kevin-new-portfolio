@@ -57,13 +57,13 @@ const Header = () => {
 
         <Grid xs={12}>
           <h1
-            className={` ${styles.appHeadline}`}
+            className={` ${styles.appHeadline}, rubik`}
             style={{ margin: 0, fontSize: "2rem" }}
           >
             &lt; Kevin Long /&gt;
           </h1>
           <h2
-            className={` ${styles.appSubHeadline}`}
+            className={` ${styles.appSubHeadline} `}
             style={{ margin: 0, fontSize: "2rem" }}
           >
             &lt; Full Stack Developer /&gt;

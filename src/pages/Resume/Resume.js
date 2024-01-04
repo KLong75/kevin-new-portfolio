@@ -108,6 +108,7 @@ const Resume = () => {
         <Grid xs={12}>
           <h2
             style={{ margin: "0", fontSize: "2rem" }}
+            className="permanent-marker"
           >
             &lt; Resume /&gt;
           </h2>

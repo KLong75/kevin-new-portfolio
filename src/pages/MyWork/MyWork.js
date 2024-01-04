@@ -9,7 +9,7 @@ const MyWork = () => {
         <section>
           <Grid container spacing={2} justifyContent="center" textAlign='center' style={{marginTop: '-2rem'}}>
             <Grid xs={12} >
-              <h3  style={{fontSize: '2rem', margin: 0}}>&lt; My Projects /&gt;</h3>
+              <h3  style={{fontSize: '2rem', margin: 0}} className="permanent-marker">&lt; My Projects /&gt;</h3>
             </Grid>
           </Grid>
           <Projects/>

@@ -15,7 +15,9 @@ import FormLabel from '@mui/material/FormLabel';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Unstable_Grid2';
 // import components
-import TyeDyeDarkBackground from '../TyeDyeDarkBackground';
+// import TyeDyeDarkBackground from '../TyeDyeDarkBackground';
+import TyeDyeBackground from '../TyeDyeBackground';
+
 // import images
 import webDev from '../../assets/logos/devKevLogo.png';
 // import from utils
@@ -23,15 +25,13 @@ import { validateEmail } from '../../utils/helpers';
 // import styles
 import styles from './ContactForm.module.css';
 
-
-const ContactFormToast = ({message, icon}) => (
-  <div>
+const ContactFormToast = ({message}) => (
+  <div style={{backgroundColor: 'hsla(0, 0%, 90%, 0.6)'}}>
     <img src={webDev} alt="" style={{width: '40%', height: 'auto', borderRadius: '50%', border: ''}}/>
     <p style={{color: '#black', fontSize: '20px', marginTop: '10px', fontWeight: 'bold'}} className='permanent-marker'>{message}</p>
-    <TyeDyeDarkBackground />
+    <TyeDyeBackground />
   </div>
 )
-
 
 const ContactForm = () => {
 
@@ -95,7 +95,7 @@ const ContactForm = () => {
       .then((result) => {
         console.log(result.text);
         // console.log(firstName, lastName, email, message, interestedIn);
-        toast(<ContactFormToast style={{color: 'black' }} message='Thank you for your message! I will be in touch soon!' />);
+        toast(<ContactFormToast style={{color: 'black'}} message='Thank you for your message! I will be in touch!' />);
       }, (error) => {
         console.log(error.text);
       });

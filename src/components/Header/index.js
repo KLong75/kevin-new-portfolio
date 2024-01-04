@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // import components
-// import WebDevLogo from "../WebDevLogo";
+import WebDevLogo from "../WebDevLogo";
 
 import TyeDyeDarkBackground from "../../components/TyeDyeDarkBackground";
 
@@ -47,13 +47,13 @@ const Header = () => {
       }}
     >
       <Grid container spacing={0} alignItems="center" textAlign="center">
-        {/* <Grid
+        <Grid
           item
           xs={12}
           style={{ marginTop: "-2rem", marginBottom: "-.5rem" }}
         >
           <WebDevLogo />
-        </Grid> */}
+        </Grid>
 
         <Grid xs={12}>
           <h1
@@ -107,7 +107,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/">&lt; About /&gt;</Link>
+                    <Link to="/" className="permanent-marker">&lt; About /&gt;</Link>
                   </li>
 
                   <li
@@ -118,7 +118,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/my_work">&lt; Projects /&gt;</Link>
+                    <Link to="/my_work" className="permanent-marker">&lt; Projects /&gt;</Link>
                   </li>
                   <li
                     className={styles.navLink}
@@ -128,7 +128,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/resume">&lt; Resume /&gt;</Link>
+                    <Link to="/resume" className="permanent-marker">&lt; Resume /&gt;</Link>
                   </li>
                   <li
                     className={styles.navLink}
@@ -138,7 +138,7 @@ const Header = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <Link to="/contact">&lt; Contact /&gt;</Link>
+                    <Link to="/contact" className="permanent-marker">&lt; Contact /&gt;</Link>
                   </li>
                 </ul>
               </nav>
@@ -175,7 +175,7 @@ const Header = () => {
           <Grid container spacing={0} alignItems="" textAlign="center">
             <TyeDyeDarkBackground />
             <Grid item xs={12} style={{ marginTop: "-8rem", marginBottom:'2rem' }}>
-              {/* <WebDevLogo /> */}
+              <WebDevLogo />
               <h1 style={{ fontSize: "1.5rem" }} className="">
                 &lt; Kevin Long /&gt;
               </h1>
@@ -197,7 +197,7 @@ const Header = () => {
                   textDecoration: 'underline'
                 }}
               >
-                <span>&lt; About Me /&gt;</span>
+                <span className="permanent-marker">&lt; About Me /&gt;</span>
               </MenuItem>
             </Grid>
 
@@ -215,7 +215,7 @@ const Header = () => {
                   textDecoration: 'underline'
                 }}
               >
-                <span className="">&lt; Projects /&gt;</span>
+                <span className="permanent-marker">&lt; Projects /&gt;</span>
               </MenuItem>
             </Grid>
             <Grid xs={12}>
@@ -231,7 +231,7 @@ const Header = () => {
                   textDecoration: 'underline'
                 }}
               >
-                <span className="">&lt; Resume /&gt;</span>
+                <span className="permanent-marker">&lt; Resume /&gt;</span>
               </MenuItem>
             </Grid>
 
@@ -248,7 +248,7 @@ const Header = () => {
                   textDecoration: 'underline'
                 }}
               >
-                <span className="">&lt; Contact /&gt;</span>
+                <span className="permanent-marker">&lt; Contact /&gt;</span>
               </MenuItem>
             </Grid>
           </Grid>

@@ -22,7 +22,7 @@ const Contact = () => {
     <>
     <Grid container spacing={6} justifyContent='space-evenly' textAlign='center' style={{marginTop: '-2rem'}} >
       <Grid xs={12} style={{ marginTop: ''}}>
-        <h3 style={{ fontSize: '2rem', marginTop: '0'}}>&lt; Let's Talk! /&gt;</h3>
+        <h3 style={{ fontSize: '2rem', marginTop: '0'}} className="permanent-marker">&lt; Let's Talk! /&gt;</h3>
       </Grid>
       <Grid sm={12} md={4} />
       <Grid  sm={12} md={4} style={{ marginTop: '-80px'}} height=''>

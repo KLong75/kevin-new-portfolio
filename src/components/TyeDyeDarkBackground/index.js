@@ -42,7 +42,7 @@ const TyeDyeDarkBackground = () => {
 
       gradient.addColorStop(0, `hsla(${hue + 60}, 100%, 50%, 1)`); // Semi-transparent yellow
       gradient.addColorStop(0.5, `hsla(${hue +240}, 100%, 50%, 1)`); // Semi-transparent blue
-      gradient.addColorStop(1, `hsla(${hue + 120}, 100%, 50%, 1)`); // Semi-transparent green
+      gradient.addColorStop(1, `hsla(120, 100%, 50%, 1)`); // Semi-transparent green
 
 
 
